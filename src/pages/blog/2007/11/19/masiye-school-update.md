@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-slug: "/posts/2007/11/masiye-school-update/"
+# slug: "/posts/2007/11/masiye-school-update/"
 date: "2007-11-19T09:50:23Z"
 title: "Masiye School update"
 categories: ["News from Malawi"]
