@@ -53,5 +53,28 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Header Image", name: headerImage, widget: image}
-      - {label: "Body", name: "body", widget: "markdown"}      
+      - {label: "Body", name: "body", widget: "markdown"} 
+      
+  - name: "samsvillage"
+    label: "Sams Village"
+    files: 
+      - file: "src/pages/projects/sams-village/index.md" 
+        label: "Sams Village"
+        name: "samsvillage"   
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Hero Image", name: heroImage, widget: image}
+          - {label: "Body", name: "body", widget: "markdown"} 
+          - {label: "Photos", name: gallery, widget: list, fields: [{label: Photo, name: photo, widget: image}]}
+          - {label: Links, name: links, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Photo, name: photo, widget: image}, {label: Text, name: text, widget: text}, {label: Link, name: link, widget: string}]}
+
+      - file: "src/pages/projects/sams-village/training-programme/index.md" 
+        label: "Training Programme"
+        name: "trainingprogramme"   
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Header Image", name: headerImage, widget: image}
+          - {label: "Body", name: "body", widget: "markdown"} 
       
