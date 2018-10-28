@@ -33,8 +33,7 @@ module.exports = {
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
-    },
-    'gatsby-plugin-netlify', // make sure to keep it last in the array
+    },    
     {
       resolve: "gatsby-transformer-remark",
       options: {
@@ -51,6 +50,7 @@ module.exports = {
         }
         ]
       },
-    }  
+    },
+    'gatsby-plugin-netlify', // make sure to keep it last in the array  
   ],
 }
