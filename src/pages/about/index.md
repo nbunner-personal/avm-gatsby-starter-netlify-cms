@@ -2,7 +2,7 @@
 templateKey: about-page
 title: About our values
 ---
-\`youtube: jt9BeiRDwJI\`
+\`youtube: https://www.youtube.com/watch?v=2Xc9gXyf2G4\` 
 
 ![null](/img/img_5263.jpg)
 
