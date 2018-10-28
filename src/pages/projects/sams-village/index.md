@@ -1,7 +1,18 @@
 ---
 templateKey: about-page
 title: Sams Village
-headerImage: /img/chemex.jpg
+heroImage: /img/flavor_wheel.jpg
+videos: |-
+  `youtube: n-n0jU215fQ`
+  `vimeo: 188256678`
+  `vimeo: 153218473`
+gallery:
+  - photo: /img/chemex.jpg
+links:
+  - link: /about/
+    photo: /img/chemex.jpg
+    text: some text
+    title: test link
 ---
 
 
