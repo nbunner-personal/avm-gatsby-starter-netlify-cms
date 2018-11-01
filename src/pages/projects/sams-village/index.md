@@ -7,17 +7,19 @@ videos: |-
   `vimeo: 188256678`
   `vimeo: 153218473`
 gallery:
-  - photo: /img/chemex.jpg
-  - photo: /img/jumbotron.jpg
+  - alt: Kitchen photo
+    photo: /img/chemex.jpg
+  - alt: Office photo
+    photo: /img/jumbotron.jpg
 links:
   - link: /about/
+    linkText: and some link text goes here
+    linkTitle: This is a link
     photo: /img/chemex.jpg
-    text: some text
-    title: test link
   - link: /about/
+    linkText: and some more link text goes here
+    linkTitle: This is another link
     photo: /img/flavor_wheel.jpg
-    text: some text to go here
-    title: another link
 ---
 
 
