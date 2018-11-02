@@ -7,8 +7,7 @@ import Gallery from '../components/Gallery'
 import PageLinksWithPhotos from '../components/PageLinksWithPhotos'
 
 
-export const VillagePageTemplate = ({
-    templateKey,    
+export const VillagePageTemplate = ({      
     heroImage,
     title,
     content,    
@@ -77,8 +76,7 @@ export const VillagePageTemplate = ({
   )
 }
 
-VillagePageTemplate.propTypes = {
-  templateKey: PropTypes.string,
+VillagePageTemplate.propTypes = {  
   heroImage: PropTypes.string,
   title: PropTypes.string,
   content: PropTypes.string,    
@@ -119,8 +117,7 @@ export const VillagePageQuery = graphql`
   query VillagePage($id: String!) {
     markdownRemark(id: { eq: $id }) {
         html
-        frontmatter {
-            templateKey
+        frontmatter {            
             title
             heroImage        
             videos

@@ -8,8 +8,7 @@ const PageLinks = ({ pagelinks }) => (
     {pagelinks.map(pagelink => (
       <article key={v4()}>
         <div>
-            <h3>{pagelink.linkTitle}</h3>
-            <img src={pagelink.photo} alt={pagelink.LinkTitle} />
+            <h3>{pagelink.linkTitle}</h3>            
             <p>{pagelink.linkText}</p>
             <Link to={pagelink.url}>
             Find out more
@@ -23,8 +22,7 @@ const PageLinks = ({ pagelinks }) => (
 PageLinks.propTypes = {
     pagelinks: PropTypes.arrayOf(
     PropTypes.shape({
-      linkTitle: PropTypes.string,
-      photo: PropTypes.string,
+      linkTitle: PropTypes.string,      
       linkText: PropTypes.string,      
       url: PropTypes.string,      
     })

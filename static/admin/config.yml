@@ -19,6 +19,17 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
+  - name: "aboutus"
+    label: "About Us"
+    files: 
+      - file: "src/pages/about-us/index.md" 
+        label: "About Us"
+        name: "aboutus"   
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "village-page"}
+          - {label: "Title", name: "title", widget: "string"}                 
+          - {label: Links, name: links, widget: list, fields: [{label: Title, name: linkTitle, widget: string}, {label: Text, name: linkText, widget: text}, {label: Url, name: url, widget: string}]}
+
   - name: "pages"
     label: "Pages"    
     files:
@@ -68,8 +79,7 @@ collections:
           - {label: "Body", name: "body", widget: "markdown"} 
           - {label: "Videos", name: "videos", widget: "markdown"} 
           - {label: "Photos", name: gallery, widget: list, fields: [{label: Photo, name: photo, widget: image}, {label: Alt text, name: alt, widget: string}]}
-          - {label: Links, name: links, widget: list, fields: [{label: Title, name: linkTitle, widget: string}, {label: Photo, name: photo, widget: image}, {label: Text, name: linkText, widget: text}, {label: Url, name: url, widget: string}]}
-
+          - {label: Links, name: links, widget: list, fields: [{label: Title, name: linkTitle, widget: string}, {label: Photo, name: photo, widget: image}, {label: Text, name: linkText, widget: text}, {label: Url, name: url, widget: string}]}  
       - file: "src/pages/projects/sams-village/training-programme/index.md" 
         label: "Training Programme"
         name: "trainingprogramme"   
