@@ -1,7 +1,7 @@
 ---
 templateKey: village-page
 title: Sams Village
-heroImage: /img/flavor_wheel.jpg
+heroImage: /img/sams-village-hero-banner.jpg
 videos: |-
   `youtube: n-n0jU215fQ`
   `vimeo: 188256678`
@@ -12,12 +12,10 @@ gallery:
   - alt: Office photo
     photo: /img/jumbotron.jpg
 links:
-  - url: /about/
-    linkText: and some link text goes here
+  - linkText: and some link text goes here
     linkTitle: This is a link
     photo: /img/chemex.jpg
-  - url: /about/
-    linkText: and some more link text goes here
+  - linkText: and some more link text goes here
     linkTitle: This is another link
     photo: /img/flavor_wheel.jpg
 ---
