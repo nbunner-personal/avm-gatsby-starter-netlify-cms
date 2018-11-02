@@ -1,5 +1,5 @@
 ---
-templateKey: about-page
+templateKey: village-page
 title: Sams Village
 heroImage: /img/flavor_wheel.jpg
 videos: |-
@@ -12,11 +12,11 @@ gallery:
   - alt: Office photo
     photo: /img/jumbotron.jpg
 links:
-  - link: /about/
+  - url: /about/
     linkText: and some link text goes here
     linkTitle: This is a link
     photo: /img/chemex.jpg
-  - link: /about/
+  - url: /about/
     linkText: and some more link text goes here
     linkTitle: This is another link
     photo: /img/flavor_wheel.jpg
