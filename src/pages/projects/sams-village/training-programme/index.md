@@ -1,5 +1,5 @@
 ---
-templateKey: village-page
+templateKey: page-basic
 title: Training programme
 headerImage: /img/chemex.jpg
 ---
