@@ -427,7 +427,7 @@ collections:
                   { label: Url, name: url, widget: string },
                 ],
             }
-      - file: "src/pages/health/disabiity/index.md"
+      - file: "src/pages/health/disability/index.md"
         label: "Disability"
         name: "disability"
         fields:
