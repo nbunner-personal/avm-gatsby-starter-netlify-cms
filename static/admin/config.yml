@@ -310,3 +310,81 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Header Image", name: headerImage, widget: image }
           - { label: "Body", name: "body", widget: "markdown" }                                        
+
+  - name: "water"
+    label: "Water"
+    files:
+      - file: "src/pages/projects/water/index.md"
+        label: "Water"
+        name: "water"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "water-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Image", name: heroImage, widget: image }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: "Photos",
+              name: gallery,
+              widget: list,
+              fields:
+                [
+                  { label: Photo, name: photo, widget: image },
+                  { label: Alt text, name: alt, widget: string },
+                ],
+            }
+          - {
+              label: Links,
+              name: links,
+              widget: list,
+              fields:
+                [
+                  { label: Title, name: linkTitle, widget: string },
+                  { label: Photo, name: photo, widget: image },
+                  { label: Text, name: linkText, widget: text },
+                  { label: Url, name: url, widget: string },
+                ],
+            }
+      - file: "src/pages/projects/water-and-sanitation/index.md"
+        label: "Water and sanitation"
+        name: "waterandsanitation"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "page-basic",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Header Image", name: headerImage, widget: image }
+          - { label: "Body", name: "body", widget: "markdown" } 
+      - file: "src/pages/projects/water-boreholes/index.md"
+        label: "Water boreholes"
+        name: "waterboreholes"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "page-basic",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Header Image", name: headerImage, widget: image }
+          - { label: "Body", name: "body", widget: "markdown" }  
+      - file: "src/pages/water/sanitation/index.md"
+        label: "Sanitation"
+        name: "sanitation"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "page-basic",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Header Image", name: headerImage, widget: image }
+          - { label: "Body", name: "body", widget: "markdown" }                                  

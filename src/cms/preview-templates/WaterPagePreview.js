@@ -1,19 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { VillagePageTemplate } from '../../templates/village-page'
+import { WaterPageTemplate } from '../../templates/water-page'
 
-const VillagePagePreview = ({ entry, widgetFor }) => (
-  <VillagePageTemplate
+const WaterPagePreview = ({ entry, widgetFor }) => (
+  <WaterPageTemplate
     title={entry.getIn(['data', 'title'])}
     content={widgetFor('body')}
   />
 )
 
-VillagePagePreview.propTypes = {
+WaterPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
   widgetFor: PropTypes.func,
 }
 
-export default VillagePagePreview
+export default WaterPagePreview
