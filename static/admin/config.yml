@@ -392,7 +392,7 @@ collections:
   - name: "health"
     label: "Health"
     files:
-      - file: "src/pages/projects/health/index.md"
+      - file: "src/pages/health/index.md"
         label: "Health"
         name: "health"
         fields:
@@ -427,19 +427,6 @@ collections:
                   { label: Url, name: url, widget: string },
                 ],
             }
-      - file: "src/pages/projects/bicycle-ambulances/index.md"
-        label: "Bicycle mbulances"
-        name: "bicycleambulances"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "page-basic",
-            }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Header Image", name: headerImage, widget: image }
-          - { label: "Body", name: "body", widget: "markdown" } 
       - file: "src/pages/health/disabiity/index.md"
         label: "Disability"
         name: "disability"
