@@ -387,4 +387,82 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Header Image", name: headerImage, widget: image }
-          - { label: "Body", name: "body", widget: "markdown" }                                  
+          - { label: "Body", name: "body", widget: "markdown" }   
+          
+  - name: "health"
+    label: "Health"
+    files:
+      - file: "src/pages/projects/health/index.md"
+        label: "Health"
+        name: "health"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "health-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Image", name: heroImage, widget: image }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: "Photos",
+              name: gallery,
+              widget: list,
+              fields:
+                [
+                  { label: Photo, name: photo, widget: image },
+                  { label: Alt text, name: alt, widget: string },
+                ],
+            }
+          - {
+              label: Links,
+              name: links,
+              widget: list,
+              fields:
+                [
+                  { label: Title, name: linkTitle, widget: string },
+                  { label: Photo, name: photo, widget: image },
+                  { label: Text, name: linkText, widget: text },
+                  { label: Url, name: url, widget: string },
+                ],
+            }
+      - file: "src/pages/projects/bicycle-ambulances/index.md"
+        label: "Bicycle mbulances"
+        name: "bicycleambulances"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "page-basic",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Header Image", name: headerImage, widget: image }
+          - { label: "Body", name: "body", widget: "markdown" } 
+      - file: "src/pages/health/disabiity/index.md"
+        label: "Disability"
+        name: "disability"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "page-basic",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Header Image", name: headerImage, widget: image }
+          - { label: "Body", name: "body", widget: "markdown" }  
+      - file: "src/pages/health/hivaids/index.md"
+        label: "hiv  / aids"
+        name: "hivaids"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "page-basic",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Header Image", name: headerImage, widget: image }
+          - { label: "Body", name: "body", widget: "markdown" }             
