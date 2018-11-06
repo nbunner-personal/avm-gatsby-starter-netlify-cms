@@ -1,5 +1,5 @@
 ---
-templateKey: about-page
+templateKey: page-basic
 title: Bicycle Ambulances
 headerImage: /img/chemex.jpg
 ---
