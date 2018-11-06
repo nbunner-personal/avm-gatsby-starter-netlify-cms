@@ -452,4 +452,53 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Header Image", name: headerImage, widget: image }
-          - { label: "Body", name: "body", widget: "markdown" }             
+          - { label: "Body", name: "body", widget: "markdown" }   
+      - file: "src/pages/projects/feeding-programme-in-schools/index.md"
+        label: "Feeding programmes"
+        name: "feedingprogrammes"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "page-basic",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Header Image", name: headerImage, widget: image }
+          - { label: "Body", name: "body", widget: "markdown" }  
+      - file: "src/pages/projects/maternity-unit.md"
+        label: "Maternity unit"
+        name: "maternityunit"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "page-gallery",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Header Image", name: headerImage, widget: image }
+          - { label: "Body", name: "body", widget: "markdown" }   
+          - {
+              label: "Photos",
+              name: gallery,
+              widget: list,
+              fields:
+                [
+                  { label: Photo, name: photo, widget: image },
+                  { label: Alt text, name: alt, widget: string },
+                ],
+            }   
+      - file: "src/pages/projects/distributions/index.md"
+        label: "Distributions"
+        name: "distributions"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "page-basic",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Header Image", name: headerImage, widget: image }
+          - { label: "Body", name: "body", widget: "markdown" }                               
