@@ -515,3 +515,45 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Header Image", name: headerImage, widget: image }
           - { label: "Body", name: "body", widget: "markdown" }                               
+
+- name: "educatin"
+    label: "Education"
+    files:
+      - file: "src/pages/education/index.md"
+        label: "Education"
+        name: "education"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "education-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Image", name: heroImage, widget: image }
+          - { label: "Body", name: "body", widget: "markdown" }          
+          - {
+              label: Links,
+              name: links,
+              widget: list,
+              fields:
+                [
+                  { label: Title, name: linkTitle, widget: string },
+                  { label: Photo, name: photo, widget: image },
+                  { label: Text, name: linkText, widget: text },
+                  { label: Url, name: url, widget: string },
+                ],
+            } 
+      - file: "src/pages/projects/community-based-childcare-centres-cbccs/index.md"
+        label: "CBCCs"
+        name: "cbccs"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "page-basic",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Header Image", name: headerImage, widget: image }
+          - { label: "Body", name: "body", widget: "markdown" }                       
