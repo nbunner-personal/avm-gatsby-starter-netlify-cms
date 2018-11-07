@@ -516,7 +516,7 @@ collections:
           - { label: "Header Image", name: headerImage, widget: image }
           - { label: "Body", name: "body", widget: "markdown" }                               
 
-- name: "educatin"
+  - name: "education"
     label: "Education"
     files:
       - file: "src/pages/education/index.md"
