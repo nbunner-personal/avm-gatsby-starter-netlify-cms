@@ -108,9 +108,21 @@ export const PageGalleryQuery = graphql`
         html
         frontmatter {            
             title
-            heroImage        
+            heroImage {
+              childImageSharp {
+                fluid(maxWidth: 2048, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }        
             gallery {
-                photo
+              photo {
+                childImageSharp {
+                  fluid(maxWidth: 2048, quality: 100) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
                 alt          
             }
         }

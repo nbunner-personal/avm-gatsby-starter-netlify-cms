@@ -10,7 +10,7 @@ const PageLinks = ({ pagelinks }) => (
       <div className="card" key={v4()}>
         <div className="card-image">
           <figure className="image is-4by3">
-            <img src={pagelink.photo} alt={pagelink.LinkTitle} alt="" />
+            <img src={pagelink.photo} alt={pagelink.LinkTitle} />
           </figure>
         </div>
         <div className="card-content">

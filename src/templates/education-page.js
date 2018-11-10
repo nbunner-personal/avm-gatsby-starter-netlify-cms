@@ -108,10 +108,22 @@ export const EducationPageQuery = graphql`
         html
         frontmatter {            
             title
-            heroImage        
+            heroImage {
+              childImageSharp {
+                fluid(maxWidth: 2048, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }       
             links {
                 linkTitle
-                photo
+                photo {
+                  childImageSharp {
+                    fluid(maxWidth: 2048, quality: 100) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
                 linkText
                 url          
             }
