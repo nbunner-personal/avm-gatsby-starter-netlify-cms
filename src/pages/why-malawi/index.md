@@ -1,6 +1,5 @@
 ---
-templateKey: 'about-page'
-path: /why-malawi
+templateKey: page-basic
 title: Why Malawi
 ---
 Malawi is one of the world’s 20 poorest countries. About 74 per cent of the population still lives below the income poverty line of US$1.25 a day and 90 per cent below the US$2 a day threshold. Only 12 per cent of households have access to credit.

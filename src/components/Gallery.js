@@ -3,13 +3,13 @@ import PropTypes from 'prop-types'
 import { v4 } from 'uuid'
 
 const Gallery = ({ gallery }) => (
-  <div>
+  <div className="tile">
     {gallery.map(photo => (
-      <article key={v4()}>
-        <div>
-            <img src={photo.photo} alt={photo.alt} />
-        </div>
-      </article>
+      <div className="tile" key={v4()}>
+       
+        <img src={photo.photo} alt={photo.alt} />
+       
+      </div>
     ))}
   </div>
 )
