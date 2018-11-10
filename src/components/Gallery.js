@@ -1,14 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { v4 } from 'uuid'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 const Gallery = ({ gallery }) => (
   <div className="tile">
     {gallery.map(photo => (
       <div className="tile" key={v4()}>
-       
-        <img src={photo.photo} alt={photo.alt} />
-       
+        <PreviewCompatibleImage imageInfo={photo.photo} />      
       </div>
     ))}
   </div>
@@ -17,7 +16,7 @@ const Gallery = ({ gallery }) => (
 Gallery.propTypes = {
     gallery: PropTypes.arrayOf(
     PropTypes.shape({
-      photo: PropTypes.string,
+      photo: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
       alt: PropTypes.string,      
     })
   ),

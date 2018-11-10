@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { v4 } from 'uuid'
 import { Link } from 'gatsby'
-// import Img from "gatsby-image"
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 const PageLinks = ({ pagelinks }) => (
   <div>
@@ -10,7 +10,7 @@ const PageLinks = ({ pagelinks }) => (
       <div className="card" key={v4()}>
         <div className="card-image">
           <figure className="image is-4by3">
-            <img src={pagelink.photo} alt={pagelink.LinkTitle} />
+            <PreviewCompatibleImage imageInfo={pagelink.photo} />
           </figure>
         </div>
         <div className="card-content">
@@ -32,7 +32,7 @@ PageLinks.propTypes = {
     pagelinks: PropTypes.arrayOf(
     PropTypes.shape({
       linkTitle: PropTypes.string,
-      photo: PropTypes.string,
+      photo: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
       linkText: PropTypes.string,      
       url: PropTypes.string,      
     })

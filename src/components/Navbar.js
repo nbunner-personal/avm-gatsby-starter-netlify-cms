@@ -12,7 +12,7 @@ const Navbar = () => (
                         <img src={logo} alt="" />
                     </figure>
                 </Link>
-                <div role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <div role="button" className="navbar-burger" aria-label="menu" aria-expanded="false">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -28,11 +28,11 @@ const Navbar = () => (
                 <Link className="navbar-item" to="/why-malawi">
                     Why malawi?
                 </Link>
-                <div class="navbar-item has-dropdown is-hoverable">
+                <div className="navbar-item has-dropdown is-hoverable">
                     <Link className="navbar-link" to="/projects">
                         Projects
                     </Link>
-                    <div class="navbar-dropdown">
+                    <div className="navbar-dropdown">
                         <Link className="navbar-item" to="/projects/sams-village">
                             Sams village
                         </Link>
@@ -44,11 +44,11 @@ const Navbar = () => (
                         </Link>
                     </div>
                 </div>    
-                <div class="navbar-item has-dropdown is-hoverable">
+                <div className="navbar-item has-dropdown is-hoverable">
                     <Link className="navbar-link" to="/get-involved">
                         Get involved
                     </Link>
-                    <div class="navbar-dropdown">
+                    <div className="navbar-dropdown">
                         <Link className="navbar-item" to="/projects/sams-village">
                             Sams village
                         </Link>
@@ -59,11 +59,11 @@ const Navbar = () => (
                             Njewa new office
             </Link>
                     </div>
-                    <div class="navbar-item has-dropdown is-hoverable">
+                    <div className="navbar-item has-dropdown is-hoverable">
                         <Link className="navbar-link" to="/about-us">
                             About us
                         </Link>
-                        <div class="navbar-dropdown">
+                        <div className="navbar-dropdown">
                             <Link className="navbar-item" to="/about-us/team">
                                 Team
                             </Link>
