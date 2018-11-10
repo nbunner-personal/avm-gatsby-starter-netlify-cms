@@ -5,11 +5,12 @@ import { Link } from 'gatsby'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 const PageLinks = ({ pagelinks }) => (
-  <div>
+  <div className="columns">
     {pagelinks.map(pagelink => (
+      <div className="column is-one-third">
       <div className="card" key={v4()}>
         <div className="card-image">
-          <figure className="image is-4by3">
+          <figure className="image">
             <PreviewCompatibleImage imageInfo={pagelink.photo} />
           </figure>
         </div>
@@ -23,6 +24,7 @@ const PageLinks = ({ pagelinks }) => (
             </Link>
           </div>  
         </div>
+      </div>
       </div>
     ))}
   </div>
