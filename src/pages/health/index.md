@@ -2,10 +2,6 @@
 templateKey: health-page
 title: Health
 heroImage: /img/sams-village-hero-banner.jpg
-videos: |-
-  `youtube: n-n0jU215fQ`
-  `vimeo: 188256678`
-  `vimeo: 153218473`
 gallery:
   - alt: Kitchen photo
     photo: /img/chemex.jpg

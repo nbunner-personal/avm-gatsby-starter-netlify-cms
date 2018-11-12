@@ -2,10 +2,10 @@
 templateKey: village-page
 title: Sams Village
 heroImage: /img/sams-village-hero-banner.jpg
-videos: |-
-  `youtube: n-n0jU215fQ`
-  `vimeo: 188256678`
-  `vimeo: 153218473`
+videos:
+  - video: https://www.youtube.com/watch?v=n-n0jU215fQ    
+  - video: https://vimeo.com/188256678
+  - video: https://vimeo.com/153218473
 gallery:
   - alt: Kitchen photo
     photo: /img/chemex.jpg

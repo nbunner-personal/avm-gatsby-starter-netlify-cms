@@ -1,5 +1,5 @@
 ---
-templateKey: village-page
+templateKey: health-page
 title: About Us
 links:
   - url: /about/

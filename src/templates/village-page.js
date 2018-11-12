@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import Gallery from '../components/Gallery'
 import PageLinksWithPhotos from '../components/PageLinksWithPhotos'
-
+import ReactPlayer from 'react-player'
 
 export const VillagePageTemplate = ({      
     heroImage,
@@ -53,16 +53,21 @@ export const VillagePageTemplate = ({
                         {title}
                       </h3>
                       <PageContent className="content" content={content} />
-                      here
+                      end of page content
                     </div>
                   </div>
-                  <div >
-                    <div className="column is-7"> here                 
-                    <PageContent className="videos" content={videos} />
+                  <div>
+                    videos  
+                    <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' playing />
+                    <div className="column">
+                                   
+                    
                     </div>
-                    here
-                    <Gallery gallery={gallery} />
+                    
                     <PageLinksWithPhotos pagelinks={links} />
+                    photos
+                    <Gallery gallery={gallery} />
+                    
                   </div>              
                   <div className="tile is-ancestor">
                     <div className="tile is-vertical">
@@ -86,7 +91,7 @@ VillagePageTemplate.propTypes = {
   heroImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   content: PropTypes.string,    
-  videos: PropTypes.string,    
+  videos: PropTypes.array,    
   gallery: PropTypes.array,  
   links: PropTypes.array,
 }
@@ -127,27 +132,29 @@ export const VillagePageQuery = graphql`
             title
             heroImage {
               childImageSharp {
-                fluid(maxWidth: 2048, quality: 100) {
+                fluid(maxWidth: 2048, quality: 60) {
                   ...GatsbyImageSharpFluid
                 }
               }
             }        
-            videos
+            videos {
+              video
+            }
             gallery {
               photo {
                 childImageSharp {
-                  fluid(maxWidth: 2048, quality: 100) {
+                  fluid(maxWidth: 300, quality: 60) {
                     ...GatsbyImageSharpFluid
                   }
                 }
               }
-                alt          
+              alt          
             }
             links {
                 linkTitle
                 photo {
                   childImageSharp {
-                    fluid(maxWidth: 2048, quality: 100) {
+                    fluid(maxWidth: 290, quality: 50) {
                       ...GatsbyImageSharpFluid
                     }
                   }

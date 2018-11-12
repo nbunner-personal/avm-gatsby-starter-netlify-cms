@@ -4,11 +4,11 @@ import { v4 } from 'uuid'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 const Gallery = ({ gallery }) => (
-  <div className="tile">
-    {gallery.map(photo => (
-      <div className="tile" key={v4()}>
-        <figure className="image is-4by3">
-          <PreviewCompatibleImage imageInfo={photo.photo} />      
+  <div className="columns">
+    {gallery.map(gall => (
+      <div className="column is-one-quarter" key={v4()}>
+        <figure className="image">
+          <PreviewCompatibleImage imageInfo={gall.photo} />      
         </figure>
       </div>
     ))}
