@@ -1,16 +1,16 @@
 ---
 templateKey: village-page
 title: Sams Village
-heroImage: /img/sams-village-hero-banner.jpg
+heroImage: /img/chemex.jpg
 videos:
   - video: 'https://www.youtube.com/watch?v=n-n0jU215fQ'
   - video: 'https://vimeo.com/188256678'
   - video: 'https://vimeo.com/153218473'
 gallery:
-  - photo: /img/chemex.jpg
-    alt: Kitchen photo    
-  - photo: /img/jumbotron.jpg
-    alt: Office photo    
+  - alt: Kitchen photo
+    photo: /img/chemex.jpg
+  - alt: Office photo
+    photo: /img/jumbotron.jpg
 links:
   - linkText: and some link text goes here
     linkTitle: This is a link
