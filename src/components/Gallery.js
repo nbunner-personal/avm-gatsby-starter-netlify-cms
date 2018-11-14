@@ -8,7 +8,7 @@ const Gallery = ({ gallery }) => (
     {gallery.map(gall => (
       <div className="column is-one-quarter" key={v4()}>
         <figure className="image">
-          <PreviewCompatibleImage imageInfo={gall.photo} />      
+          <PreviewCompatibleImage imageInfo={gall} />      
         </figure>
       </div>
     ))}

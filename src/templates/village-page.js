@@ -58,10 +58,10 @@ export const VillagePageTemplate = ({
                   </div>
                   <div>
                     videos  
-                    <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' playing />
+                    <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
                     <div className="column">
                                    
-                    
+                   
                     </div>
                     
                     <PageLinksWithPhotos pagelinks={links} />

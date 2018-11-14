@@ -137,16 +137,16 @@ export const HealthPageQuery = graphql`
               alt          
             }
             links {
-                linkTitle
-                photo {
-                  childImageSharp {
-                    fluid(maxWidth: 2048, quality: 100) {
-                      ...GatsbyImageSharpFluid
-                    }
+              linkTitle
+              photo {
+                childImageSharp {
+                  fluid(maxWidth: 300, quality: 100) {
+                    ...GatsbyImageSharpFluid
                   }
                 }
-                linkText
-                url          
+              }
+              linkText
+              url          
             }
         }
     }
