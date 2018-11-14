@@ -1,7 +1,7 @@
 ---
 templateKey: village-page
 title: Sams Village
-heroImage: /img/chemex.jpg
+heroImage: /img/jumbotron.jpg
 videos:
   - video: 'https://www.youtube.com/watch?v=n-n0jU215fQ'
   - video: 'https://vimeo.com/188256678'
