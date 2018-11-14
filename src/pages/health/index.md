@@ -10,10 +10,10 @@ gallery:
 links:
   - linkText: and some link text goes here
     linkTitle: This is a link
-    photo: /img/chemex.jpg
+    photo: /img/jumbotron.jpg
   - linkText: and some more link text goes here
     linkTitle: This is another link
-    photo: /img/flavor_wheel.jpg
+    photo: /img/jumbotron.jpg
 ---
 
 
