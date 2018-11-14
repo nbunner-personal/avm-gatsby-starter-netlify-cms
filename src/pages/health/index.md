@@ -3,10 +3,10 @@ templateKey: health-page
 title: Health
 heroImage: /img/sams-village-hero-banner.jpg
 gallery:
-  - alt: Kitchen photo
-    photo: /img/chemex.jpg
-  - alt: Office photo
-    photo: /img/jumbotron.jpg
+  - photo: /img/chemex.jpg
+    alt: Kitchen photo    
+  - photo: /img/jumbotron.jpg
+    alt: Office photo    
 links:
   - linkText: and some link text goes here
     linkTitle: This is a link

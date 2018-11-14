@@ -7,8 +7,8 @@ import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 const PageLinks = ({ pagelinks }) => (
   <div className="columns">
     {pagelinks.map(pagelink => (
-      <div className="column is-one-third">
-      <div className="card" key={v4()}>
+      <div className="column is-one-third" key={v4()}>
+      <div className="card">
         <div className="card-image">
           <figure className="image">
             <PreviewCompatibleImage imageInfo={pagelink.photo} />

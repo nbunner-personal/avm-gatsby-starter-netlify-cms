@@ -24,7 +24,13 @@ export const EducationPageTemplate = ({
                 <div className="content">
                   <div
                     className="full-width-image-container margin-top-0"
-                    style={{ backgroundImage: `url(${heroImage})` }}
+                    style={{
+                      backgroundImage: `url(${
+                        !!heroImage.childImageSharp
+                          ? heroImage.childImageSharp.fluid.src
+                          : heroImage
+                      })`,
+                    }}
                   >
                     <h2
                       className="has-text-weight-bold is-size-1"
@@ -70,7 +76,7 @@ export const EducationPageTemplate = ({
 }
 
 EducationPageTemplate.propTypes = {  
-  heroImage: PropTypes.string,
+  heroImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   content: PropTypes.string,        
   links: PropTypes.array,
@@ -119,7 +125,7 @@ export const EducationPageQuery = graphql`
                 linkTitle
                 photo {
                   childImageSharp {
-                    fluid(maxWidth: 2048, quality: 100) {
+                    fluid(maxWidth: 300, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }

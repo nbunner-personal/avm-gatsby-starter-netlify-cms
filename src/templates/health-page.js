@@ -26,7 +26,13 @@ export const HealthPageTemplate = ({
                 <div className="content">
                   <div
                     className="full-width-image-container margin-top-0"
-                    style={{ backgroundImage: `url(${heroImage})` }}
+                    style={{
+                      backgroundImage: `url(${
+                        !!heroImage.childImageSharp
+                          ? heroImage.childImageSharp.fluid.src
+                          : heroImage
+                      })`,
+                    }}
                   >
                     <h2
                       className="has-text-weight-bold is-size-1"
@@ -73,7 +79,7 @@ export const HealthPageTemplate = ({
 }
 
 HealthPageTemplate.propTypes = {  
-  heroImage: PropTypes.string,
+  heroImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   content: PropTypes.string,      
   gallery: PropTypes.array,  
@@ -128,7 +134,7 @@ export const HealthPageQuery = graphql`
                   }
                 }
               }
-                alt          
+              alt          
             }
             links {
                 linkTitle
