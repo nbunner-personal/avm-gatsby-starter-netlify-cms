@@ -1,11 +1,11 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-
+import layoutStyles from "./layout.module.css"
 import Navbar from '../components/Navbar'
 import './all.sass'
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div className={layoutStyles.container}>
     <Helmet title="Home | Gatsby + Netlify CMS" />
     <Navbar />
     <div>{children}</div>
