@@ -6,9 +6,9 @@ import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 const Gallery = ({ gallery }) => (
   <div className="columns">
     {gallery.map(gall => (
-      <div className="column is-one-quarter" key={v4()}>
+      <div className="column is-6" key={v4()}>
         <figure className="image">
-          <PreviewCompatibleImage imageInfo={gall} />      
+          <PreviewCompatibleImage imageInfo={gall.photo} />      
         </figure>
       </div>
     ))}

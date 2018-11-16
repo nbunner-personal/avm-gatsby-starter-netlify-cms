@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import Gallery from '../components/Gallery'
 import PageLinksWithPhotos from '../components/PageLinksWithPhotos'
-import ReactPlayer from 'react-player'
+import Videos from '../components/Videos'
 
 export const VillagePageTemplate = ({      
     heroImage,
@@ -48,7 +48,7 @@ export const VillagePageTemplate = ({
                     </h2>
                   </div>
                   <div className="columns">
-                    <div className="column is-7">
+                    <div className="column is-12">
                       <h3 className="has-text-weight-semibold is-size-2">
                         {title}
                       </h3>
@@ -58,11 +58,7 @@ export const VillagePageTemplate = ({
                   </div>
                   <div>
                     videos  
-                    <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
-                    <div className="column">
-                                   
-                   
-                    </div>
+                    <Videos videos={videos} />
                     
                     <PageLinksWithPhotos pagelinks={links} />
                     photos
@@ -138,7 +134,7 @@ export const VillagePageQuery = graphql`
               }
             }        
             videos {
-              video
+              videourl
             }
             gallery {
               photo {

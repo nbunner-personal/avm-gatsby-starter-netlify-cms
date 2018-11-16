@@ -3,9 +3,9 @@ templateKey: village-page
 title: Sams Village
 heroImage: /img/jumbotron.jpg
 videos:
-  - video: 'https://www.youtube.com/watch?v=n-n0jU215fQ'
-  - video: 'https://vimeo.com/188256678'
-  - video: 'https://vimeo.com/153218473'
+  - videourl: 'https://www.youtube.com/watch?v=n-n0jU215fQ'
+  - videourl: 'https://vimeo.com/188256678'
+  - videourl: 'https://vimeo.com/153218473'
 gallery:
   - alt: Kitchen photo
     photo: /img/chemex.jpg

@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { v4 } from 'uuid'
+// import { v4 } from 'uuid'
 import { Link } from 'gatsby'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 const PageLinks = ({ pagelinks }) => (
   <div className="columns">
     {pagelinks.map(pagelink => (
-      <div className="column is-one-third" key={v4()}>
+      <div className="column is-one-quarter" key={pagelink.linkTitle}>
       <div className="card">
         <div className="card-image">
           <figure className="image">
