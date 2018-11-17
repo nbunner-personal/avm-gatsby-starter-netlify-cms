@@ -4,8 +4,11 @@ title: Sams Village
 heroImage: /img/jumbotron.jpg
 videos:
   - videourl: 'https://www.youtube.com/watch?v=n-n0jU215fQ'
+    videotext: "A brief overview of Sam's Village and our first training course for Tailors"
   - videourl: 'https://vimeo.com/188256678'
+    videotext: "Sam's Village - Drone update Sept 2016 from Sam Palmer on Vimeo."
   - videourl: 'https://vimeo.com/153218473'
+    videotext: "Sam's Training Village from Sam Palmer on Vimeo."
 gallery:
   - alt: Kitchen photo
     photo: /img/chemex.jpg

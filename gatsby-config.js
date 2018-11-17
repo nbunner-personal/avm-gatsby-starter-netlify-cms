@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'AVM new developement site mk2',
+    title: 'AVM new developement site mk3',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -66,9 +66,9 @@ module.exports = {
         {
           resolve: "gatsby-remark-embed-video",
           options: {
-            width: 800,
+            width: 554,
             ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
-            height: 400, // Optional: Overrides optional.ratio
+            height: 311, // Optional: Overrides optional.ratio
             related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
             noIframeBorder: true //Optional: Disable insertion of <style> border: 0
           }

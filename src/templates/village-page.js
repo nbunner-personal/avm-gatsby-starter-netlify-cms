@@ -6,6 +6,7 @@ import Content, { HTMLContent } from '../components/Content'
 import Gallery from '../components/Gallery'
 import PageLinksWithPhotos from '../components/PageLinksWithPhotos'
 import Videos from '../components/Videos'
+import { Link } from 'gatsby'
 
 export const VillagePageTemplate = ({      
     heroImage,
@@ -47,6 +48,16 @@ export const VillagePageTemplate = ({
                       {title}
                     </h2>
                   </div>
+                  <div class="tabs">
+                    <ul>
+                      <li class="is-active"><Link to="/projects/sams-village/">Sam's Village</Link></li>
+                      <li><Link to="/water/">Water</Link></li>
+                      <li><Link to="/health/">Health</Link></li>
+                      <li><Link to="/education/">Education</Link></li>
+                      <li><Link to="/water/">Environment</Link></li>
+                      <li><Link to="/water/">Celebrate &amp; Give</Link></li>
+                    </ul>
+                  </div>
                   <div className="columns">
                     <div className="column is-12">
                       <h3 className="has-text-weight-semibold is-size-2">
@@ -55,13 +66,14 @@ export const VillagePageTemplate = ({
                       <PageContent className="content" content={content} />
                       end of page content
                     </div>
+                    <div classname="column is-12">
+                      
+                    </div>
                   </div>
                   <div>
-                    videos  
-                    <Videos videos={videos} />
-                    
+                  <Videos videos={videos} />
                     <PageLinksWithPhotos pagelinks={links} />
-                    photos
+                    
                     <Gallery gallery={gallery} />
                     
                   </div>              
@@ -135,6 +147,7 @@ export const VillagePageQuery = graphql`
             }        
             videos {
               videourl
+              videotext
             }
             gallery {
               photo {

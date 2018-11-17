@@ -215,6 +215,7 @@ collections:
               fields:
                 [
                   { label: Video Url, name: videourl, widget: string},
+                  { label: Description, name: videotext, widget: text},
                 ]           
             }
           - {
