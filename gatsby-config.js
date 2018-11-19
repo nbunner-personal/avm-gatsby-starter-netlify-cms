@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'AVM new developement site mk3',
+    title: 'AVM new developement site mk5',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

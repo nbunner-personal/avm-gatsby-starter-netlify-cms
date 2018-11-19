@@ -66,32 +66,30 @@ export const VillagePageTemplate = ({
                       <PageContent className="content" content={content} />
                       end of page content
                     </div>
-                    <div classname="column is-12">
-                      
+                  </div>
+                  <div className="full-width-image-container margin-top-0">
+                    <div className="column is-10 is-offset-1">
+                      <Videos videos={videos} />
                     </div>
                   </div>
-                  <div>
-                  <Videos videos={videos} />
-                    <PageLinksWithPhotos pagelinks={links} />
-                    
-                    <Gallery gallery={gallery} />
-                    
+                  <div className="full-width-image-container margin-top-0">  
+                    <div className="column is-10 is-offset-1">
+                      <PageLinksWithPhotos pagelinks={links} /> 
+                    </div>             
+                  </div>
+                  <div className="full-width-image-container margin-top-0">        
+                    <div className="column is-10 is-offset-1">
+                      <Gallery gallery={gallery} />               
+                    </div>     
                   </div>              
-                  <div className="tile is-ancestor">
-                    <div className="tile is-vertical">
-                      <div className="tile">
-                        <div className="tile is-parent is-vertical">
-                          
-                        </div>                    
-                      </div>                  
-                    </div>
-                  </div>              
+                               
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
   )
 }
 

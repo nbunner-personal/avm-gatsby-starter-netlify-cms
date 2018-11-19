@@ -2,9 +2,10 @@ import React from 'react'
 import { Link } from 'gatsby'
 import github from '../img/github-icon.svg'
 import logo from '../img/logo-full.png'
+import navbarStyles from './navbar.module.css'
 
 const Navbar = () => (
-    <nav className="navbar" role="navigation" aria-label="dropdown navigation">
+    <nav className={`navbar ${navbarStyles.navbarTop}`} role="navigation" aria-label="dropdown navigation">
         <div className="container">
             <div className="navbar-brand">
                 <Link to="/" className="navbar-item">

@@ -1,0 +1,6 @@
+.navbarTop {
+    background: #9a563f !important;    
+}
+
+.navbarTop > a:link, 
+.navbarTop a:visited {color: #fff !important;}
