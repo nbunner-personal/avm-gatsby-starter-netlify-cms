@@ -76,6 +76,15 @@ module.exports = {
         ]
       },
     },
+    {
+      resolve: 'gatsby-plugin-google-fonts',
+      options: {
+        fonts: [
+          'noto sans\:400,700,400italic,700italic',
+          'londrina solid'
+        ]
+      }
+    },
     'gatsby-plugin-netlify', // make sure to keep it last in the array  
   ],
 }

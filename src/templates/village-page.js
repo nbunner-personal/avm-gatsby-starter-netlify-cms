@@ -49,7 +49,7 @@ export const VillagePageTemplate = ({
                     </h2>
                   </div>
                   <div class="tabs">
-                    <ul>
+                    <ul class="featuredProjects">
                       <li class="is-active"><Link to="/projects/sams-village/">Sam's Village</Link></li>
                       <li><Link to="/water/">Water</Link></li>
                       <li><Link to="/health/">Health</Link></li>
@@ -60,25 +60,34 @@ export const VillagePageTemplate = ({
                   </div>
                   <div className="columns">
                     <div className="column is-12">
-                      <h3 className="has-text-weight-semibold is-size-2">
+                      <h1 className="has-text-weight-semibold is-size-2">
                         {title}
-                      </h3>
+                      </h1>
                       <PageContent className="content" content={content} />
                       end of page content
                     </div>
                   </div>
                   <div className="full-width-image-container margin-top-0">
                     <div className="column is-10 is-offset-1">
+                      <h2>Videos</h2>
                       <Videos videos={videos} />
                     </div>
                   </div>
-                  <div className="full-width-image-container margin-top-0">  
+                  <div className="full-width-image-container margin-top-0"
+                  style={{
+                    backgroundImage: `url(${
+                      !!heroImage.childImageSharp
+                        ? heroImage.childImageSharp.fluid.src
+                        : heroImage
+                    })`,
+                  }}>  
                     <div className="column is-10 is-offset-1">
                       <PageLinksWithPhotos pagelinks={links} /> 
                     </div>             
                   </div>
                   <div className="full-width-image-container margin-top-0">        
                     <div className="column is-10 is-offset-1">
+                      <h2>Photo updates</h2>
                       <Gallery gallery={gallery} />               
                     </div>     
                   </div>              

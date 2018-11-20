@@ -34,7 +34,7 @@ const Navbar = () => (
                         Projects
                     </Link>
                     <div className="navbar-dropdown">
-                        <Link className="navbar-item" to="/projects/sams-village">
+                        <Link className={`navbar-item ${navbarStyles.navbarItem}`} to="/projects/sams-village">
                             Sams village
                         </Link>
                         <Link className="navbar-item" to="/health/a-child-is-born">
