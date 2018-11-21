@@ -1,9 +1,19 @@
 .navbarTop {
     background: #9a563f !important;    
 }
-
-.navbarTop div div > a {color: #fff;}
+.navContainer {
+    padding-left: 155px;
+}
+/* .navbarTop div div > a {color: #fff;} */
 /* .navbarItem > a {color: #3273dc !important;} */
-.navbarItem.hasDropdown:hover a {
+/* .navbarItem.hasDropdown:hover a {
     color: #4a4a4a;
+} */
+a.navbarItemParent {
+    color: #fff;
+}
+.navbarLogo {
+    left: 0;
+    position: absolute;
+    top: 0;
 }

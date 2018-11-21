@@ -24,7 +24,7 @@ export const VillagePageTemplate = ({
         <div className="container">
           <div className="section">
             <div className="columns">
-              <div className="column is-10 is-offset-1">
+              <div className="column is-8 is-offset-2">
                 <div className="content">
                   <div
                     className="full-width-image-container margin-top-0"
@@ -59,7 +59,7 @@ export const VillagePageTemplate = ({
                     </ul>
                   </div>
                   <div className="columns">
-                    <div className="column is-12">
+                    <div className="column is-10">
                       <h1 className="has-text-weight-semibold is-size-2">
                         {title}
                       </h1>
