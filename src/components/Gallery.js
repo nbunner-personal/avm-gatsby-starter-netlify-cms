@@ -6,13 +6,15 @@ import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 const Gallery = ({ gallery }) => (
   <div className="columns">
     {gallery.map(gall => (
-      <div className="column is-6" key={v4()}>
-        <figure className="image">
-          <PreviewCompatibleImage imageInfo={gall.photo} />      
-        </figure>
+      <div className="column is-3" key={v4()}>
+        <a href={gall.photo.childImageSharp.fluid.src}>
+          <figure className="image">
+            <PreviewCompatibleImage imageInfo={gall.photo} />      
+          </figure>
+        </a>
       </div>
     ))}
-  </div>
+  </div>  
 )
 
 Gallery.propTypes = {

@@ -1,0 +1,6 @@
+.featuredProjects {
+    margin-bottom: 30px; overflow: hidden;
+}
+.featuredProjects, .featuredProjects li {list-style-type: none; margin: 0; padding: 0;}
+.featuredProjects li {float: left; width: 16.666666%;}
+.featuredProjects a, .featuredProjects span {border-right: 1px solid #c7cfe0; border-left: 1px solid #fff; display: block; height: 68px; font-weight: bold; font-size: 0.8em; padding: 25px 0 20px; text-align: center; text-decoration: none;}

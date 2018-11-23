@@ -6,7 +6,8 @@ import Content, { HTMLContent } from '../components/Content'
 import Gallery from '../components/Gallery'
 import PageLinksWithPhotos from '../components/PageLinksWithPhotos'
 import Videos from '../components/Videos'
-import { Link } from 'gatsby'
+import FeaturedProjects from '../components/FeaturedProjects'
+// import { Link } from 'gatsby'
 
 export const VillagePageTemplate = ({      
     heroImage,
@@ -24,8 +25,8 @@ export const VillagePageTemplate = ({
         <div className="container">
           <div className="section">
             <div className="columns">
-              <div className="column is-8 is-offset-2">
-                <div className="content">
+              <div className="column is-10 is-offset-1">
+                <div className="">
                   <div
                     className="full-width-image-container margin-top-0"
                     style={{
@@ -48,16 +49,9 @@ export const VillagePageTemplate = ({
                       {title}
                     </h2>
                   </div>
-                  <div class="tabs">
-                    <ul class="featuredProjects">
-                      <li class="is-active"><Link to="/projects/sams-village/">Sam's Village</Link></li>
-                      <li><Link to="/water/">Water</Link></li>
-                      <li><Link to="/health/">Health</Link></li>
-                      <li><Link to="/education/">Education</Link></li>
-                      <li><Link to="/water/">Environment</Link></li>
-                      <li><Link to="/water/">Celebrate &amp; Give</Link></li>
-                    </ul>
-                  </div>
+                </div>  
+                  <FeaturedProjects currentProject="village" />
+                <div className="content">  
                   <div className="columns">
                     <div className="column is-10">
                       <h1 className="has-text-weight-semibold is-size-2">
@@ -66,9 +60,12 @@ export const VillagePageTemplate = ({
                       <PageContent className="content" content={content} />
                       end of page content
                     </div>
+                    <div className="column is-4">
+                      side col goes here
+                    </div>
                   </div>
                   <div className="full-width-image-container margin-top-0">
-                    <div className="column is-10 is-offset-1">
+                    <div className="column is-10">
                       <h2>Videos</h2>
                       <Videos videos={videos} />
                     </div>
@@ -159,7 +156,7 @@ export const VillagePageQuery = graphql`
             gallery {
               photo {
                 childImageSharp {
-                  fluid(maxWidth: 300, quality: 60) {
+                  fluid(maxWidth: 800, quality: 60) {
                     ...GatsbyImageSharpFluid
                   }
                 }
@@ -170,7 +167,7 @@ export const VillagePageQuery = graphql`
                 linkTitle
                 photo {
                   childImageSharp {
-                    fluid(maxWidth: 290, quality: 50) {
+                    fluid(maxWidth: 2000, quality: 50) {
                       ...GatsbyImageSharpFluid
                     }
                   }
