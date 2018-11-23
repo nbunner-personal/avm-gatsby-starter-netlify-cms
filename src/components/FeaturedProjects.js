@@ -6,7 +6,7 @@ import projectLinkStyles from './projects.module.css'
 const FeaturedProjects = ({ projects }) => (
   <div>
      <ul className={projectLinkStyles.featuredProjects}>
-        <li className="is-active"><Link to="/projects/sams-village/">Sam's Village</Link></li>
+        <li className={projectLinkStyles.active}><Link to="/projects/sams-village/">Sam's Village</Link></li>
         <li><Link to="/water/">Water</Link></li>
         <li><Link to="/health/">Health</Link></li>
         <li><Link to="/education/">Education</Link></li>
