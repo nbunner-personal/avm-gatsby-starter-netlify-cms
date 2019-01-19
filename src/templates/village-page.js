@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import Gallery from '../components/Gallery'
+// import Lightbox from "../components/lightbox"
 import PageLinksWithPhotos from '../components/PageLinksWithPhotos'
 import Videos from '../components/Videos'
 import FeaturedProjects from '../components/FeaturedProjects'
@@ -64,30 +65,32 @@ export const VillagePageTemplate = ({
                       side col goes here
                     </div>
                   </div>
-                  <div className="full-width-image-container margin-top-0">
+                  <div className="full-width-image-container margin-top-0"
+                  style={{
+                    backgroundImage: 'url(http://www.africanvision.org.uk/africa-vision-news/wp-content/themes/eddiemachado-bones-ea76d28/library/images/photo-donate.jpg)',
+                    backgroundSize: 'cover'
+                  }}>
                     <div className="column is-10">
                       <h2>Videos</h2>
                       <Videos videos={videos} />
                     </div>
                   </div>
+                  <div className="full-width-image-container margin-top-0">        
+                    <div className="column is-10 is-offset-1">
+                      <h2>Photo updates</h2>
+                      <Gallery gallery={gallery} initialState={{ showDialog: false }} />   
+                                  
+                    </div>     
+                  </div>
                   <div className="full-width-image-container margin-top-0"
                   style={{
-                    backgroundImage: `url(${
-                      !!heroImage.childImageSharp
-                        ? heroImage.childImageSharp.fluid.src
-                        : heroImage
-                    })`,
+                    background: '#223843'
                   }}>  
                     <div className="column is-10 is-offset-1">
                       <PageLinksWithPhotos pagelinks={links} /> 
                     </div>             
                   </div>
-                  <div className="full-width-image-container margin-top-0">        
-                    <div className="column is-10 is-offset-1">
-                      <h2>Photo updates</h2>
-                      <Gallery gallery={gallery} />               
-                    </div>     
-                  </div>              
+                                
                                
                 </div>
               </div>

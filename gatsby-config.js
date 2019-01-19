@@ -1,12 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: 'AVM new developement site mk7',
+    title: 'AVM new developement site mk9',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     'gatsby-remark-embed-video',
     'gatsby-remark-responsive-iframe',
+    'gatsby-plugin-styled-components',
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',

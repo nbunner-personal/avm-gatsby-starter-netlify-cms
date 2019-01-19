@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 // import { v4 } from 'uuid'
 import { Link } from 'gatsby'
+import pageLinksStyles from './pagelinks.module.css'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 const PageLinks = ({ pagelinks }) => (
@@ -10,9 +11,9 @@ const PageLinks = ({ pagelinks }) => (
       <div className="column is-one-quarter" key={pagelink.linkTitle}>
       <div className="card">
         <div className="card-image">
-          <figure className="image">
+          <span className={pageLinksStyles.cardImage}>
             <PreviewCompatibleImage imageInfo={pagelink.photo} />
-          </figure>
+          </span>
         </div>
         <div className="card-content">
           <div className="content">

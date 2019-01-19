@@ -1,9 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { v4 } from 'uuid'
+import { Dialog } from "@reach/dialog"
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
-const Gallery = ({ gallery }) => (
+const Gallery = ({ gallery, state, setstate }) => (
   <div className="columns">
     {gallery.map(gall => (
       <div className="column is-3" key={v4()}>

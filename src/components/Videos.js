@@ -10,7 +10,7 @@ const Videos = ({ videos }) => (
         <div className={videoStyles.playerWrapper}>
           <ReactPlayer url={video.videourl} width='100%' height='100%' className={videoStyles.reactPlayer} />           
         </div> 
-        <p>{video.videotext}</p>        
+        <p className={videoStyles.vidText}>{video.videotext}</p>        
       </div>
     ))}
   </div>

@@ -16,3 +16,9 @@
     top: 0;
     left: 0;
 }
+
+.vidText {
+    background: #fff;
+    font-size: 0.9em;
+    padding: 4px;
+}

@@ -8,7 +8,9 @@ const TemplateWrapper = ({ children }) => (
   <div className={layoutStyles.container}>
     <Helmet title="Home | Gatsby + Netlify CMS" />
     <Navbar />
-    <div>{children}</div>
+    <div style={{
+      background: '#FDFFFC'
+      }}>{children}</div>
   </div>
 )
 
