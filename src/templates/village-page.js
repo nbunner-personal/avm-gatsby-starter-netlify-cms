@@ -29,7 +29,7 @@ export const VillagePageTemplate = ({
               <div className="column is-10 is-offset-1">
                 <div className="">
                   <div
-                    className="full-width-image-container margin-top-0"
+                    className="full-width-image-container margin-top-0 margin-bottom-0"
                     style={{
                       backgroundImage: `url(${
                         !!heroImage.childImageSharp
@@ -65,7 +65,7 @@ export const VillagePageTemplate = ({
                       side col goes here
                     </div>
                   </div>
-                  <div className="full-width-image-container margin-top-0"
+                  <div className="full-width-container margin-top-0"
                   style={{
                     backgroundImage: 'url(http://www.africanvision.org.uk/africa-vision-news/wp-content/themes/eddiemachado-bones-ea76d28/library/images/photo-donate.jpg)',
                     backgroundSize: 'cover'
@@ -75,14 +75,14 @@ export const VillagePageTemplate = ({
                       <Videos videos={videos} />
                     </div>
                   </div>
-                  <div className="full-width-image-container margin-top-0">        
+                  <div className="full-width-container margin-top-0">        
                     <div className="column is-10 is-offset-1">
                       <h2>Photo updates</h2>
                       <Gallery gallery={gallery} initialState={{ showDialog: false }} />   
                                   
                     </div>     
                   </div>
-                  <div className="full-width-image-container margin-top-0"
+                  <div className="full-width-container margin-top-0"
                   style={{
                     background: '#223843'
                   }}>  

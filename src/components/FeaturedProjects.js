@@ -3,18 +3,55 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import projectLinkStyles from './projects.module.css'
 
-const FeaturedProjects = ({ projects }) => (
+const projects = [
+  {
+    id: 'village',
+    name: 'Sam\'s Village',
+    src: '/projects/sams-village/',    
+  },
+  {
+    id: 'water',
+    name: 'Water',
+    src: '/water/',
+  },
+  {
+    id: 'health',
+    name: 'Health',
+    src: '/health/',
+  },
+  {
+    id: 'education',
+    name: 'Education',
+    src: '/education/',
+  },
+  {
+    id: 'environment',
+    name: 'Environment',
+    src: '/water/',
+  },
+  {
+    id: 'celebrate',
+    name: 'Celebrate & Give',
+    src: '/water/',
+  }
+];
+
+const FeaturedProjects = ({ currentProject }) => (
   <div>
      <ul className={projectLinkStyles.featuredProjects}>
-        <li className={projectLinkStyles.active}><Link to="/projects/sams-village/">Sam's Village</Link></li>
-        <li><Link to="/water/">Water</Link></li>
-        <li><Link to="/health/">Health</Link></li>
-        <li><Link to="/education/">Education</Link></li>
-        <li><Link to="/water/">Environment</Link></li>
-        <li><Link to="/water/">Celebrate &amp; Give</Link></li>
+        {projects.map(project => (
+          
+            <li className={project.id === currentProject ? projectLinkStyles.active : ``}>
+              <Link to={project.src}>{project.name}</Link>
+            </li>  
+           
+          
+        ))}
+        
     </ul>
   </div>  
 )
+
 
 FeaturedProjects.propTypes = {
     currentProject: PropTypes.string,
