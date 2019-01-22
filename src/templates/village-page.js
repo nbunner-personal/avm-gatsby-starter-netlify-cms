@@ -58,13 +58,13 @@ export const VillagePageTemplate = ({
                       <h1 className="has-text-weight-semibold is-size-2">
                         {title}
                       </h1>
-                      <PageContent className="content" content={content} />
-                      end of page content
+                      <PageContent className="content" content={content} />                      
                     </div>
                     <div className="column is-4">
                       side col goes here
                     </div>
                   </div>
+                  { videos.length && 
                   <div className="full-width-container margin-top-0"
                   style={{
                     backgroundImage: 'url(http://www.africanvision.org.uk/africa-vision-news/wp-content/themes/eddiemachado-bones-ea76d28/library/images/photo-donate.jpg)',
@@ -74,7 +74,9 @@ export const VillagePageTemplate = ({
                       <h2>Videos</h2>
                       <Videos videos={videos} />
                     </div>
-                  </div>
+                </div> 
+                }
+                { gallery.length && 
                   <div className="full-width-container margin-top-0">        
                     <div className="column is-10 is-offset-1">
                       <h2>Photo updates</h2>
@@ -82,6 +84,8 @@ export const VillagePageTemplate = ({
                                   
                     </div>     
                   </div>
+                }
+                { links.length && 
                   <div className="full-width-container margin-top-0"
                   style={{
                     background: '#223843'
@@ -90,7 +94,7 @@ export const VillagePageTemplate = ({
                       <PageLinksWithPhotos pagelinks={links} /> 
                     </div>             
                   </div>
-                                
+                }                
                                
                 </div>
               </div>
