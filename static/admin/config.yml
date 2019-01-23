@@ -204,7 +204,13 @@ collections:
               label: "Template Key",
               name: "templateKey",
               widget: "hidden",
-              default: "village-page",
+              default: "featured-project",
+            }
+          - {
+              label: "Current Project",
+              name: "currentProject",
+              widget: "hidden",
+              default: "village",
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Hero Image", name: heroImage, widget: image }

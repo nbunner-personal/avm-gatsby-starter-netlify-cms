@@ -27,7 +27,7 @@ export const VillagePageTemplate = ({
           <div className="section">
             <div className="columns">
               <div className="column is-10 is-offset-1">
-                <div className="">
+                <section>
                   <div
                     className="full-width-image-container margin-top-0 margin-bottom-0"
                     style={{
@@ -37,35 +37,24 @@ export const VillagePageTemplate = ({
                           : heroImage
                       })`,
                     }}
-                  >
-                    <h2
-                      className="has-text-weight-bold is-size-1"
-                      style={{
-                        boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-                        backgroundColor: '#f40',
-                        color: 'white',
-                        padding: '1rem',
-                      }}
-                    >
-                      {title}
-                    </h2>
+                  >                    
                   </div>
-                </div>  
+                </section>  
                   <FeaturedProjects currentProject="village" />
-                <div className="content">  
+                <article className="content">                    
                   <div className="columns">
-                    <div className="column is-10">
+                    <main className="column is-10">
                       <h1 className="has-text-weight-semibold is-size-2">
                         {title}
                       </h1>
                       <PageContent className="content" content={content} />                      
-                    </div>
-                    <div className="column is-4">
+                    </main>
+                    <aside className="column is-4">
                       side col goes here
-                    </div>
+                    </aside>
                   </div>
                   { videos.length && 
-                  <div className="full-width-container margin-top-0"
+                  <section className="full-width-container margin-top-0"
                   style={{
                     backgroundImage: 'url(http://www.africanvision.org.uk/africa-vision-news/wp-content/themes/eddiemachado-bones-ea76d28/library/images/photo-donate.jpg)',
                     backgroundSize: 'cover'
@@ -74,29 +63,29 @@ export const VillagePageTemplate = ({
                       <h2>Videos</h2>
                       <Videos videos={videos} />
                     </div>
-                </div> 
+                </section> 
                 }
                 { gallery.length && 
-                  <div className="full-width-container margin-top-0">        
+                  <section className="full-width-container margin-top-0">        
                     <div className="column is-10 is-offset-1">
                       <h2>Photo updates</h2>
                       <Gallery gallery={gallery} initialState={{ showDialog: false }} />   
                                   
                     </div>     
-                  </div>
+                  </section>
                 }
                 { links.length && 
-                  <div className="full-width-container margin-top-0"
+                  <section className="full-width-container margin-top-0"
                   style={{
                     background: '#223843'
                   }}>  
                     <div className="column is-10 is-offset-1">
                       <PageLinksWithPhotos pagelinks={links} /> 
                     </div>             
-                  </div>
+                  </section>
                 }                
                                
-                </div>
+                </article>
               </div>
             </div>
           </div>
