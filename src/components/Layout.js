@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import layoutStyles from "./layout.module.css"
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 import './all.sass'
 
 const TemplateWrapper = ({ children }) => (
@@ -11,6 +12,7 @@ const TemplateWrapper = ({ children }) => (
     <div style={{
       background: '#FDFFFC'
       }}>{children}</div>
+    <Footer></Footer>
   </div>
 )
 

@@ -22,9 +22,11 @@ export const VillagePageTemplate = ({
   const PageContent = contentComponent || Content
   
   return (
-    <section className="section section--gradient">
+    <section className="section section--gradient" style={{
+      paddingBottom: '0'
+    }}>
         <div className="container">
-          <div className="section">
+          <div>
             <div className="columns">
               <div className="column is-10 is-offset-1">
                 <section>
@@ -56,19 +58,31 @@ export const VillagePageTemplate = ({
                   { videos.length && 
                   <section className="full-width-container margin-top-0"
                   style={{
-                    backgroundImage: 'url(http://www.africanvision.org.uk/africa-vision-news/wp-content/themes/eddiemachado-bones-ea76d28/library/images/photo-donate.jpg)',
-                    backgroundSize: 'cover'
+                    background: '#f2f2f2',
+                    borderBottom: '1px solid #e5e5e5',
+                    marginBottom: '0',
+                    paddingBottom: '30px'
                   }}>
                     <div className="column is-10">
-                      <h2>Videos</h2>
+                      <h2 style={{                        
+                        textAlign: 'center'
+                      }}>Videos</h2>
                       <Videos videos={videos} />
                     </div>
                 </section> 
                 }
                 { gallery.length && 
-                  <section className="full-width-container margin-top-0">        
+                  <section className="full-width-container margin-top-0"
+                  style={{
+                    background: '#f2f2f2',
+                    borderBottom: '1px solid #e5e5e5',
+                    marginBottom: '0',
+                    paddingBottom: '30px'
+                  }}>        
                     <div className="column is-10 is-offset-1">
-                      <h2>Photo updates</h2>
+                    <h2 style={{                        
+                        textAlign: 'center'
+                      }}>Photo updates</h2>
                       <Gallery gallery={gallery} initialState={{ showDialog: false }} />   
                                   
                     </div>     
@@ -77,9 +91,15 @@ export const VillagePageTemplate = ({
                 { links.length && 
                   <section className="full-width-container margin-top-0"
                   style={{
-                    background: '#223843'
-                  }}>  
+                    background: '#f2f2f2',
+                    borderBottom: '1px solid #e5e5e5',
+                    marginBottom: '0',
+                    paddingBottom: '30px'
+                  }}>                    
                     <div className="column is-10 is-offset-1">
+                      <h2 style={{                        
+                        textAlign: 'center'
+                      }}>Find out more...</h2>
                       <PageLinksWithPhotos pagelinks={links} /> 
                     </div>             
                   </section>

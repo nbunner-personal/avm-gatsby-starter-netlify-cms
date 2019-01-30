@@ -40,7 +40,7 @@ export default class IndexPage extends React.Component {
                 </div>
               ))}
           </div>
-        </section>
+        </section>        
       </Layout>
     )
   }
