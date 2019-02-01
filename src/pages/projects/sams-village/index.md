@@ -1,6 +1,7 @@
 ---
 templateKey: featured-project
 currentProject: village
+columns: 1
 title: Sams Village
 heroImage: /img/jumbotron.jpg
 videos:

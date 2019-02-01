@@ -1,7 +1,9 @@
 ---
-templateKey: water-page
+templateKey: featured-project-simple
+currentProject: water
+columns: 1
 title: Water and sanitation
-heroImage: /img/sams-village-hero-banner.jpg
+heroImage: /img/jumbotron.jpg
 gallery:
   - photo: /img/chemex.jpg
     alt: Kitchen photo    

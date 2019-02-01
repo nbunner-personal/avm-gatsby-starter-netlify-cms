@@ -10,13 +10,12 @@ import Videos from '../components/Videos'
 import FeaturedProjects from '../components/FeaturedProjects'
 // import { Link } from 'gatsby'
 
-export const FeaturedProjectsTemplate = ({      
+export const FeaturedProjectsSimpleTemplate = ({      
     heroImage,
     title,
     currentProject,
     columns,
-    content,    
-    videos,
+    content,        
     gallery,
     links,
     contentComponent
@@ -59,23 +58,7 @@ export const FeaturedProjectsTemplate = ({
                     </aside>
                     : ''
                     }
-                  </div>
-                  { videos.length && 
-                  <section className="full-width-container margin-top-0"
-                  style={{
-                    background: '#f2f2f2',
-                    borderBottom: '1px solid #e5e5e5',
-                    marginBottom: '0',
-                    paddingBottom: '30px'
-                  }}>
-                    <div className="column is-10">
-                      <h2 style={{                        
-                        textAlign: 'center'
-                      }}>Videos</h2>
-                      <Videos videos={videos} />
-                    </div>
-                </section> 
-                }
+                  </div>                  
                 { gallery.length && 
                   <section className="full-width-container margin-top-0"
                   style={{
@@ -120,30 +103,28 @@ export const FeaturedProjectsTemplate = ({
   )
 }
 
-FeaturedProjectsTemplate.propTypes = {  
+FeaturedProjectsSimpleTemplate.propTypes = {  
   heroImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   currentProject: PropTypes.string,
   columns: PropTypes.number,
-  content: PropTypes.string,    
-  videos: PropTypes.array,    
+  content: PropTypes.string,         
   gallery: PropTypes.array,  
   links: PropTypes.array,
 }
 
-const FeaturedProjectsPage = ({ data }) => {
+const FeaturedProjectsPageSimple = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
     <Layout>
-      <FeaturedProjectsTemplate 
+      <FeaturedProjectsSimpleTemplate 
       contentComponent={HTMLContent}     
       title={post.frontmatter.title}
       currentProject={post.frontmatter.currentProject}
       columns={post.frontmatter.columns}
       content={post.html}
-      heroImage={post.frontmatter.heroImage}
-      videos={post.frontmatter.videos}
+      heroImage={post.frontmatter.heroImage}      
       gallery={post.frontmatter.gallery}
       links={post.frontmatter.links}        
       />
@@ -151,7 +132,7 @@ const FeaturedProjectsPage = ({ data }) => {
   )
 }
 
-FeaturedProjectsPage.propTypes = {
+FeaturedProjectsPageSimple.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -159,10 +140,10 @@ FeaturedProjectsPage.propTypes = {
   }),
 }
 
-export default FeaturedProjectsPage
+export default FeaturedProjectsPageSimple
 
-export const FeaturedProjectsPageQuery = graphql`
-  query FeaturedProjectsPage($id: String!) {
+export const FeaturedProjectsPageSimpleQuery = graphql`
+  query FeaturedProjectsPageSimple($id: String!) {
     markdownRemark(id: { eq: $id }) {
         html
         frontmatter {            
@@ -176,10 +157,6 @@ export const FeaturedProjectsPageQuery = graphql`
             } 
             currentProject  
             columns     
-            videos {
-              videourl
-              videotext
-            }
             gallery {
               photo {
                 childImageSharp {

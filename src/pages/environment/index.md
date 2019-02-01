@@ -1,8 +1,8 @@
 ---
 templateKey: featured-project-simple
-currentProject: education
+currentProject: environment
 columns: 1
-title: Education
+title: Environment
 heroImage: /img/jumbotron.jpg
 gallery:
   - photo: /img/chemex.jpg
@@ -20,5 +20,5 @@ links:
     url: /about-us/
 ---
 
-Education content goes here.
+Environment content goes here.
 

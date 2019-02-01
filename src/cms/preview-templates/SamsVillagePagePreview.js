@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { FeaturedProjectTemplate } from '../../templates/featured-project'
+import { FeaturedProjectsTemplate } from '../../templates/featured-project'
 
 const VillagePagePreview = ({ entry, widgetFor }) => (
-  <FeaturedProjectTemplate
+  <FeaturedProjectsTemplate
     title={entry.getIn(['data', 'title'])}
     content={widgetFor('body')}
   />

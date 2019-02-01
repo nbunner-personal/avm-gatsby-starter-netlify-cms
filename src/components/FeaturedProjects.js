@@ -27,12 +27,12 @@ const projects = [
   {
     id: 'environment',
     name: 'Environment',
-    src: '/water/',
+    src: '/environment/',
   },
   {
     id: 'celebrate',
     name: 'Celebrate & Give',
-    src: '/water/',
+    src: '/celebrate-and-give/',
   }
 ];
 

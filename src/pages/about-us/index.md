@@ -1,5 +1,5 @@
 ---
-templateKey: health-page
+templateKey: page-basic
 title: About Us
 links:
   - url: /about/

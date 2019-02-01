@@ -1,7 +1,12 @@
 ---
-templateKey: health-page
+templateKey: featured-project
+currentProject: health
+columns: 1
 title: Health
 heroImage: /img/jumbotron.jpg
+videos:
+  - videourl: ''
+    videotext: ''
 gallery:
   - alt: Kitchen photo
     photo: /img/chemex.jpg
