@@ -8,6 +8,7 @@ import Gallery from '../components/Gallery'
 import PageLinksWithPhotos from '../components/PageLinksWithPhotos'
 import Videos from '../components/Videos'
 import FeaturedProjects from '../components/FeaturedProjects'
+import CtaButton from '../components/CtaButton'
 // import { Link } from 'gatsby'
 
 export const FeaturedProjectsTemplate = ({      
@@ -51,7 +52,10 @@ export const FeaturedProjectsTemplate = ({
                       <h1 className="has-text-weight-semibold is-size-2">
                         {title}
                       </h1>
-                      <PageContent className="content" content={content} />                      
+                      <PageContent className="content" content={content} />                   <CtaButton 
+                        link='https://www.charitycheckout.co.uk/1113786/'
+                        text='Donate'
+                      />
                     </main>
                     {columns === 2 ? 
                     <aside className="column is-4">

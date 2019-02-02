@@ -46,14 +46,14 @@ export const FeaturedProjectsSimpleTemplate = ({
                   <FeaturedProjects currentProject={currentProject} />
                 <article className="content">                    
                   <div className="columns">
-                    <main className="column is-10">
+                    <main className="column is-9">
                       <h1 className="has-text-weight-semibold is-size-2">
                         {title}
                       </h1>
                       <PageContent className="content" content={content} />                      
                     </main>
                     {columns === 2 ? 
-                    <aside className="column is-4">
+                    <aside className="column is-5">
                       side col goes here
                     </aside>
                     : ''

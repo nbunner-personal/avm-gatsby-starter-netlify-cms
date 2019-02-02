@@ -1,0 +1,16 @@
+.ctaButton {
+    background: #58B5D7;
+    border-radius: 4px;    
+    display: block;
+    padding: 8px 12px;
+    text-align: center;    
+    text-transform: uppercase;
+}
+.ctaButton a:link, 
+.ctaButton a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+.ctaButton:hover {
+    background: #6dbedc;
+}
