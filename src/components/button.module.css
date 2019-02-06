@@ -1,9 +1,16 @@
 .ctaButton {
+    
+    display: block;
+    
+    /* text-align: center;     */
+    
+}
+.ctaButton a {
     background: #58B5D7;
     border-radius: 4px;    
-    display: block;
-    padding: 8px 12px;
-    text-align: center;    
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center; 
     text-transform: uppercase;
 }
 .ctaButton a:link, 
@@ -11,6 +18,6 @@
     color: #fff;
     text-decoration: none;
 }
-.ctaButton:hover {
+.ctaButton a:hover {
     background: #6dbedc;
 }

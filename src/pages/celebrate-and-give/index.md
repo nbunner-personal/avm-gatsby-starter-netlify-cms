@@ -3,7 +3,7 @@ templateKey: featured-project-simple
 currentProject: celebrate
 columns: 2
 title: Celebrate & Give
-heroImage: /img/jumbotron.jpg
+heroImage: /img/mainphoto_celebrate.jpg
 gallery:
   - photo: /img/chemex.jpg
     alt: Kitchen photo    

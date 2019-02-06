@@ -3,7 +3,7 @@ templateKey: featured-project-simple
 currentProject: environment
 columns: 1
 title: Environment
-heroImage: /img/jumbotron.jpg
+heroImage: /img/mainphoto_environment.jpg
 gallery:
   - photo: /img/chemex.jpg
     alt: Kitchen photo    

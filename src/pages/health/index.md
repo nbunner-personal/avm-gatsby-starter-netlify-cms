@@ -3,7 +3,7 @@ templateKey: featured-project
 currentProject: health
 columns: 1
 title: Health
-heroImage: /img/jumbotron.jpg
+heroImage: /img/mainphoto_health.jpg
 videos:
   - videourl: ''
     videotext: ''

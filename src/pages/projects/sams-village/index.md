@@ -3,7 +3,7 @@ templateKey: featured-project
 currentProject: village
 columns: 1
 title: Sams Village
-heroImage: /img/jumbotron.jpg
+heroImage: /img/mainphoto_village-ver3.jpg
 videos:
   - videourl: 'https://www.youtube.com/watch?v=n-n0jU215fQ'
     videotext: "A brief overview of Sam's Village and our first training course for Tailors"

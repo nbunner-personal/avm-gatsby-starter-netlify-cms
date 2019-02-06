@@ -3,7 +3,7 @@ templateKey: featured-project-simple
 currentProject: education
 columns: 1
 title: Education
-heroImage: /img/jumbotron.jpg
+heroImage: /img/mainphoto_education.jpg
 gallery:
   - photo: /img/chemex.jpg
     alt: Kitchen photo    

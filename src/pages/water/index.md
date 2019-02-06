@@ -3,7 +3,7 @@ templateKey: featured-project-simple
 currentProject: water
 columns: 1
 title: Water and sanitation
-heroImage: /img/jumbotron.jpg
+heroImage: /img/mainphoto_water.jpg
 gallery:
   - photo: /img/chemex.jpg
     alt: Kitchen photo    
