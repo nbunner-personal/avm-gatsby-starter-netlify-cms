@@ -45,7 +45,7 @@ export const FeaturedProjectsTemplate = ({
                   >                    
                   </div>
                 </section>  
-                  <FeaturedProjects currentProject={currentProject} />
+                <FeaturedProjects currentProject={currentProject} />
                 <article className="content">                    
                   <div className="columns">
                     <main className="column is-10">

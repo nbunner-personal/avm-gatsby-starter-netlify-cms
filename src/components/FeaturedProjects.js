@@ -41,7 +41,7 @@ const FeaturedProjects = ({ currentProject }) => (
      <ul className={projectLinkStyles.featuredProjects}>
         {projects.map(project => (
           
-            <li className={project.id === currentProject ? projectLinkStyles.active : ``}>
+            <li className={project.id == currentProject ? projectLinkStyles.active : ``}>
               <Link to={project.src}>{project.name}</Link>
             </li>  
            
