@@ -13,10 +13,10 @@ export const PageBasicTemplate = ({ title, content, contentComponent }) => {
     <section className="section section--gradient">
       <div className="container">
         <div className="columns">
-          <div className="column is-9 is-offset-1">
+          <div className="column is-14 is-offset-1">
             <article className="content">
               <div className="columns">
-                <main className="column is-9">
+                <main className="column is-8">
                   <h1 className="has-text-weight-semibold is-size-2">
                     {title}
                   </h1>
@@ -26,7 +26,7 @@ export const PageBasicTemplate = ({ title, content, contentComponent }) => {
                     text="Donate"
                   />
                 </main>
-                <aside className="column is-5">
+                <aside className="column is-4">
                   <FeaturedProjects currentProject="default" />
                 </aside>
               </div>

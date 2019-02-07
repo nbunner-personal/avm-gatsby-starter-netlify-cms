@@ -1,8 +1,8 @@
 .navbarTop {
-    background: #9a563f !important;    
+  background: #9a563f !important;
 }
 .navContainer {
-    padding-left: 155px;
+  padding-left: 155px;
 }
 /* .navbarTop div div > a {color: #fff;} */
 /* .navbarItem > a {color: #3273dc !important;} */
@@ -10,10 +10,10 @@
     color: #4a4a4a;
 } */
 a.navbarItemParent {
-    color: #fff;
+  color: #fff;
 }
 .navbarLogo {
-    left: 0;
-    position: absolute;
-    top: 0;
+  left: -60px; /* TODO needs changing for mobile */
+  position: absolute;
+  top: 0;
 }
