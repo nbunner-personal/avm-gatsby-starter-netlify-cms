@@ -91,9 +91,15 @@ const Navbar = () => (
             </Link>
             <Link
               className="navbar-item"
-              to="/projects/sams-village/njewa-new-office"
+              to="/get-involved/holiday-in-france-for-us/"
             >
-              Njewa new office
+              Holiday in France for us
+            </Link>
+            <Link
+              className="navbar-item"
+              to="/get-involved/use-your-baggage-allowance-to-lilongwe/"
+            >
+              Use your baggage allowance to Lilongwe!
             </Link>
           </div>
         </div>
