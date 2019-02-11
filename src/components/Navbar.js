@@ -4,33 +4,51 @@ import { Link } from "gatsby";
 import logo from "../img/logo-full.png";
 import navbarStyles from "./navbar.module.css";
 
-const Navbar = () => (
-  <nav
-    className={`navbar ${navbarStyles.navbarTop}`}
-    role="navigation"
-    aria-label="dropdown navigation"
-  >
-    <div className={`container ${navbarStyles.navContainer}`}>
-      <Link to="/" className={navbarStyles.navbarLogo}>
-        <figure className="image">
-          <img src={logo} alt="" />
-        </figure>
-      </Link>
+const Navbar = class extends React.Component {
+
+  componentDidMount() {
+    // Get all "navbar-burger" elements
+   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    // Check if there are any navbar burgers
+   if ($navbarBurgers.length > 0) {
+ 
+     // Add a click event on each of them
+     $navbarBurgers.forEach( el => {
+       el.addEventListener('click', () => {
+ 
+         // Get the target from the "data-target" attribute
+         const target = el.dataset.target;
+         const $target = document.getElementById(target);
+ 
+         // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+         el.classList.toggle('is-active');
+         $target.classList.toggle('is-active');
+ 
+       });
+     });
+   }
+ }
+ 
+ render() {
+   return (
+  
+  <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
+    <div className="container">
       <div className="navbar-brand">
-        <div
-          role="button"
-          className="navbar-burger"
-          aria-label="menu"
-          aria-expanded="false"
-        >
-          <span aria-hidden="true" />
-          <span aria-hidden="true" />
-          <span aria-hidden="true" />
+        <Link to="/" className="navbar-item" title="Logo">
+          <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+        </Link>
+        {/* Hamburger menu */}
+        <div className="navbar-burger burger" data-target="navMenu">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
-      <div className="navbar-start">
-        <Link className={`navbar-item ${navbarStyles.navbarItemParent}`} to="/">
-          Home
+      <div id="navMenu" className="navbar-menu">
+      <div className="navbar-start has-text-centered">
+        <Link className="navbar-item" to="/about">
+          About
         </Link>
         <Link
           className={`navbar-item ${navbarStyles.navbarItemParent}`}
@@ -38,9 +56,19 @@ const Navbar = () => (
         >
           Shop
         </Link>
-        <Link
-          className={`navbar-item ${navbarStyles.navbarItemParent}`}
-          to="/why-malawi"
+        <Link className="navbar-item" to="/contact">
+          Contact
+        </Link>
+        <Link className="navbar-item" to="/contact/examples">
+          Form Examples
+        </Link>
+      </div>
+      <div className="navbar-end has-text-centered">
+        <a
+          className="navbar-item"
+          href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Why malawi?
         </Link>
@@ -126,9 +154,10 @@ const Navbar = () => (
           </div>
         </div>
       </div>
-      <div className="navbar-end" />
+      </div>
     </div>
   </nav>
-);
+  )}
+}
 
 export default Navbar;
