@@ -1,5 +1,5 @@
 ---
-templateKey: blog-post
+templateKey: events-post
 title: Pedal Power Malawi 2019
 date: 2018-10-11T22:07:16.531Z
 description: Description to go here
