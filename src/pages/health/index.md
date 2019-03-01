@@ -1,24 +1,22 @@
 ---
 templateKey: featured-project
-currentProject: health
-columns: 1
 title: Health
 heroImage: /img/mainphoto_health.jpg
-videos:
-  - videourl: ''
-    videotext: ''
 gallery:
   - alt: Kitchen photo
-    photo: /img/chemex.jpg
+    photo: >-
+      https://res.cloudinary.com/african-vision-malawi/image/upload/v1551472964/sample.jpg
   - alt: Office photo
     photo: /img/jumbotron.jpg
 links:
   - linkText: and some link text goes here
     linkTitle: This is a link
     photo: /img/jumbotron.jpg
+    url: /education/
   - linkText: and some more link text goes here
     linkTitle: This is another link
     photo: /img/jumbotron.jpg
+    url: /education/
 ---
 
 
