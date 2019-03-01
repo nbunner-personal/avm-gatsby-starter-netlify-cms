@@ -1,14 +1,7 @@
 ---
 templateKey: featured-project-simple
-currentProject: education
-columns: 1
 title: Education
 heroImage: /img/mainphoto_education.jpg
-gallery:
-  - photo: /img/chemex.jpg
-    alt: Kitchen photo    
-  - photo: /img/jumbotron.jpg
-    alt: Office photo      
 links:
   - linkText: and some link text goes here
     linkTitle: This is a link
@@ -19,6 +12,8 @@ links:
     photo: /img/jumbotron.jpg
     url: /about-us/
 ---
+![](https://res.cloudinary.com/african-vision-malawi/image/upload/v1551472964/sample.jpg)
+
+
 
 Education content goes here.
-
