@@ -20,7 +20,19 @@
   width: 70px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
+  .navContainer {
+    padding-left: 115px;
+  }
+  .navbarLogo {
+    left: 2px; /* TODO needs changing for mobile */
+    width: 80px;
+    
+  }
+  
+}
+
+@media only screen and (min-width: 1088px) {
   .navContainer {
     padding-left: 95px;
   }
@@ -29,9 +41,7 @@
     width: 135px;
     
   }
-  
 }
-
 
 .navbarBurger {
   color: #fff !important;
