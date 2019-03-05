@@ -20,7 +20,7 @@ const TemplateWrapper = ({ children }) => (
       }
     `}
     render={data => (
-      <div className={layoutStyles.container}>
+      <div className={`mainContainer ${layoutStyles.container}`}>
         <Helmet>
           <html lang="en" />
           <title>{data.site.siteMetadata.title}</title>
