@@ -1,9 +1,7 @@
 .navbarTop {
   background: #9a563f !important;
 }
-.navContainer {
-  padding-left: 155px;
-}
+
 /* .navbarTop div div > a {color: #fff;} */
 /* .navbarItem > a {color: #3273dc !important;} */
 /* .navbarItem.hasDropdown:hover a {
@@ -16,10 +14,25 @@
   border-color: #fff !important;
 }
 .navbarLogo {
-  left: -60px; /* TODO needs changing for mobile */
+  left: 5px;
   position: absolute;
   top: 0;
+  width: 70px;
 }
+
+@media only screen and (min-width: 768px) {
+  .navContainer {
+    padding-left: 95px;
+  }
+  .navbarLogo {
+    left: -60px; /* TODO needs changing for mobile */
+    width: 135px;
+    
+  }
+  
+}
+
+
 .navbarBurger {
   color: #fff !important;
 }

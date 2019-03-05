@@ -8,6 +8,7 @@ $kaldi-red-invert: #fff
 $primary: #9d5942
 $primary-invert: $kaldi-red-invert
 $body-color: #333
+$navbar-breakpoint: $tablet
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -68,6 +69,12 @@ $body-color: #333
 .navbar-menu:not(.is-active) .navbar-single
   color: #fff
   
+.navbar-menu.is-active
+  padding-top: 40px;
+
+body.mobNavOpen .main-body,
+body.mobNavOpen footer
+  position: fixed;
 
 
 @import "~bulma"
