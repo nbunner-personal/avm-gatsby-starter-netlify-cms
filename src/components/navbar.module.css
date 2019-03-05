@@ -9,11 +9,17 @@
 /* .navbarItem.hasDropdown:hover a {
     color: #4a4a4a;
 } */
-a.navbarItemParent {
+/* a.navbarItemParent, a.navItem {
   color: #fff;
+} */
+.navbarArrow::after {
+  border-color: #fff !important;
 }
 .navbarLogo {
   left: -60px; /* TODO needs changing for mobile */
   position: absolute;
   top: 0;
+}
+.navbarBurger {
+  color: #fff !important;
 }

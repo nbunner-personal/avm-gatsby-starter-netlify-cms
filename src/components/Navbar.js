@@ -43,37 +43,26 @@ const Navbar = class extends React.Component {
           </Link>
           <div className="navbar-brand">
             {/* Hamburger menu */}
-            <div className="navbar-burger burger" data-target="navMenu">
+            <div className={`navbar-burger burger ${navbarStyles.navbarBurger}`} data-target="navMenu">
               <span />
               <span />
               <span />
             </div>
           </div>
           <div id="navMenu" className="navbar-menu">
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
-              </Link>
+            <div className="navbar-start">              
               <Link
-                className={`navbar-item ${navbarStyles.navbarItemParent}`}
+                className="navbar-item navbar-parent"
                 to="/shop"
               >
                 Shop
-              </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link>
-            </div>
-            <div className="navbar-end has-text-centered">
-              <Link className="navbar-item" to="/why-malawi">
+              </Link>                       
+              <Link className="navbar-item navbar-single" to="/why-malawi">
                 Why malawi?
               </Link>
               <div className="navbar-item has-dropdown is-hoverable">
                 <Link
-                  className={`navbar-link ${navbarStyles.navbarItemParent}`}
+                  className={`navbar-link navbar-parent ${navbarStyles.navbarArrow}`}
                   to="/projects"
                 >
                   Projects
@@ -110,7 +99,7 @@ const Navbar = class extends React.Component {
               </div>
               <div className="navbar-item has-dropdown is-hoverable">
                 <Link
-                  className={`navbar-link ${navbarStyles.navbarItemParent}`}
+                  className={`navbar-link navbar-parent ${navbarStyles.navbarArrow}`}
                   to="/get-involved"
                 >
                   Get involved
@@ -138,7 +127,7 @@ const Navbar = class extends React.Component {
               </div>
               <div className="navbar-item has-dropdown is-hoverable">
                 <Link
-                  className={`navbar-link ${navbarStyles.navbarItemParent}`}
+                  className={`navbar-link navbar-parent ${navbarStyles.navbarArrow}`}
                   to="/about-us"
                 >
                   About us
