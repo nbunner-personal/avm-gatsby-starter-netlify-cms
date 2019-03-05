@@ -1,22 +1,41 @@
 ---
-templateKey: featured-project
+templateKey: featured-project-simple-vid
+currentProject: health
 title: Health
 heroImage: /img/mainphoto_health.jpg
-gallery:
-  - alt: Kitchen photo
-    photo: >-
-      https://res.cloudinary.com/african-vision-malawi/image/upload/v1551472964/sample.jpg
-  - alt: Office photo
-    photo: /img/jumbotron.jpg
+videos:
+  - videourl: "https://vimeo.com/186275229"
+    videotext: "This film shows the progress of the recently built Maternity Unit and the report back of Project4Africa who very kindly funded it. It also explains our search for funds to build a Safe Motherhood Unit in 2017."
+  - videourl: "https://vimeo.com/56690243"
+    videotext: "A short film looking at the many different types of physical and mental disabilities people face in the rural area in Malawi where African Vision Malawi operates. Similarly, it looks at what the charity is actively doing to improve their situation, through medical referrals and education."
+  - videourl: "https://vimeo.com/55759417"
+    videotext: "A short film showing one of our Feeding Centres in action. We are very grateful to the Allan and Nesta Ferguson Charitable Trust for funding this. We provide a nutritious porridge 5 mornings a week to the under 5's in our area, which feeds over 1000 children in total."     
 links:
-  - linkText: and some link text goes here
-    linkTitle: This is a link
+  - linkTitle: Bicycle Ambulances
+    linkText: Bicycle ambulances — We found one of the major difficulties for people reaching one of our two free government clinics, was the lack of transport. We have introduced bicycle ambulances in our area. The community are trained on the maintenance and recording of the use of the bicycle. Transaid have helped with training and assessments over the years and also donated money for 2 of the latest installed bicycles.
     photo: /img/jumbotron.jpg
-    url: /education/
-  - linkText: and some more link text goes here
-    linkTitle: This is another link
+    url: "./projects/bicycle-ambulances/"
+  - linkTitle: Disability
+    linkText: We have found over the years that people with disabilities are the most poverty stricken and often outcast from their community.
     photo: /img/jumbotron.jpg
-    url: /education/
+    url: "./health/disability/"
+  - linkTitle: HIV/AIDS
+    linkText: Many children are orphaned due to HIV/AIDS and are left to be looked after by their extended family, often grandparents.
+    photo: /img/jumbotron.jpg
+    url: "./health/hivaids/"
+  - linkTitle: Feeding Programmes
+    linkText: The under 5's are one of our most vulnerable groups where 11% never reach the age of 5 years old. They often die through disentary from drinking dirty water, or malaria.
+    photo: /img/jumbotron.jpg
+    url: "./projects/feeding-programme-in-schools/"
+  - linkTitle: Safe Motherhood
+    linkText: We work in an area of 45,000 people of which 16,000 go to M'bang'ombe Maternity and 29,000 access N'goni Clinic. Both are very poorly equiped in terms of furnishings, medication, light and running water.
+    photo: /img/jumbotron.jpg
+    url: "./projects/maternity-unit/"
+  - linkTitle: Distributions
+    linkText: Although we aim to build sustainable communities and projects, unfortunately some times distributions are necessary. Often these link in to our health projects.
+    photo: /img/jumbotron.jpg
+    url: "./projects/distributions/"
+
 ---
 
 

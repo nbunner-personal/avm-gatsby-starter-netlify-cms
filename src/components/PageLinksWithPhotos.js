@@ -6,16 +6,15 @@ import pageLinksStyles from './pagelinks.module.css'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 const PageLinks = ({ pagelinks }) => (
-  <div className="columns">
-    {pagelinks.map(pagelink => (
-      <div className="column is-one-quarter" key={pagelink.linkTitle}>
-      <div className="card">
+  <div className={pageLinksStyles.cardCont}>
+    {pagelinks.map(pagelink => (      
+      <div className={pageLinksStyles.card} key={pagelink.linkTitle}>
         <div className="card-image">
           <span className={pageLinksStyles.cardImage}>
             <PreviewCompatibleImage imageInfo={pagelink.photo} />
           </span>
         </div>
-        <div className="card-content">
+        <div className={pageLinksStyles.cardContent}>
           <div className="content">
             <h3>{pagelink.linkTitle}</h3>
             
@@ -25,8 +24,7 @@ const PageLinks = ({ pagelinks }) => (
             </Link>
           </div>  
         </div>
-      </div>
-      </div>
+      </div>      
     ))}
   </div>
 )

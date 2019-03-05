@@ -1,13 +1,13 @@
-.grid {
+.gallery {
 
 
 display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  grid-template-rows: repeat(6, 200px);
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));  
   grid-gap: 1rem;
   grid-auto-flow: dense;
 
 }
+.gallery .gatsby-image-wrapper {height: 100%;}
 /* .gridCell {
   border: 1px solid #cacaca;
   max-width: 300px;
