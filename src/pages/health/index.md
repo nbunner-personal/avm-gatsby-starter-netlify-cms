@@ -13,27 +13,27 @@ videos:
 links:
   - linkTitle: Bicycle Ambulances
     linkText: Bicycle ambulances — We found one of the major difficulties for people reaching one of our two free government clinics, was the lack of transport. We have introduced bicycle ambulances in our area. The community are trained on the maintenance and recording of the use of the bicycle. Transaid have helped with training and assessments over the years and also donated money for 2 of the latest installed bicycles.
-    photo: /img/jumbotron.jpg
+    photo: /img/page-links/link-bicycle-ambulance.jpg
     url: "./projects/bicycle-ambulances/"
   - linkTitle: Disability
     linkText: We have found over the years that people with disabilities are the most poverty stricken and often outcast from their community.
-    photo: /img/jumbotron.jpg
+    photo: /img/page-links/link-disability.jpg
     url: "./health/disability/"
   - linkTitle: HIV/AIDS
     linkText: Many children are orphaned due to HIV/AIDS and are left to be looked after by their extended family, often grandparents.
-    photo: /img/jumbotron.jpg
+    photo: /img/page-links/link-health-room.jpg
     url: "./health/hivaids/"
   - linkTitle: Feeding Programmes
     linkText: The under 5's are one of our most vulnerable groups where 11% never reach the age of 5 years old. They often die through disentary from drinking dirty water, or malaria.
-    photo: /img/jumbotron.jpg
+    photo: /img/page-links/link-feeding.jpg
     url: "./projects/feeding-programme-in-schools/"
   - linkTitle: Safe Motherhood
     linkText: We work in an area of 45,000 people of which 16,000 go to M'bang'ombe Maternity and 29,000 access N'goni Clinic. Both are very poorly equiped in terms of furnishings, medication, light and running water.
-    photo: /img/jumbotron.jpg
+    photo: /img/page-links/link-motherhood.jpg
     url: "./projects/maternity-unit/"
   - linkTitle: Distributions
     linkText: Although we aim to build sustainable communities and projects, unfortunately some times distributions are necessary. Often these link in to our health projects.
-    photo: /img/jumbotron.jpg
+    photo: /img/page-links/link-distributions.jpg
     url: "./projects/distributions/"
 
 ---
