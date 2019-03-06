@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from 'gatsby'
+import { Link } from 'gatsby'
 import footerStyles from "./footer.module.css";
 
 const Footer = () => (
@@ -44,24 +44,24 @@ const Footer = () => (
       </div>
 
       <nav role="navigation">
-        <div class="columns is-mobile is-centered">
+        <div class="columns is-centered">
           <div class="nav column">
             <h3>Featured Projects</h3>
             <ul>
               <li>
-                <a href="/projects/sams-village/">Sam's Village</a>
+                <Link to="/projects/sams-village/">Sam's Village</Link>
               </li>
               <li>
-                <a href="/water/">Water</a>
+                <Link to="/water/">Water</Link>
               </li>
               <li>
-                <a href="/health">Health</a>
+                <Link to="/health">Health</Link>
               </li>
               <li>
-                <a href="/education/">Education</a>
+                <Link to="/education/">Education</Link>
               </li>
               <li>
-                <a href="/environment/">Environment</a>
+                <Link href="/environment/">Environment</Link>
               </li>
             </ul>
           </div>
@@ -121,13 +121,13 @@ const Footer = () => (
                 <a href="https://www.facebook.com/africanvision">Facebook</a>
               </li>
               <li>
-                <a href="http://twitter.com/avmalawi">Twitter</a>
+                <a href="https://twitter.com/avmalawi">Twitter</a>
               </li>
               <li>
-                <a href="http://www.youtube.com/landirani">Youtube</a>
+                <a href="https://www.youtube.com/landirani">Youtube</a>
               </li>
               <li>
-                <a href="http://www.myspace.com/landirani">Myspace</a>
+                <a href="https://www.myspace.com/landirani">Myspace</a>
               </li>
               <li>
                 <a href="https://mydonate.bt.com/charities/thelandiranitrust">
