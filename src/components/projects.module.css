@@ -23,10 +23,6 @@ aside .featuredProjects li {
 .featuredProjects a {color: #fff;}
 .featuredProjects .active a {background: #fff; color: #494949;}
 
-@media only screen and (min-width: 510px) {
-    
-}
-
 @media only screen and (min-width: 1020px) {
     .featuredProjectsCont {
         margin-top: -2.5rem;

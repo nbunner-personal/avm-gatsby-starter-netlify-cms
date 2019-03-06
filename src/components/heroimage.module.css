@@ -1,0 +1,15 @@
+.heroCont {
+    justify-content: center;
+}
+.heroText {
+    align-content: center;
+    background: rgba(255,255,255,0.9);
+    border-radius: 4px;
+    color: #4a4a4a;
+    display: flex;    
+    font-size: 1.7rem;    
+    font-weight: bold;
+    max-width: 672px;
+    padding: 20px;
+    text-align: center;
+}

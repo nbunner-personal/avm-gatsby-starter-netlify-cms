@@ -50,7 +50,7 @@ export const FeaturedProjectsTemplate = ({
                   <div className="columns">
                     <main className="column is-10">
                       <h1 className="has-text-weight-semibold is-size-2">
-                        {title}
+                      {title}
                       </h1>
                       <PageContent className="content" content={content} />                   <CtaButton 
                         link='https://www.charitycheckout.co.uk/1113786/'
