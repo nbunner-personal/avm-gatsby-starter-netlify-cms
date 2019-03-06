@@ -16,15 +16,34 @@
     grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));   
 }
 .featuredProjects li {}
-aside .featuredProjects li {
-    display: block; width: 100%;
-}
+
+
+
+
 .featuredProjects a, .featuredProjects span {border-right: 1px solid #9e6b3b; border-bottom: 1px solid #9e6b3b; display: block; font-weight: bold; font-size: 0.8em; padding: 8px 0; text-align: center; text-decoration: none;}
 .featuredProjects a {color: #fff;}
 .featuredProjects .active a {background: #fff; color: #494949;}
 
+aside .featuredProjects {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+}
+aside .featuredProjects a {color: #3273dc; border-right: none; text-align: left;}
+aside .featuredProjectsCont {
+    justify-content: flex-start;
+    left: auto;
+    margin: 0;
+    right: auto;
+    width: 100%;
+} 
+
 @media only screen and (min-width: 1020px) {
     .featuredProjectsCont {
         margin-top: -2.5rem;
-    }    
+    }  
+    aside .featuredProjectsCont {
+        margin-top: 0;
+    }  
 }
