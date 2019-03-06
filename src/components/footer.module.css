@@ -1,6 +1,7 @@
 .footer {
   background: #477374 url(/img/common/footer-back.png) repeat 0 0;
   color: #fff;
+  margin-top: auto;
 }
 .footer a:link,
 .footer a:visited {
