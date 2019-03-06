@@ -37,7 +37,7 @@ const projects = [
 ];
 
 const FeaturedProjects = ({ currentProject }) => (
-  <div>
+  <div className={projectLinkStyles.featuredProjectsCont}>
     <ul className={projectLinkStyles.featuredProjects}>
       {projects.map(project => (
         <li
