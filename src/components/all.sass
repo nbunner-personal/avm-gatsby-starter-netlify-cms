@@ -1,11 +1,17 @@
 @import "~bulma/sass/utilities/initial-variables"
 
 // Config vars
-$kaldi-red: #FD461E
+// Kalidi logo brand color: #FD461E
+$kaldi-red: #D64000
 $kaldi-red-invert: #fff
 
 $primary: #9d5942
 $primary-invert: $kaldi-red-invert
+$body-color: #333
+$navbar-breakpoint: $tablet
+
+.navbar .navbar-menu
+  box-shadow:none !important
 
 .content .taglist
   list-style: none
@@ -55,6 +61,20 @@ $primary-invert: $kaldi-red-invert
 .margin-bottom-0
   margin-bottom: 0 !important  
 
+.content figure.image 
+  margin-left: auto
+  margin-right: auto
+
+.navbar-menu:not(.is-active) .navbar-parent,
+.navbar-menu:not(.is-active) .navbar-single
+  color: #fff
+  
+.navbar-menu.is-active
+  padding-top: 40px
+
+.mobNavOpen .main-body,
+.mobNavOpen footer
+  position: fixed
 
 
 @import "~bulma"

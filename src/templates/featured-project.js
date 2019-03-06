@@ -88,7 +88,7 @@ export const FeaturedProjectsTemplate = ({
                     marginBottom: '0',
                     paddingBottom: '30px'
                   }}>        
-                    <div className="column is-10 is-offset-1">
+                    <div className="column is-10">
                     <h2 style={{                        
                         textAlign: 'center'
                       }}>Photo updates</h2>
@@ -105,7 +105,7 @@ export const FeaturedProjectsTemplate = ({
                     marginBottom: '0',
                     paddingBottom: '30px'
                   }}>                    
-                    <div className="column is-10 is-offset-1">
+                    <div className="column is-10">
                       <h2 style={{                        
                         textAlign: 'center'
                       }}>Find out more...</h2>
@@ -198,7 +198,7 @@ export const FeaturedProjectsPageQuery = graphql`
                 linkTitle
                 photo {
                   childImageSharp {
-                    fluid(maxWidth: 2000, quality: 50) {
+                    fluid(maxWidth: 250, quality: 50) {
                       ...GatsbyImageSharpFluid
                     }
                   }

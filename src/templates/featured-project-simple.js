@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
-import Gallery from "../components/Gallery";
+// import Gallery from "../components/Gallery";
 // import Lightbox from "../components/lightbox"
 import PageLinksWithPhotos from "../components/PageLinksWithPhotos";
 // import Videos from '../components/Videos'
@@ -16,8 +16,7 @@ export const FeaturedProjectsSimpleTemplate = ({
   title,
   currentProject,
   columns,
-  content,
-  gallery,
+  content,  
   links,
   contentComponent
 }) => {
@@ -64,32 +63,7 @@ export const FeaturedProjectsSimpleTemplate = ({
                   ) : (
                     ""
                   )}
-                </div>
-                {gallery.length && (
-                  <section
-                    className="full-width-container margin-top-0"
-                    style={{
-                      background: "#f2f2f2",
-                      borderBottom: "1px solid #e5e5e5",
-                      marginBottom: "0",
-                      paddingBottom: "30px"
-                    }}
-                  >
-                    <div className="column is-10 is-offset-1">
-                      <h2
-                        style={{
-                          textAlign: "center"
-                        }}
-                      >
-                        Photo updates
-                      </h2>
-                      <Gallery
-                        gallery={gallery}
-                        initialState={{ showDialog: false }}
-                      />
-                    </div>
-                  </section>
-                )}
+                </div>               
                 {links.length && (
                   <section
                     className="full-width-container margin-top-0"
@@ -126,8 +100,7 @@ FeaturedProjectsSimpleTemplate.propTypes = {
   title: PropTypes.string,
   currentProject: PropTypes.string,
   columns: PropTypes.number,
-  content: PropTypes.string,
-  gallery: PropTypes.array,
+  content: PropTypes.string,  
   links: PropTypes.array
 };
 
@@ -142,8 +115,7 @@ const FeaturedProjectsPageSimple = ({ data }) => {
         currentProject={post.frontmatter.currentProject}
         columns={post.frontmatter.columns}
         content={post.html}
-        heroImage={post.frontmatter.heroImage}
-        gallery={post.frontmatter.gallery}
+        heroImage={post.frontmatter.heroImage}        
         links={post.frontmatter.links}
       />
     </Layout>
@@ -174,22 +146,12 @@ export const FeaturedProjectsPageSimpleQuery = graphql`
           }
         }
         currentProject
-        columns
-        gallery {
-          photo {
-            childImageSharp {
-              fluid(maxWidth: 800, quality: 60) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-          alt
-        }
+        columns        
         links {
           linkTitle
           photo {
             childImageSharp {
-              fluid(maxWidth: 2000, quality: 50) {
+              fluid(maxWidth: 250, quality: 50) {
                 ...GatsbyImageSharpFluid
               }
             }

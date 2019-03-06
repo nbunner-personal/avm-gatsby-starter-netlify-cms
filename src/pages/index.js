@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import FeaturedProjects from '../components/FeaturedProjects'
 
 export default class IndexPage extends React.Component {
   render() {
@@ -12,14 +13,18 @@ export default class IndexPage extends React.Component {
       <Layout>
         <section className="section">
           <div className="container">
-            <div className="content">
-              <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
+            <section>
+              
+            </section> 
+            <FeaturedProjects currentProject="home" />
+            <div className="content">            
+              <h1 className="has-text-weight-bold is-size-2">Welcome to African Vision Malawi (known as The Landirani Trust in Malawi).</h1>
             </div>
             {posts
               .map(({ node: post }) => (
                 <div
                   className="content"
-                  style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
+                  style={{ border: '1px solid #333', padding: '2em 4em' }}
                   key={post.id}
                 >
                   <p>

@@ -1,19 +1,72 @@
 .navbarTop {
   background: #9a563f !important;
 }
-.navContainer {
-  padding-left: 155px;
-}
+
 /* .navbarTop div div > a {color: #fff;} */
 /* .navbarItem > a {color: #3273dc !important;} */
 /* .navbarItem.hasDropdown:hover a {
     color: #4a4a4a;
 } */
-a.navbarItemParent {
+/* a.navbarItemParent, a.navItem {
   color: #fff;
+} */
+.navbarArrow::after {
+  border-color: #fff !important;
 }
 .navbarLogo {
-  left: -60px; /* TODO needs changing for mobile */
+  left: 5px;
   position: absolute;
   top: 0;
+  width: 70px;
+}
+
+.navbarBtns {
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));  
+  font-size: 0.8rem;
+  justify-content: space-between;  
+  left: 82px;
+  max-width: 348px;
+  position: absolute;
+  top: 10px;  
+  width: 67%;
+}
+  
+
+@media only screen and (min-width: 769px) {
+  .navContainer {
+    padding-left: 115px;
+  }
+  .navbarLogo {
+    left: 2px; /* TODO needs changing for mobile */
+    width: 80px;    
+  }
+  .navbarBtns {
+    display: flex;    
+    left: auto;
+    right: 5px;
+    top: 50px;
+    width: auto;
+
+  }
+  
+}
+
+@media only screen and (min-width: 1088px) {
+  .navContainer {
+    padding-left: 95px;
+  }
+  .navbarLogo {
+    left: -60px; /* TODO needs changing for mobile */
+    width: 135px;
+    
+  }
+  .navbarBtns {
+    top: 12px;
+  }
+}
+
+.navbarBurger {
+  color: #fff !important;
 }

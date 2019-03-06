@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "AVM new developement site mk7"
+    title: "Gatsby + Netlify CMS Starter8",
+    description:
+      "This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution."
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -50,20 +52,13 @@ module.exports = {
               // base for generating different widths of each image.
               maxWidth: 2048
             }
-          }
-        ]
-      }
-    },
-    {
-      resolve: "gatsby-plugin-netlify-cms",
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`
-      }
-    },
-    {
-      resolve: "gatsby-transformer-remark",
-      options: {
-        plugins: [
+          },
+          {
+            resolve: "gatsby-remark-copy-linked-files",
+            options: {
+              destinationDir: "static"
+            }
+          },
           {
             resolve: "gatsby-remark-embed-video",
             options: {
@@ -78,11 +73,25 @@ module.exports = {
       }
     },
     {
+      resolve: "gatsby-plugin-netlify-cms",
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`
+      }
+    },
+    {
       resolve: "gatsby-plugin-google-fonts",
       options: {
         fonts: ["noto sans:400,700,400italic,700italic", "londrina solid"]
       }
     },
+    {
+      resolve: "gatsby-plugin-purgecss", // purges all unused/unreferenced css rules
+      options: {
+        develop: true, // Activates purging in npm run develop
+        purgeOnly: ["/all.sass"] // applies purging only on the bulma css file
+      }
+    }, // must be after other CSS plugins
+
     "gatsby-plugin-netlify" // make sure to keep it last in the array
   ]
 };

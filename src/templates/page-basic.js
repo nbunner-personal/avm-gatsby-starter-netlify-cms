@@ -30,12 +30,7 @@ export const PageBasicTemplate = ({ title, content, contentComponent }) => {
                   <FeaturedProjects currentProject="default" />
                 </aside>
               </div>
-            </article>
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-            </div>
+            </article>            
           </div>
         </div>
       </div>
