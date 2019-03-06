@@ -20,14 +20,35 @@
   width: 70px;
 }
 
+.navbarBtns {
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));  
+  font-size: 0.8rem;
+  justify-content: space-between;  
+  left: 82px;
+  max-width: 348px;
+  position: absolute;
+  top: 10px;  
+  width: 67%;
+}
+  
+
 @media only screen and (min-width: 769px) {
   .navContainer {
     padding-left: 115px;
   }
   .navbarLogo {
     left: 2px; /* TODO needs changing for mobile */
-    width: 80px;
-    
+    width: 80px;    
+  }
+  .navbarBtns {
+    display: flex;    
+    left: auto;
+    right: 5px;
+    top: 50px;
+    width: auto;
+
   }
   
 }
@@ -40,6 +61,9 @@
     left: -60px; /* TODO needs changing for mobile */
     width: 135px;
     
+  }
+  .navbarBtns {
+    top: 12px;
   }
 }
 

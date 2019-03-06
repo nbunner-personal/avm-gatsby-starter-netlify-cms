@@ -2,7 +2,9 @@ import React from "react";
 import { Link } from "gatsby";
 // import github from '../img/github-icon.svg'
 import logo from "../img/logo-full.png";
+import CtaButton from "../components/CtaButton";
 import navbarStyles from "./navbar.module.css";
+
 
 const Navbar = class extends React.Component {
   componentDidMount() {
@@ -151,6 +153,16 @@ const Navbar = class extends React.Component {
               </div>
             </div>
           </div>
+          <div className={navbarStyles.navbarBtns}>            
+              <CtaButton
+                link="https://fundraise.charitycheckout.co.uk/africanvisionmalawi/fundraising/start#!/"
+                text="Fundraise for us"
+              />            
+              <CtaButton
+                link="https://www.charitycheckout.co.uk/1113786/"
+                text="Donate"
+              />            
+          </div>          
         </div>
       </nav>
     );
