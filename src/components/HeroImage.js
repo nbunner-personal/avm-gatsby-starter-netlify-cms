@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 // import { Link } from 'gatsby'
-import heroStyles from './heroImage.module.css'
+import heroStyles from './heroimage.module.css'
 
 
 const hero = ({ heroImage, heroMsg }) => (
