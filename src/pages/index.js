@@ -6,12 +6,12 @@ import FeaturedProjects from '../components/FeaturedProjects'
 import HeroImage from '../components/HeroImage'
 import videoStyles from '../components/videos.module.css'
 import ReactPlayer from 'react-player'
-import PostList from '../components/PostList'
+import BlogRoll from '../components/BlogRoll';
 
 export default class IndexPage extends React.Component {
   render() {
-    const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
+    // const { data } = this.props
+    // const { edges: posts } = data.allMarkdownRemark
     const heroImage = this.props.data.heroImage
     const heroMsg = "The people of Malawi want to help themselves. We can empower them to become self-sufficient and independent."
     const promoVideo = "https://www.youtube.com/watch?v=ghHoDBf9z2c"
@@ -38,7 +38,7 @@ export default class IndexPage extends React.Component {
                 <p>Our vision is to see a "healthy, educated and self-sufficient community in Malawi".</p>
               </div>
             </section>
-            <PostList posts={posts} />            
+            <BlogRoll />           
           </div>
         </section>        
       </Layout>
@@ -54,27 +54,10 @@ IndexPage.propTypes = {
   }),
 }
 
+
+
 export const pageQuery = graphql`
-  query IndexQuery {
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] },
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
-    ) {
-      edges {
-        node {
-          excerpt(pruneLength: 400)
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            templateKey
-            date(formatString: "MMMM DD, YYYY")
-          }
-        }
-      }
-    }
+  query IndexQuery {   
     heroImage: file(relativePath: { eq: "mainphoto_home.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 2048, quality: 60) {
