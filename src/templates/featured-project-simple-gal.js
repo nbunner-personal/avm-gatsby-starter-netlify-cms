@@ -76,13 +76,7 @@ export const FeaturedProjectsSimpleGalTemplate = ({
                                         }}
                                     >
                                         <div className="column is-10 is-offset-1">
-                                            <h2
-                                                style={{
-                                                    textAlign: "center"
-                                                }}
-                                            >
-                                                Find out more...
-                      </h2>
+                                            <h2>Find out more...</h2>
                                             <PageLinksWithPhotos pagelinks={links} />
                                         </div>
                                     </section>
@@ -98,13 +92,7 @@ export const FeaturedProjectsSimpleGalTemplate = ({
                                         }}
                                     >
                                         <div className="column is-10 is-offset-1">
-                                            <h2
-                                                style={{
-                                                    textAlign: "center"
-                                                }}
-                                            >
-                                                Photo updates
-                      </h2>
+                                            <h2>Photo updates</h2>
                                             <Gallery
                                                 gallery={gallery}
                                                 initialState={{ showDialog: false }}

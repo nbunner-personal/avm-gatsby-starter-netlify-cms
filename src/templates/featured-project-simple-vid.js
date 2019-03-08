@@ -72,9 +72,7 @@ export const FeaturedProjectsSimpleVidTemplate = ({
                                             paddingBottom: '30px'
                                         }}>
                                         <div className="column is-10">
-                                            <h2 style={{
-                                                textAlign: 'center'
-                                            }}>Videos</h2>
+                                            <h2>Videos</h2>
                                             <Videos videos={videos} />
                                         </div>
                                     </section>
@@ -88,9 +86,7 @@ export const FeaturedProjectsSimpleVidTemplate = ({
                                             paddingBottom: '30px'
                                         }}>
                                         <div className="column is-10">
-                                            <h2 style={{
-                                                textAlign: 'center'
-                                            }}>Find out more...</h2>
+                                            <h2>Find out more...</h2>
                                             <PageLinksWithPhotos pagelinks={links} />
                                         </div>
                                     </section>
