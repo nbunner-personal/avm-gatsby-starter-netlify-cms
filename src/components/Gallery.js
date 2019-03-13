@@ -36,6 +36,7 @@ class Gallery extends Component {
       <div className={galleryStyles.gallery}>
         {gallery.map(gall => (
           <span
+          class={galleryStyles.gridCell}
             onClick={() =>
               this.setState({
                 showLightbox: true,
