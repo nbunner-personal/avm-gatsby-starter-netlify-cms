@@ -8,11 +8,15 @@ const PageLinks = ({ pagelinks }) => (
     {pagelinks.map(pagelink => (
       <article key={v4()}>
         <div>
-            <h3>{pagelink.linkTitle}</h3>            
-            <p>{pagelink.linkText}</p>
+          <h3>
+            <Link to={pagelink.url}>{pagelink.linkTitle}</Link>
+          </h3>            
+          <p>
+            {pagelink.linkText}&hellip; 
             <Link to={pagelink.url}>
-            Find out more
+              Find out more
             </Link>
+          </p>            
         </div>
       </article>
     ))}
