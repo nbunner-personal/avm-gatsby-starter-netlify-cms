@@ -7,3 +7,10 @@
 .card {width: 250px;}
 .cardContent {background: #fff; padding: 1rem;}
 .cardImage {margin: 0;}
+
+.linkRow {    
+    margin: 0 0 3rem;
+}
+.linkHeading a {
+    color: #363636;
+}

@@ -47,26 +47,30 @@ const Navbar = class extends React.Component {
           </Link>
           <div className="navbar-brand">
             {/* Hamburger menu */}
-            <div className={`navbar-burger burger ${navbarStyles.navbarBurger}`} data-target="navMenu">
+            <div
+              className={`navbar-burger burger ${
+                navbarStyles.navbarBurger
+              }`}
+              data-target="navMenu"
+            >
               <span />
               <span />
               <span />
             </div>
           </div>
           <div id="navMenu" className="navbar-menu">
-            <div className="navbar-start">              
-              <Link
-                className="navbar-item navbar-parent"
-                to="/shop"
-              >
+            <div className="navbar-start">
+              <Link className="navbar-item navbar-parent" to="/shop">
                 Shop
-              </Link>                       
+              </Link>
               <Link className="navbar-item navbar-single" to="/why-malawi">
                 Why malawi?
               </Link>
               <div className="navbar-item has-dropdown is-hoverable">
                 <Link
-                  className={`navbar-link navbar-parent ${navbarStyles.navbarArrow}`}
+                  className={`navbar-link navbar-parent ${
+                    navbarStyles.navbarArrow
+                  }`}
                   to="/projects"
                 >
                   Projects
@@ -75,7 +79,10 @@ const Navbar = class extends React.Component {
                   <Link className="navbar-item" to="/projects/sams-village">
                     Sams village
                   </Link>
-                  <Link className="navbar-item" to="/health/a-child-is-born/">
+                  <Link
+                    className="navbar-item"
+                    to="/health/a-child-is-born/"
+                  >
                     A child is born
                   </Link>
                   <Link
@@ -96,14 +103,19 @@ const Navbar = class extends React.Component {
                   >
                     Groundnut Farming
                   </Link>
-                  <Link className="navbar-item" to="/projects/maternity-unit/">
+                  <Link
+                    className="navbar-item"
+                    to="/projects/maternity-unit/"
+                  >
                     Maternity Unit
                   </Link>
                 </div>
               </div>
               <div className="navbar-item has-dropdown is-hoverable">
                 <Link
-                  className={`navbar-link navbar-parent ${navbarStyles.navbarArrow}`}
+                  className={`navbar-link navbar-parent ${
+                    navbarStyles.navbarArrow
+                  }`}
                   to="/get-involved"
                 >
                   Get involved
@@ -112,7 +124,10 @@ const Navbar = class extends React.Component {
                   <Link className="navbar-item" to="/get-involved/donate/">
                     Donate
                   </Link>
-                  <Link className="navbar-item" to="/get-involved/fundraise/">
+                  <Link
+                    className="navbar-item"
+                    to="/get-involved/fundraise/"
+                  >
                     Fundraise for us
                   </Link>
                   <Link
@@ -131,7 +146,9 @@ const Navbar = class extends React.Component {
               </div>
               <div className="navbar-item has-dropdown is-hoverable">
                 <Link
-                  className={`navbar-link navbar-parent ${navbarStyles.navbarArrow}`}
+                  className={`navbar-link navbar-parent ${
+                    navbarStyles.navbarArrow
+                  }`}
                   to="/about-us"
                 >
                   About us
@@ -140,29 +157,44 @@ const Navbar = class extends React.Component {
                   <Link className="navbar-item" to="/about-us/team">
                     Team
                   </Link>
-                  <Link className="navbar-item" to="/health/a-child-is-born">
-                    A child is born
+                  <Link
+                    className="navbar-item"
+                    to="/about-us/where-we-work"
+                  >
+                    Where we work
                   </Link>
                   <Link
                     className="navbar-item"
-                    to="/projects/sams-village/njewa-new-office"
+                    to="/about-us/how-we-started"
                   >
-                    Njewa new office
+                    How we started
+                  </Link>
+                  <Link
+                    className="navbar-item"
+                    to="/about-us/african-vision-malawi-our-new-name"
+                  >
+                    African Vision Malawi - our new name
+                  </Link>
+                  <Link
+                    className="navbar-item"
+                    to="/about-us/thank-yous"
+                  >
+                    Thank yous
                   </Link>
                 </div>
               </div>
             </div>
           </div>
-          <div className={navbarStyles.navbarBtns}>            
-              <CtaButton
-                link="https://fundraise.charitycheckout.co.uk/africanvisionmalawi/fundraising/start#!/"
-                text="Fundraise for us"
-              />            
-              <CtaButton
-                link="https://www.charitycheckout.co.uk/1113786/"
-                text="Donate"
-              />            
-          </div>          
+          <div className={navbarStyles.navbarBtns}>
+            <CtaButton
+              link="https://fundraise.charitycheckout.co.uk/africanvisionmalawi/fundraising/start#!/"
+              text="Fundraise for us"
+            />
+            <CtaButton
+              link="https://www.charitycheckout.co.uk/1113786/"
+              text="Donate"
+            />
+          </div>
         </div>
       </nav>
     );
