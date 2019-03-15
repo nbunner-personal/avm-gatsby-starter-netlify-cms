@@ -3,6 +3,10 @@ templateKey: featured-project-simple
 currentProject: education
 title: Education
 heroImage: /img/mainphoto_education.jpg
+heroMsg: >-
+    90% of primary school aged children attend school
+    25% enroll in secondary school
+    Ratio of pupil/teacher is 62/1 in Malawi, it is 17/1 in UK
 gallery:
   - photo: 
     alt: 

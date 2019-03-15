@@ -4,6 +4,7 @@ currentProject: village
 columns: 1
 title: Sams Village
 heroImage: /img/mainphoto_village-ver3.jpg
+heroMsg: null
 videos:
   - videourl: "https://www.youtube.com/watch?v=n-n0jU215fQ"
     videotext: "A brief overview of Sam's Village and our first training course for Tailors"

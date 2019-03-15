@@ -4,6 +4,7 @@ currentProject: celebrate
 columns: 2
 title: Celebrate & Give
 heroImage: /img/mainphoto_celebrate.jpg
+heroMsg: null
 gallery:
   - photo: /img/chemex.jpg
     alt: Kitchen photo    

@@ -4,6 +4,7 @@ currentProject: environment
 columns: 1
 title: Environment
 heroImage: /img/mainphoto_environment.jpg
+heroMsg: null
 gallery:
   - photo: /img/chemex.jpg
     alt: Kitchen photo    

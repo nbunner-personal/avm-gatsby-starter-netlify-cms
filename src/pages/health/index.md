@@ -3,6 +3,11 @@ templateKey: featured-project-simple-vid
 currentProject: health
 title: Health
 heroImage: /img/mainphoto_health.jpg
+heroMsg: >-
+  11% of children don't reach their 5th birthday
+  50% of deaths of under 5's is due to malaria
+  11% of Malawians are living with HIV/AIDS
+  Quotes from World Health Organisation (2009 statistics)
 videos:
   - videourl: "https://vimeo.com/186275229"
     videotext: "This film shows the progress of the recently built Maternity Unit and the report back of Project4Africa who very kindly funded it. It also explains our search for funds to build a Safe Motherhood Unit in 2017."

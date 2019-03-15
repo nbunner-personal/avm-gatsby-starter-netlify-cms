@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import HeroImage from "../components/HeroImage";
 // import Gallery from "../components/Gallery";
 // import Lightbox from "../components/lightbox"
 import PageLinksWithPhotos from "../components/PageLinksWithPhotos";
@@ -12,91 +13,90 @@ import CtaButton from "../components/CtaButton";
 // import { Link } from 'gatsby'
 
 export const FeaturedProjectsSimpleTemplate = ({
-  heroImage,
-  title,
-  currentProject,
-  columns,
-  content,  
-  links,
-  contentComponent
-}) => {
-  const PageContent = contentComponent || Content;
+         heroImage,
+         heroMsg,
+         title,
+         currentProject,
+         columns,
+         content,
+         links,
+         contentComponent
+       }) => {
+         const PageContent = contentComponent || Content;
 
-  return (
-    <section
-      className="section section--gradient"
-      style={{
-        paddingBottom: "0"
-      }}
-    >
-      <div className="container">
-        <div>
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <section>
-                <div
-                  className="full-width-image-container margin-top-0 margin-bottom-0"
-                  style={{
-                    backgroundImage: `url(${
-                      !!heroImage.childImageSharp
-                        ? heroImage.childImageSharp.fluid.src
-                        : heroImage
-                    })`
-                  }}
-                />
-              </section>
-              <FeaturedProjects currentProject={currentProject} />
-              <article className="content">
-                <div className="columns">
-                  <main className="column is-9">
-                    <h1 className="has-text-weight-semibold is-size-2">
-                      {title}
-                    </h1>
-                    <PageContent className="content" content={content} />{" "}
-                    <CtaButton
-                      link="https://www.charitycheckout.co.uk/1113786/"
-                      text="Donate"
-                    />
-                  </main>
-                  {columns === 2 ? (
-                    <aside className="column is-5">side col goes here</aside>
-                  ) : (
-                    ""
-                  )}
-                </div>               
-                {links.length && (
-                  <section
-                    className="full-width-container margin-top-0"
-                    style={{
-                      background: "#f2f2f2",
-                      borderBottom: "1px solid #e5e5e5",
-                      marginBottom: "0",
-                      paddingBottom: "30px"
-                    }}
-                  >
-                    <div className="column is-10 is-offset-1">
-                      <h2>
-                        Find out more...
-                      </h2>
-                      <PageLinksWithPhotos pagelinks={links} />
-                    </div>
-                  </section>
-                )}
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
+         return (
+           <section
+             className="section section--gradient"
+             style={{
+               paddingBottom: "0"
+             }}
+           >
+             <div className="container">
+               <div>
+                 <div className="columns">
+                   <div className="column is-10 is-offset-1">
+                     <section>
+                       <HeroImage
+                         heroImage={heroImage}
+                         heroMsg={heroMsg}
+                       />
+                     </section>
+                     <FeaturedProjects currentProject={currentProject} />
+                     <article className="content">
+                       <div className="columns">
+                         <main className="column is-9">
+                           <h1 className="has-text-weight-semibold is-size-2">
+                             {title}
+                           </h1>
+                           <PageContent
+                             className="content"
+                             content={content}
+                           />{" "}
+                           <CtaButton
+                             link="https://www.charitycheckout.co.uk/1113786/"
+                             text="Donate"
+                           />
+                         </main>
+                         {columns === 2 ? (
+                           <aside className="column is-5">
+                             side col goes here
+                           </aside>
+                         ) : (
+                           ""
+                         )}
+                       </div>
+                       {links.length && (
+                         <section
+                           className="full-width-container margin-top-0"
+                           style={{
+                             background: "#f2f2f2",
+                             borderBottom: "1px solid #e5e5e5",
+                             marginBottom: "0",
+                             paddingBottom: "30px"
+                           }}
+                         >
+                           <div className="column is-10 is-offset-1">
+                             <h2>Find out more...</h2>
+                             <PageLinksWithPhotos pagelinks={links} />
+                           </div>
+                         </section>
+                       )}
+                     </article>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </section>
+         );
+       };
 
 FeaturedProjectsSimpleTemplate.propTypes = {
   heroImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  heroMsg: PropTypes.string,
   title: PropTypes.string,
   currentProject: PropTypes.string,
   columns: PropTypes.number,
-  content: PropTypes.string,  
+  content: PropTypes.string,
   links: PropTypes.array
 };
 
@@ -111,7 +111,8 @@ const FeaturedProjectsPageSimple = ({ data }) => {
         currentProject={post.frontmatter.currentProject}
         columns={post.frontmatter.columns}
         content={post.html}
-        heroImage={post.frontmatter.heroImage}        
+        heroImage={post.frontmatter.heroImage}
+        heroMsg={post.frontmatter.heroMsg}
         links={post.frontmatter.links}
       />
     </Layout>
@@ -141,6 +142,7 @@ export const FeaturedProjectsPageSimpleQuery = graphql`
             }
           }
         }
+        heroMsg
         currentProject
         columns        
         links {

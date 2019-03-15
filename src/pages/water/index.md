@@ -4,6 +4,7 @@ currentProject: water
 columns: 1
 title: Water and sanitation
 heroImage: /img/mainphoto_water.jpg
+heroMsg: Half of the worlds hospital beds are filled with people suffering from a water-related disease (World Health Organisation)
 gallery:
   - photo: /img/water-photo-1.jpg
     alt: Water update    

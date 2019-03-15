@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import HeroImage from "../components/HeroImage";
 import Gallery from '../components/Gallery'
 // import Lightbox from "../components/lightbox"
 import PageLinksWithPhotos from '../components/PageLinksWithPhotos'
@@ -13,6 +14,7 @@ import CtaButton from '../components/CtaButton'
 
 export const FeaturedProjectsTemplate = ({      
     heroImage,
+    heroMsg,
     title,
     currentProject,
     columns,
@@ -33,17 +35,7 @@ export const FeaturedProjectsTemplate = ({
             <div className="columns">
               <div className="column is-10 is-offset-1">
                 <section>
-                  <div
-                    className="full-width-image-container margin-top-0 margin-bottom-0"
-                    style={{
-                      backgroundImage: `url(${
-                        !!heroImage.childImageSharp
-                          ? heroImage.childImageSharp.fluid.src
-                          : heroImage
-                      })`,
-                    }}
-                  >                    
-                  </div>
+                  <HeroImage heroImage={heroImage} heroMsg={heroMsg} />
                 </section>  
                 <FeaturedProjects currentProject={currentProject} />
                 <article className="content">                    
@@ -118,16 +110,17 @@ export const FeaturedProjectsTemplate = ({
   )
 }
 
-FeaturedProjectsTemplate.propTypes = {  
+FeaturedProjectsTemplate.propTypes = {
   heroImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  heroMsg: PropTypes.string,
   title: PropTypes.string,
   currentProject: PropTypes.string,
   columns: PropTypes.number,
-  content: PropTypes.string,    
-  videos: PropTypes.array,    
-  gallery: PropTypes.array,  
-  links: PropTypes.array,
-}
+  content: PropTypes.string,
+  videos: PropTypes.array,
+  gallery: PropTypes.array,
+  links: PropTypes.array
+};
 
 const FeaturedProjectsPage = ({ data }) => {
   const { markdownRemark: post } = data
@@ -141,6 +134,7 @@ const FeaturedProjectsPage = ({ data }) => {
       columns={post.frontmatter.columns}
       content={post.html}
       heroImage={post.frontmatter.heroImage}
+      heroMsg={post.frontmatter.heroMsg}
       videos={post.frontmatter.videos}
       gallery={post.frontmatter.gallery}
       links={post.frontmatter.links}        
@@ -160,48 +154,49 @@ FeaturedProjectsPage.propTypes = {
 export default FeaturedProjectsPage
 
 export const FeaturedProjectsPageQuery = graphql`
-  query FeaturedProjectsPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-        html
-        frontmatter {            
-            title
-            heroImage {
-              childImageSharp {
-                fluid(maxWidth: 2048, quality: 60) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            } 
-            currentProject  
-            columns     
-            videos {
-              videourl
-              videotext
-            }
-            gallery {
-              photo {
-                childImageSharp {
-                  fluid(maxWidth: 800, quality: 60) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-              alt          
-            }
-            links {
-                linkTitle
-                photo {
-                  childImageSharp {
-                    fluid(maxWidth: 250, quality: 50) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
-                linkText
-                url          
-            }
-        }
-    }
-  }
-`
+         query FeaturedProjectsPage($id: String!) {
+           markdownRemark(id: { eq: $id }) {
+             html
+             frontmatter {
+               title
+               heroImage {
+                 childImageSharp {
+                   fluid(maxWidth: 2048, quality: 60) {
+                     ...GatsbyImageSharpFluid
+                   }
+                 }
+               }
+               heroMsg
+               currentProject
+               columns
+               videos {
+                 videourl
+                 videotext
+               }
+               gallery {
+                 photo {
+                   childImageSharp {
+                     fluid(maxWidth: 800, quality: 60) {
+                       ...GatsbyImageSharpFluid
+                     }
+                   }
+                 }
+                 alt
+               }
+               links {
+                 linkTitle
+                 photo {
+                   childImageSharp {
+                     fluid(maxWidth: 250, quality: 50) {
+                       ...GatsbyImageSharpFluid
+                     }
+                   }
+                 }
+                 linkText
+                 url
+               }
+             }
+           }
+         }
+       `;
 

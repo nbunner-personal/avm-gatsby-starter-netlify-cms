@@ -13,3 +13,6 @@
     padding: 20px;
     text-align: center;
 }
+.heroText:empty {
+    display: none;
+}
