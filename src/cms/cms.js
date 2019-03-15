@@ -11,11 +11,12 @@ import FeaturedProjectPageSimpleGalPreview from './preview-templates/FeaturedPro
 import FeaturedProjectPageSimpleVidPreview from './preview-templates/FeaturedProjectPageSimpleVidPreview'
 
 CMS.registerPreviewTemplate('about', AboutPagePreview)
+CMS.registerPreviewTemplate("blog", BlogPostPreview);
+CMS.registerPreviewTemplate("events", EventsPostPreview);
 // CMS.registerPreviewTemplate('products', ProductPagePreview)
 CMS.registerPreviewTemplate('projects', ProjectPagePreview)
 CMS.registerPreviewTemplate('featuredProject', FeaturedProjectPagePreview)
 CMS.registerPreviewTemplate('featuredProjectSimple', FeaturedProjectPageSimplePreview)
 CMS.registerPreviewTemplate('featuredProjectSimpleGal', FeaturedProjectPageSimpleGalPreview)
 CMS.registerPreviewTemplate('featuredProjectSimpleVid', FeaturedProjectPageSimpleVidPreview)
-CMS.registerPreviewTemplate('blog', BlogPostPreview)
-CMS.registerPreviewTemplate('events', EventsPostPreview)
+

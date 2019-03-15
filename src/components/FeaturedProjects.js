@@ -44,6 +44,7 @@ const FeaturedProjects = ({ currentProject }) => (
           className={
             project.id === currentProject ? projectLinkStyles.active : ``
           }
+          key={project.id}
         >
           <Link to={project.src}>{project.name}</Link>
         </li>

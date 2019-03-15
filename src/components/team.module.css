@@ -1,0 +1,23 @@
+.teamList {
+    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 1rem;    
+    justify-content: flex-start;
+    
+}
+.teamList, .teamList li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;    
+}
+.teamList li h4 {    
+    margin-bottom: 0;
+    
+}
+.teamPhoto {
+    border-radius: 50%;
+    max-width: 150px;
+}
+.teamPhoto img {border-radius: 50%;}
