@@ -8,6 +8,7 @@ import videoStyles from '../components/videos.module.css'
 import ReactPlayer from 'react-player'
 import BlogItem from "../components/BlogRollItem"
 import postStyles from "../components/posts.module.css"
+import { Link } from 'gatsby'
 
 export default class IndexPage extends React.Component {
   render() {
@@ -54,13 +55,17 @@ export default class IndexPage extends React.Component {
                 </p>
               </div>
             </section>
-            <section className={postStyles.cont}>
+            <section>
+            <h2>Latest news</h2>
+              <div className={postStyles.cont}>
               {posts &&
                 posts.map(({ node: post }) => (
                   <div key={post.fields.slug}>
                     <BlogItem post={post} />
                   </div>
                 ))}
+              </div>
+              <Link to="/news">View all news</Link>  
             </section>
           </div>
         </section>

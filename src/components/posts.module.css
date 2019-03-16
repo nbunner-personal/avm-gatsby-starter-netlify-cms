@@ -5,3 +5,11 @@
 }
 .card {width: 250px;}
 .cardContent {background: #fff; padding: 1rem;}
+
+.postWide .cont {
+    display: flex;
+    flex-direction: column;
+}
+.postWide .card {
+    width: 100%;
+}

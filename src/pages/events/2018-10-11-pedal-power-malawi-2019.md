@@ -1,11 +1,15 @@
 ---
 templateKey: events-post
+layout: post
 title: Pedal Power Malawi 2019
-date: 2018-10-11T22:07:16.531Z
-description: Description to go here
-tags:
-  - news
-  - events
+date: 2018-04-08T22:07:16.531Z
+endDate: 2019-04-22T19:50:09.959Z
+allDay: true
+location: Malawi
+cost: 950
+url: null
+description: some description text here
+tags: [malawi]
 ---
 ![null](/img/img_5263.jpg)
 
