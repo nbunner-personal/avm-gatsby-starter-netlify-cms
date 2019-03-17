@@ -177,29 +177,18 @@ collections:
           widget: "hidden",
           default: "page-text-links",
         }
-      - { label: "Title", name: "title", widget: "string" }
-      - file: "src/pages/about-us/index.md"
-        label: "About Us"
-        name: "aboutus"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "page-text-links",
-            }
-          - { label: "Title", name: "title", widget: "string" }
-          - {
-              label: Links,
-              name: links,
-              widget: list,
-              fields:
-                [
-                  { label: Title, name: linkTitle, widget: string },
-                  { label: Text, name: linkText, widget: text },
-                  { label: Url, name: url, widget: string },
-                ],
-            }
+      - { label: "Title", name: "title", widget: "string" }      
+      - {
+          label: Links,
+          name: links,
+          widget: list,
+          fields:
+            [
+              { label: Title, name: linkTitle, widget: string },
+              { label: Text, name: linkText, widget: text },
+              { label: Url, name: url, widget: string },
+            ],
+        }
 
   - name: "samsvillage"
     label: "Sams Village"
