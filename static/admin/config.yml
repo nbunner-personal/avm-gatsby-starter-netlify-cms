@@ -112,8 +112,7 @@ collections:
               widget: "hidden",
               default: "about-team",
             }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }  
+          - { label: "Title", name: "title", widget: "string" }          
           - {
               label: "Malawi Team",
               name: malawiTeam,
@@ -125,6 +124,9 @@ collections:
                   { label: Role, name: role, widget: string },
                 ],
             }  
+          - { label: "Malawi Title", name: "malawiTitle", widget: "string" }  
+          - { label: "Malawi Extra Text", name: "malawiText", widget: "text" }              
+          - { label: "Body", name: "body", widget: "markdown" }              
           - {
               label: "UK Team",
               name: ukTeam,
@@ -135,9 +137,7 @@ collections:
                   { label: Name, name: name, widget: string },
                   { label: Role, name: role, widget: string },
                 ],
-            }   
-          - { label: "Malawi Title", name: "malawiTitle", widget: "string" }  
-          - { label: "Malawi Extra Text", name: "malawiText", widget: "text" }                  
+            }                   
           - { label: "UK Title", name: "ukTitle", widget: "string" }  
           - { label: "UK Extra Text", name: "ukText", widget: "text" }                  
       - file: "src/pages/about-us/thank-yous/index.md"
@@ -175,11 +175,31 @@ collections:
           label: "Template Key",
           name: "templateKey",
           widget: "hidden",
-          default: "about-page",
+          default: "page-text-links",
         }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Header Image", name: headerImage, widget: image }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - file: "src/pages/about-us/index.md"
+        label: "About Us"
+        name: "aboutus"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "page-text-links",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: Links,
+              name: links,
+              widget: list,
+              fields:
+                [
+                  { label: Title, name: linkTitle, widget: string },
+                  { label: Text, name: linkText, widget: text },
+                  { label: Url, name: url, widget: string },
+                ],
+            }
 
   - name: "samsvillage"
     label: "Sams Village"
