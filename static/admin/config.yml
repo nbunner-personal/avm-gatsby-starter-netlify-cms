@@ -64,7 +64,7 @@ collections:
               label: "Template Key",
               name: "templateKey",
               widget: "hidden",
-              default: "health-page",
+              default: "page-text-links",
             }
           - { label: "Title", name: "title", widget: "string" }
           - {
@@ -78,23 +78,92 @@ collections:
                   { label: Url, name: url, widget: string },
                 ],
             }
-
-  - name: "pages"
-    label: "Pages"
-    files:
-      - file: "src/pages/about/index.md"
-        label: "About"
-        name: "about"
+      - file: "src/pages/about-us/african-vision-malawi-our-new-name/index.md"
+        label: "African Vision Malawi - our new name"
+        name: "ournewname"
         fields:
           - {
               label: "Template Key",
               name: "templateKey",
               widget: "hidden",
-              default: "about-page",
+              default: "page-basic",
             }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
-      
+          - { label: "Body", name: "body", widget: "markdown" }   
+      - file: "src/pages/about-us/how-we-started/index.md"
+        label: "How ewer started"
+        name: "howwestarted"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "page-basic",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" } 
+      - file: "src/pages/about-us/team/index.md"
+        label: "Team"
+        name: "team"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "about-team",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }  
+          - {
+              label: "Malawi Team",
+              name: malawiTeam,
+              widget: list,
+              fields:
+                [
+                  { label: Photo, name: photo, widget: image },
+                  { label: Name, name: name, widget: string },
+                  { label: Role, name: role, widget: string },
+                ],
+            }  
+          - {
+              label: "UK Team",
+              name: ukTeam,
+              widget: list,
+              fields:
+                [
+                  { label: Photo, name: photo, widget: image },
+                  { label: Name, name: name, widget: string },
+                  { label: Role, name: role, widget: string },
+                ],
+            }   
+          - { label: "Malawi Title", name: "malawiTitle", widget: "string" }  
+          - { label: "Malawi Extra Text", name: "malawiText", widget: "text" }                  
+          - { label: "UK Title", name: "ukTitle", widget: "string" }  
+          - { label: "UK Extra Text", name: "ukText", widget: "text" }                  
+      - file: "src/pages/about-us/thank-yous/index.md"
+        label: "Thank yous"
+        name: "thankyous"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "page-basic",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }   
+      - file: "src/pages/about-us/where-we-work/index.md"
+        label: "Where we work"
+        name: "wherewework"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "page-basic",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }                                   
 
   - name: "projects"
     label: "Projects"
