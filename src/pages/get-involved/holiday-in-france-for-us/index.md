@@ -1,22 +1,32 @@
 ---
-templateKey: page-basic
+templateKey: page-gallery
 title: Holiday in France for us
+gallery:
+  - alt: House in France
+    photo: /img/projects/France-1.jpg
+  - alt: House in France
+    photo: /img/projects/France-2.jpg
+  - alt: House in France
+    photo: /img/projects/France-3.jpg
+  - alt: House in France
+    photo: /img/projects/France-4.jpg
+  - alt: House in France
+    photo: /img/projects/France-5.jpg
+  - alt: House in France
+    photo: /img/projects/France-8.jpg
 ---
-
-La Guimarderie in France
 
 La Guimarderie in France
 
 Two of our supporters own a beautiful holiday home in the Loire Valley in France and they have offered that all money raised from renting it out goes to African Vision Malawi projects.
 
-For some of the year it is used as a retreat and again the proceeds go to AVM. More details about the retreats here …
+For some of the year it is used as a retreat and again the proceeds go to AVM. More details about the retreats [here](https://www.retreattothefarm.co.uk/) …
 
 So, do you fancy a holiday in France?!
 
-14th Century farmhouse in 1 acre gardens, with heated pool, and in a rural setting in Chinon, in the Loire Valley
+_14th Century farmhouse in 1 acre gardens, with heated pool, and in a rural setting in Chinon, in the Loire Valley_
 
-Prices start from £50 per day. Take a look at some of the photos here, and then read some details about it below….
-France 1France 2 France 4 France 5 France 8
+Prices start from £50 per day. Take a look at some of the photos in the gallery at the bottom of this page and then read some details about it below….
 
 This is a peaceful 14th century farmhouse in one acre grounds with extensive gardens and orchard, fully restored. It has a beautiful 16m heated swimming pool and is set between Chinon and Richelieu in chateaux country. There is lots to do: fishing, watersports, horse riding, walking and cycling. Peaceful and quiet. Even better: all rental income is donated to African Vision Malawi!
 
@@ -27,14 +37,14 @@ The stone-built barbecue overlooks the neighbouring château. Delightful eating 
 
 There is an adjacent Barn which can be let also to same occupants, upon request. There are an additional 2 single beds plus fold-up bed upstairs, with a double sofabed downstairs.
 
-You can check availability by sending us an email at info@africanvision.org.uk or give us a call on 020 8287 8169 to book your holiday! You can also book directly on Airbnb here
+You can check availability by sending us an email at [info@africanvision.org.uk](mailto:info@africanvision.org.uk) or give us a call on 020 8287 8169 to book your holiday! You can also book directly on Airbnb here
 
 And if that weren’t enough to whet your appetite…
 
-Local recommendations:
+## Local recommendations:
 
 ‘Chateau du Rivau’
-We thoroughly recommend the beautiful Château Du Rivau which our property overlooks. Discover not only a genuine medieval castle at the heart of a UNESCO world heritage site, but contemporary sculptures and a delightful restaurant serving local specialities and produce from the château gardens.The 14 gardens evoke wonderful stories and legends from literature over the centuries. http://www.loire-castle-rivau.com/
+We thoroughly recommend the beautiful Château Du Rivau which our property overlooks. Discover not only a genuine medieval castle at the heart of a UNESCO world heritage site, but contemporary sculptures and a delightful restaurant serving local specialities and produce from the château gardens.The 14 gardens evoke wonderful stories and legends from literature over the centuries. [https://www.loire-castle-rivau.com/](https://www.loire-castle-rivau.com/)
 
 ‘Chinon and Saumur Markets’
 The Chinon market on Thursday, the Saumur market on Saturday offer a little bit of everything: clothing stalls and bric-a-brac on one side, live rabbits and chickens on another. Farmers come to sell their homemade goats cheese, hand-picked strawberries and tomatoes; fishmongers offer fresh fish from the Loire and in the fall and winter months, there are wild mushrooms, game and home made wild boar patés.
@@ -61,4 +71,4 @@ Many in surrounding area, Chinon especially.
 This area of the Loire offers fantastic variety from the deep reds of Chinon to Vouvray whites from sweet Coteaux du Layon to Anjou Rose – a great week’s wine-tasting!
 
 ‘Zoo de Doue’
-One of the best zoos in the world, certainly the best we’ve ever seen. Don’t miss it! Wild animals and no cages. The vulture enclosure is a must! www.zoodoue.fr
+One of the best zoos in the world, certainly the best we’ve ever seen. Don’t miss it! Wild animals and no cages. The vulture enclosure is a must! [www.zoodoue.fr](https://www.zoodoue.fr)
