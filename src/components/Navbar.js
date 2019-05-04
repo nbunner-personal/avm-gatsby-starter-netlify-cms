@@ -5,7 +5,6 @@ import logo from "../img/logo-full.png";
 import CtaButton from "../components/CtaButton";
 import navbarStyles from "./navbar.module.css";
 
-
 const Navbar = class extends React.Component {
   componentDidMount() {
     // Get all "navbar-burger" elements
@@ -48,9 +47,7 @@ const Navbar = class extends React.Component {
           <div className="navbar-brand">
             {/* Hamburger menu */}
             <div
-              className={`navbar-burger burger ${
-                navbarStyles.navbarBurger
-              }`}
+              className={`navbar-burger burger ${navbarStyles.navbarBurger}`}
               data-target="navMenu"
             >
               <span />
@@ -76,13 +73,17 @@ const Navbar = class extends React.Component {
                   Projects
                 </Link>
                 <div className="navbar-dropdown">
+                  <Link
+                    className="navbar-item"
+                    to="/projects/funsani-rammed-earth-community-based-childcare-centre-cbcc"
+                  >
+                    Funsani – Rammed Earth Community Based Childcare Centre
+                    (CBCC)
+                  </Link>
                   <Link className="navbar-item" to="/projects/sams-village">
                     Sams village
                   </Link>
-                  <Link
-                    className="navbar-item"
-                    to="/health/a-child-is-born/"
-                  >
+                  <Link className="navbar-item" to="/health/a-child-is-born/">
                     A child is born
                   </Link>
                   <Link
@@ -103,10 +104,7 @@ const Navbar = class extends React.Component {
                   >
                     Groundnut Farming
                   </Link>
-                  <Link
-                    className="navbar-item"
-                    to="/projects/maternity-unit/"
-                  >
+                  <Link className="navbar-item" to="/projects/maternity-unit/">
                     Maternity Unit
                   </Link>
                 </div>
@@ -124,10 +122,7 @@ const Navbar = class extends React.Component {
                   <Link className="navbar-item" to="/get-involved/donate/">
                     Donate
                   </Link>
-                  <Link
-                    className="navbar-item"
-                    to="/get-involved/fundraise/"
-                  >
+                  <Link className="navbar-item" to="/get-involved/fundraise/">
                     Fundraise for us
                   </Link>
                   <Link
@@ -157,16 +152,10 @@ const Navbar = class extends React.Component {
                   <Link className="navbar-item" to="/about-us/team">
                     Team
                   </Link>
-                  <Link
-                    className="navbar-item"
-                    to="/about-us/where-we-work"
-                  >
+                  <Link className="navbar-item" to="/about-us/where-we-work">
                     Where we work
                   </Link>
-                  <Link
-                    className="navbar-item"
-                    to="/about-us/how-we-started"
-                  >
+                  <Link className="navbar-item" to="/about-us/how-we-started">
                     How we started
                   </Link>
                   <Link
@@ -175,10 +164,7 @@ const Navbar = class extends React.Component {
                   >
                     African Vision Malawi - our new name
                   </Link>
-                  <Link
-                    className="navbar-item"
-                    to="/about-us/thank-yous"
-                  >
+                  <Link className="navbar-item" to="/about-us/thank-yous">
                     Thank yous
                   </Link>
                 </div>
