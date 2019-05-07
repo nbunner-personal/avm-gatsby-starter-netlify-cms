@@ -141,7 +141,13 @@ const Navbar = class extends React.Component {
                     className="navbar-item"
                     to="/get-involved/use-your-baggage-allowance-to-lilongwe/"
                   >
-                    Use your baggage allowance to Lilongwe!
+                    Take a suitcase to Lilongwe for us!
+                  </Link>
+                  <Link
+                    className="navbar-item"
+                    to="/get-involved/volunteering/"
+                  >
+                    Volunteer with us
                   </Link>
                 </div>
               </div>
