@@ -6,12 +6,22 @@ import ArticleList from "../components/ArticleList";
 import FeaturedProjects from "../components/FeaturedProjects";
 import CtaButton from "../components/CtaButton";
 import postStyles from "../components/posts.module.css";
+import paginationStyles from "../components/pagination.module.css";
 
 const PaginationLink = props => {
   if (!props.test) {
-    return <Link to={`/news/${props.url}`}>{`${props.text}`}</Link>;
+    return (
+      <Link
+        className={paginationStyles.activeLink}
+        to={`/news/${props.url}`}
+      >{`${props.text}`}</Link>
+    );
   } else {
-    return <Link disabled>{props.text}</Link>;
+    return (
+      <span className={paginationStyles.currentLink} disabled>
+        {props.text}
+      </span>
+    );
   }
 };
 
