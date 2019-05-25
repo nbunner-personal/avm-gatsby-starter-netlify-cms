@@ -32,9 +32,18 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors);
     }
 
-    const posts = result.data.allMarkdownRemark.edges;
+    const postsAndPages = result.data.allMarkdownRemark.edges;
 
-    posts.forEach(edge => {
+    // Post pages:
+    let posts = [];
+    // Iterate through each post/page, putting all found posts (where templateKey = article-page) into `posts`
+    postsAndPages.forEach(edge => {
+      if (_.isMatch(edge.node.frontmatter, { templateKey: "blog-post" })) {
+        posts = posts.concat(edge);
+      }
+    });
+
+    postsAndPages.forEach(edge => {
       const id = edge.node.id;
       createPage({
         path: edge.node.fields.slug,
@@ -49,6 +58,23 @@ exports.createPages = ({ actions, graphql }) => {
       });
     });
 
+    // const posts = result.data.allMarkdownRemark.edges;
+
+    // posts.forEach(edge => {
+    //   const id = edge.node.id;
+    //   createPage({
+    //     path: edge.node.fields.slug,
+    //     tags: edge.node.frontmatter.tags,
+    //     component: path.resolve(
+    //       `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
+    //     ),
+    //     // additional data can be passed via context
+    //     context: {
+    //       id
+    //     }
+    //   });
+    // });
+
     createPaginatedPages({
       edges: posts,
       createPage: createPage,
@@ -61,7 +87,7 @@ exports.createPages = ({ actions, graphql }) => {
     // Tag pages:
     let tags = [];
     // Iterate through each post, putting all found tags into `tags`
-    posts.forEach(edge => {
+    postsAndPages.forEach(edge => {
       if (_.get(edge, `node.frontmatter.tags`)) {
         tags = tags.concat(edge.node.frontmatter.tags);
       }
