@@ -51,7 +51,7 @@ export const ProductTemplate = ({
                     />
                   </main>
                 </div>
-                {productGallery.length && (
+                {/* {productGallery.length && (
                   <section
                     className="full-width-container margin-top-0"
                     style={{
@@ -75,7 +75,7 @@ export const ProductTemplate = ({
                       />
                     </div>
                   </section>
-                )}
+                )} */}
               </article>
             </div>
           </div>
