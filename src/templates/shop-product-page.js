@@ -5,8 +5,18 @@ import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 // import FeaturedProjects from "../components/FeaturedProjects";
 import CtaButton from "../components/CtaButton";
+import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
-export const ShopProductTemplate = ({ title, content, contentComponent }) => {
+export const ShopProductTemplate = ({
+  title,
+  content,
+  contentComponent,
+  price,
+  salePrice,
+  inStock,
+  weight,
+  productImage
+}) => {
   const PageContent = contentComponent || Content;
 
   return (
@@ -20,7 +30,15 @@ export const ShopProductTemplate = ({ title, content, contentComponent }) => {
                   <h1 className="has-text-weight-semibold is-size-2">
                     {title}
                   </h1>
+                  <PreviewCompatibleImage imageInfo={productImage} />
                   <PageContent className="content" content={content} />
+                  Price: &pound;{price}
+                  <br />
+                  Sale Price: &pound;{salePrice}
+                  <br />
+                  In Stock: {inStock}
+                  <br />
+                  Weight: {weight}
                   <CtaButton
                     link="https://www.charitycheckout.co.uk/1113786/"
                     text="Donate"
@@ -39,7 +57,12 @@ export const ShopProductTemplate = ({ title, content, contentComponent }) => {
 ShopProductTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
-  contentComponent: PropTypes.func
+  contentComponent: PropTypes.func,
+  price: PropTypes.number,
+  salePrice: PropTypes.number,
+  inStock: PropTypes.number,
+  weight: PropTypes.number,
+  productImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
 };
 
 const ShopProductPage = ({ data }) => {
@@ -51,13 +74,22 @@ const ShopProductPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
+        price={post.frontmatter.price}
+        salePrice={post.frontmatter.salePrice}
+        inStock={post.frontmatter.inStock}
+        weight={post.frontmatter.weight}
+        productImage={post.frontmatter.productImage}
       />
     </Layout>
   );
 };
 
 ShopProductPage.propTypes = {
-  data: PropTypes.object.isRequired
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.shape({
+      frontmatter: PropTypes.object
+    })
+  })
 };
 
 export default ShopProductPage;
@@ -68,6 +100,17 @@ export const pageBasicQuery = graphql`
       html
       frontmatter {
         title
+        price
+        salePrice
+        inStock
+        weight
+        productImage {
+          childImageSharp {
+            fluid(maxWidth: 300, quality: 50) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
