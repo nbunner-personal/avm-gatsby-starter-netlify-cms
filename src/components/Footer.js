@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'gatsby'
+import { Link } from "gatsby";
 import footerStyles from "./footer.module.css";
 
 const Footer = () => (
@@ -68,7 +68,7 @@ const Footer = () => (
 
           <div className="nav column">
             <h3>
-              <a href="/news/">News</a>
+              <a href="/news">News</a>
             </h3>
             <ul>
               <li>
@@ -114,7 +114,7 @@ const Footer = () => (
 
           <div className="nav column">
             <h3>
-              <a href="/news/">Join us on&hellip;</a>
+              <a href="/news">Join us on&hellip;</a>
             </h3>
             <ul>
               <li>
