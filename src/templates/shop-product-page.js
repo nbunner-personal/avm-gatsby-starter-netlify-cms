@@ -15,6 +15,11 @@ export const ShopProductTemplate = ({
   salePrice,
   inStock,
   weight,
+  length,
+  width,
+  height,
+  shippingClass,
+  tags,
   productImage
 }) => {
   const PageContent = contentComponent || Content;
@@ -39,6 +44,21 @@ export const ShopProductTemplate = ({
                   In Stock: {inStock}
                   <br />
                   Weight: {weight}
+                  <br />
+                  Length: {length}
+                  <br />
+                  Width: {width}
+                  <br />
+                  Height: {height}
+                  <br />
+                  Shipping Class: {shippingClass}
+                  {tags && tags.length ? (
+                    <ul className="taglist">
+                      {tags.map(tag => (
+                        <li key={tag + `tag`}>{tag}</li>
+                      ))}
+                    </ul>
+                  ) : null}
                   <CtaButton
                     link="https://www.charitycheckout.co.uk/1113786/"
                     text="Donate"
@@ -62,6 +82,11 @@ ShopProductTemplate.propTypes = {
   salePrice: PropTypes.number,
   inStock: PropTypes.number,
   weight: PropTypes.number,
+  length: PropTypes.number,
+  width: PropTypes.number,
+  height: PropTypes.number,
+  shippingClass: PropTypes.string,
+  tags: PropTypes.array,
   productImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
 };
 
@@ -78,6 +103,11 @@ const ShopProductPage = ({ data }) => {
         salePrice={post.frontmatter.salePrice}
         inStock={post.frontmatter.inStock}
         weight={post.frontmatter.weight}
+        length={post.frontmatter.length}
+        width={post.frontmatter.width}
+        height={post.frontmatter.height}
+        shippingClass={post.frontmatter.shippingClass}
+        tags={post.frontmatter.tags}
         productImage={post.frontmatter.productImage}
       />
     </Layout>
@@ -104,9 +134,14 @@ export const pageBasicQuery = graphql`
         salePrice
         inStock
         weight
+        length
+        width
+        height
+        shippingClass
+        tags
         productImage {
           childImageSharp {
-            fluid(maxWidth: 300, quality: 50) {
+            fluid(maxWidth: 450, quality: 50) {
               ...GatsbyImageSharpFluid
             }
           }
