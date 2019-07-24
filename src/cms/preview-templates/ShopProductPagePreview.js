@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { ShopProductPage } from "../../templates/shop-product-page";
+import { ShopProductPageTemplate } from "../../templates/shop-product-page";
 
 const ShopProductPagePreview = ({ entry, widgetFor }) => (
   <ShopProductPageTemplate
