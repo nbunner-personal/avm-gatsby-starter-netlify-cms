@@ -9,7 +9,7 @@ description: Give a gift that will make a difference...
 price: 100
 salePrice: 100
 inStock: 100
-weight: 0
+weight: 4
 length: 0
 width: 0
 height: 0
