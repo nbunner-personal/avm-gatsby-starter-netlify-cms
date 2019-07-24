@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { ShopProductPageTemplate } from "../../templates/shop-product-page";
+import { ShopProductTemplate } from "../../templates/shop-product-page";
 
 const ShopProductPagePreview = ({ entry, widgetFor }) => (
-  <ShopProductPageTemplate
+  <ShopProductTemplate
     title={entry.getIn(["data", "title"])}
     content={widgetFor("body")}
   />
