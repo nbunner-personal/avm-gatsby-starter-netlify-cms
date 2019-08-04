@@ -1,15 +1,16 @@
 ---
 templateKey: about-team
 title: Team
+desription: Meet the team - African Vision Malawi
 malawiTeam:
   - order: 1
     photo: /img/team/Alinafe-4-150x150.jpg
     name: Alinafe Kasiya
-    role: Trustee 
+    role: Trustee
   - order: 2
     photo: /img/team/William-Nyasulu-photo-150x150.jpg
     name: William Nyasulu
-    role: Trustee     
+    role: Trustee
   - order: 3
     photo: /img/team/Duncan-photo-150x150.jpg
     name: Duncan Chiyani
@@ -33,12 +34,12 @@ malawiTeam:
   - order: 8
     photo: /img/team/Ruth-Katchere-150x150.jpg
     name: Ruth Katchere
-    role: Finance Officer               
+    role: Finance Officer
 ukTeam:
   - order: 1
     photo: /img/team/Heather-150x150.jpg
     name: Heather Palmer
-    role: CEO   
+    role: CEO
   - order: 2
     photo: /img/team/Nigel-for-website-150x150.jpg
     name: Nigel Palmer
@@ -48,6 +49,7 @@ malawiText: The team also includes 98 volunteers who are members of 14 Locally B
 ukTitle: UK Staff
 ukText: All of our UK staff are volunteers, so as a supporter you can be sure that even more of your donation goes directly to help orphans and vulnerable people in rural Malawi, instead of being spent on administration costs in the UK.
 ---
+
 ## Staff Stories
 
 Would you like to know more about our staff in Malawi? These are stories from our staff, past and present, written in their own words.

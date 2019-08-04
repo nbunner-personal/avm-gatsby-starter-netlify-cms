@@ -1,13 +1,10 @@
 ---
 templateKey: page-basic
 title: Thank yous
+desription: People who have generously supported us
 ---
 
-
-
-This page celebrates the friends of African Vision Malawi who have been kind enough to support us in activities in the UK and Malawi.  The number of people who help us is growing all the time!
-
- 
+This page celebrates the friends of African Vision Malawi who have been kind enough to support us in activities in the UK and Malawi. The number of people who help us is growing all the time!
 
 We would like to thank:
 
@@ -16,8 +13,6 @@ All of the individuals and companies who are donors, fundraisers, sponsors and v
 All our regular partners, in Malawi and the UK.
 
 All our UK partnership schools, and especially those who have raised money for their Malawian partnership schools.
-
- 
 
 Thank you so much to:
 
@@ -89,8 +84,6 @@ Kingston Rotary Club
 
 Kira Palmer
 
- 
-
 Lesley Howlett
 
 Lilongwe Round Table
@@ -108,8 +101,6 @@ MAP (Malawi Association for the Physically Handicapped)
 Martha Tilston
 
 Mavali Morris
-
- 
 
 Metropolitan Health Insurance
 

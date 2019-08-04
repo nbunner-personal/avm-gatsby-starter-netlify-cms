@@ -1,6 +1,7 @@
 ---
 templateKey: page-basic
 title: Kafutwe Food Mill
+description: About our food mill at Kafutwe
 headerImage: /img/chemex.jpg
 ---
 

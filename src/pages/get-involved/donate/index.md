@@ -1,6 +1,7 @@
 ---
 templateKey: page-basic
 title: Donate
+description: Donating to us
 headerImage: /img/chemex.jpg
 ---
 

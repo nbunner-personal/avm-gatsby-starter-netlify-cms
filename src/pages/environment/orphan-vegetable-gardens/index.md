@@ -1,6 +1,7 @@
 ---
 templateKey: page-basic
 title: Orphan Vegetable Gardens
+description: About out various orphan vegetable gardens
 headerImage: /img/chemex.jpg
 ---
 

@@ -1,6 +1,7 @@
 ---
 templateKey: page-basic
 title: Fundraise for us
+description: Supporters have organised table top fairs and supermarket bucket collections, abseiled, climbed Mt Kilimangaro, run 10km races, competed in the Lilongwe Triathlon, run the North London Half Marathon and even the London Marathon for us
 headerImage: /img/chemex.jpg
 ---
 

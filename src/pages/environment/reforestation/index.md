@@ -1,6 +1,7 @@
 ---
 templateKey: page-basic
 title: Reforestation
+description: How our Reforestation Project is promoting self-sufficiency within our support area
 headerImage: /img/chemex.jpg
 ---
 

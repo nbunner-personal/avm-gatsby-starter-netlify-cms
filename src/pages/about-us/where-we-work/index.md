@@ -1,6 +1,7 @@
 ---
 templateKey: page-basic
 title: Where we work
+desription: We support 26 Primary Schools, have just under 3,000 orphans and 300 disabled registered with 2 clinics and 2 maternity units.
 headerImage: /img/chemex.jpg
 ---
 

@@ -1,6 +1,7 @@
 ---
 templateKey: page-basic
 title: Fuel-Saving Stoves
+description: How we help people build fuel efficient stoves
 headerImage: /img/chemex.jpg
 ---
 

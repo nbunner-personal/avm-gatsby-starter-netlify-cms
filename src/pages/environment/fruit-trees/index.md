@@ -1,6 +1,7 @@
 ---
 templateKey: page-basic
 title: Fruit trees
+description: About seeds for Africa
 headerImage: /img/chemex.jpg
 ---
 

@@ -1,6 +1,7 @@
 ---
 templateKey: page-basic
 title: Fundraise with Easy Fundraising
+description: Easy fundraising
 ---
 
 <iframe src="http://wfyw.easyfundraising.org.uk/?id=1823" scrolling="no" width="100%" height="2000" frameborder="0"></iframe>

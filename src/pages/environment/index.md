@@ -3,13 +3,14 @@ templateKey: featured-project-simple
 currentProject: environment
 columns: 1
 title: Environment
+description: Details about our various environment projects
 heroImage: /img/mainphoto_environment.jpg
 heroMsg: null
 gallery:
   - photo: /img/chemex.jpg
-    alt: Kitchen photo    
+    alt: Kitchen photo
   - photo: /img/jumbotron.jpg
-    alt: Office photo      
+    alt: Office photo
 links:
   - linkTitle: Groundnut Farming
     linkText: We deliver training on groundnut farming across our area. Training is a sustainable way of making a real difference to people's lives.
@@ -34,7 +35,7 @@ links:
   - linkTitle: Fruit Trees
     linkText: Hundreds of trees were planted back in 2008 and the trees in Chitsime, Masiye and M'bang'ombe are thriving, despite droughts.
     photo: /img/page-links/link-fruit-trees.jpg
-    url: ./environment/fruit-trees/              
+    url: ./environment/fruit-trees/
 ---
 
 Environment content goes here.

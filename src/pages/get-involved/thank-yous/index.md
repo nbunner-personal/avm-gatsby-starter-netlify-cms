@@ -1,6 +1,7 @@
 ---
 templateKey: page-basic
 title: Thank yous
+description: This page celebrates the friends of African Vision Malawi who have been kind enough to support us in activities in the UK and Malawi.
 headerImage: /img/chemex.jpg
 ---
 

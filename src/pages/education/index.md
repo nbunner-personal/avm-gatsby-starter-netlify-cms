@@ -2,17 +2,18 @@
 templateKey: featured-project-simple
 currentProject: education
 title: Education
+description: details about our education projects
 heroImage: /img/mainphoto_education.jpg
 heroMsg: >-
-    90% of primary school aged children attend school
-    25% enroll in secondary school
-    Ratio of pupil/teacher is 62/1 in Malawi, it is 17/1 in UK
+  90% of primary school aged children attend school
+  25% enroll in secondary school
+  Ratio of pupil/teacher is 62/1 in Malawi, it is 17/1 in UK
 gallery:
-  - photo: 
-    alt: 
+  - photo:
+    alt:
 links:
   - linkTitle: CBCC
-    linkText: African Vision Malawi is committed to supporting the under 5's and have set up 9 Community Based Childcare Centres (CBCC) to date.    
+    linkText: African Vision Malawi is committed to supporting the under 5's and have set up 9 Community Based Childcare Centres (CBCC) to date.
     photo: /img/page-links/link-crowd-children.jpg
     url: ./projects/community-based-childcare-centres-cbccs/
   - linkTitle: Primary Schools
@@ -30,7 +31,7 @@ links:
   - linkTitle: Adult Education
     linkText: Our vision is to create a self-sustaining training village – Sam’s Village - on a 10 acre site in our area.
     photo: /img/page-links/link-village-map.jpg
-    url: ./projects/sams-village/            
+    url: ./projects/sams-village/
   - linkTitle: Building Schools
     linkText: From our very first project at Masiye in 2006, to forthcoming plans for Songwe, we have built a number of schools blocks and teachers' accommodation.
     photo: /img/page-links/link-building-schools.jpg
@@ -40,8 +41,7 @@ links:
     photo: /img/page-links/link-project4africa.jpg
     url: ./projects/project4africa/
 ---
+
 ![](https://res.cloudinary.com/african-vision-malawi/image/upload/v1551472964/sample.jpg)
-
-
 
 Education content goes here.

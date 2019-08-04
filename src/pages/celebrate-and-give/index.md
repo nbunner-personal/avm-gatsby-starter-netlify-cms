@@ -3,13 +3,14 @@ templateKey: featured-project-simple
 currentProject: celebrate
 columns: 2
 title: Celebrate & Give
+description: Ways in which you can donate through gifts
 heroImage: /img/mainphoto_celebrate.jpg
 heroMsg: null
 gallery:
   - photo: /img/chemex.jpg
-    alt: Kitchen photo    
+    alt: Kitchen photo
   - photo: /img/jumbotron.jpg
-    alt: Office photo      
+    alt: Office photo
 links:
   - linkText: and some link text goes here
     linkTitle: This is a link
@@ -54,5 +55,4 @@ This year, consider asking your friends and family to donate the money instead t
 
 These are the lifeblood of the charity and allows African Vision Malawi to continue its vital work supporting the orphans and vulnerable, leading them to a position self-sufficiency. Only £2 a month will ensure that one child receives safe, clean drinking water.
 
-You can donate online here: 
-
+You can donate online here:

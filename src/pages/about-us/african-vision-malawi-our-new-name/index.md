@@ -1,6 +1,7 @@
 ---
 templateKey: page-basic
 title: African Vision Malawi – our change of name
+desription: About our change of name from the Landirani Trust
 headerImage: /img/chemex.jpg
 ---
 

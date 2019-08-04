@@ -1,6 +1,7 @@
 ---
 templateKey: page-basic
 title: Groundnut Farming
+description: Training local people to learn how to cultivate and harvest groundnuts
 headerImage: /img/chemex.jpg
 ---
 

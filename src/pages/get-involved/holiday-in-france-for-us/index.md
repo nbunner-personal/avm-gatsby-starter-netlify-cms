@@ -1,6 +1,7 @@
 ---
 templateKey: page-gallery
 title: Holiday in France for us
+description: Support us whilst holidaying in France
 gallery:
   - alt: House in France
     photo: /img/projects/France-1.jpg

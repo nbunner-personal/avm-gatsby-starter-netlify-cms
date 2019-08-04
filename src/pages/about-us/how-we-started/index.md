@@ -1,6 +1,7 @@
 ---
 templateKey: page-basic
 title: How we started
+desription: The origins of African Vision Malawi
 headerImage: /img/chemex.jpg
 ---
 
