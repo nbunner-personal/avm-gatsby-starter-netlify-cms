@@ -1,6 +1,7 @@
 ---
 templateKey: page-basic
 title: A child is born
+description: We will be building a waiting home for new mothers at the recently completed maternity unit. We want to reduce risks in childbirth to expectant mothers and their unborn children.
 headerImage: /img/chemex.jpg
 ---
 

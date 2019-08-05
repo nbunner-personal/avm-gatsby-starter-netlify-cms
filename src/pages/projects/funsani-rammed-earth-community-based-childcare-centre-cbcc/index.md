@@ -1,6 +1,7 @@
 ---
 templateKey: page-gallery
 title: Funsani – Rammed Earth Community Based Childcare Centre (CBCC)
+description: Gandys ‘Orphans for Orphans’ has funded the building of a pre-school at Funsani, Lumbadzi Centre. This has been much needed and the community have been asking for support for the last three years.
 gallery:
   - alt: Funsani update
     photo: /img/projects/Funsani-1.jpg

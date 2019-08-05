@@ -1,6 +1,7 @@
 ---
 templateKey: page-basic
 title: Project4Africa
+description: Project4Africa is a group who raise funds to help various projects in Africa.
 headerImage: /img/chemex.jpg
 ---
 

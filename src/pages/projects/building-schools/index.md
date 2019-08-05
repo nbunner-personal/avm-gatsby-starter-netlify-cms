@@ -1,6 +1,7 @@
 ---
 templateKey: page-basic
 title: Building Schools
+description: Back in 2006, the very first project of African Vision Malawi was to build a school for Masiye village.
 headerImage: /img/chemex.jpg
 ---
 

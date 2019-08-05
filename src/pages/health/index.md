@@ -2,6 +2,7 @@
 templateKey: featured-project-simple-vid
 currentProject: health
 title: Health
+description: Details about our health related projects
 heroImage: /img/mainphoto_health.jpg
 heroMsg: >-
   11% of children don't reach their 5th birthday
@@ -14,7 +15,7 @@ videos:
   - videourl: "https://vimeo.com/56690243"
     videotext: "A short film looking at the many different types of physical and mental disabilities people face in the rural area in Malawi where African Vision Malawi operates. Similarly, it looks at what the charity is actively doing to improve their situation, through medical referrals and education."
   - videourl: "https://vimeo.com/55759417"
-    videotext: "A short film showing one of our Feeding Centres in action. We are very grateful to the Allan and Nesta Ferguson Charitable Trust for funding this. We provide a nutritious porridge 5 mornings a week to the under 5's in our area, which feeds over 1000 children in total."     
+    videotext: "A short film showing one of our Feeding Centres in action. We are very grateful to the Allan and Nesta Ferguson Charitable Trust for funding this. We provide a nutritious porridge 5 mornings a week to the under 5's in our area, which feeds over 1000 children in total."
 links:
   - linkTitle: Bicycle Ambulances
     linkText: Bicycle ambulances — We found one of the major difficulties for people reaching one of our two free government clinics, was the lack of transport. We have introduced bicycle ambulances in our area. The community are trained on the maintenance and recording of the use of the bicycle. Transaid have helped with training and assessments over the years and also donated money for 2 of the latest installed bicycles.
@@ -40,9 +41,7 @@ links:
     linkText: Although we aim to build sustainable communities and projects, unfortunately some times distributions are necessary. Often these link in to our health projects.
     photo: /img/page-links/link-distributions.jpg
     url: "./projects/distributions/"
-
 ---
-
 
 ## A Child is Born
 

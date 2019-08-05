@@ -1,6 +1,7 @@
 ---
 templateKey: page-basic
 title: Maternity unit
+description: Gandys ‘Orphans for Orphans’ has funded the building of a pre-school at Funsani, Lumbadzi Centre. This has been much needed and the community have been asking for support for the last three years.
 headerImage: /img/chemex.jpg
 gallery:
   - alt: Kitchen photo

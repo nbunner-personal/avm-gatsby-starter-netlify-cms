@@ -1,6 +1,7 @@
 ---
 templateKey: page-basic
 title: Volunteer Programme
+description: We have a volunteer programme in Malawi, and volunteers are also vital to our fundraising and administration work in the UK.
 ---
 
 We have a volunteer programme in Malawi, and volunteers are also vital to our fundraising and administration work in the UK. In fact, we are proud that all of our staff in the UK are volunteers, meaning that more of our donors money can go to directly support orphans and vulnerable people in rural Malawi.

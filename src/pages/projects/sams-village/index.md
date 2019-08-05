@@ -3,6 +3,7 @@ templateKey: featured-project
 currentProject: village
 columns: 1
 title: Sams Village
+description: Sam’s Training Village is a self-sustaining training village, built on a 10 acre site. The construction phase is now almost complete and the objective is to support a move away from hand-outs and to create self-sufficient training programmes that can support thousands of local people.
 heroImage: /img/mainphoto_village-ver3.jpg
 heroMsg: null
 videos:

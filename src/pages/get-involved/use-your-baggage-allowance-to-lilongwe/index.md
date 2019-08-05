@@ -1,9 +1,11 @@
 ---
 templateKey: page-basic
 title: Use your baggage allowance to Lilongwe!
+description: Many people travelling to Malawi often don’t need the full 46kg weight allowance offered by some airlines, including Ethiopian.
 ---
+
 blankets
-Many people travelling to Malawi often don’t need the full 46kg weight allowance offered by some airlines, including Ethiopian. African Vision Malawi  supports around 3,000 orphaned and vulnerable children from schools and communities across Malawi. The charity runs sustainable projects including feeding stations in schools and building wells to reduce illness and death. Local people are encouraged to help the children within their villages, rather than sending them to orphanages.
+Many people travelling to Malawi often don’t need the full 46kg weight allowance offered by some airlines, including Ethiopian. African Vision Malawi supports around 3,000 orphaned and vulnerable children from schools and communities across Malawi. The charity runs sustainable projects including feeding stations in schools and building wells to reduce illness and death. Local people are encouraged to help the children within their villages, rather than sending them to orphanages.
 Why take an extra bag?
 
 In the UK we get wonderful donations every week, including hand-knitted blankets, school books and clothes. But we have very few means of getting them to those in desperate need. Tom and Janey at Mabuya know about the Landirani Trust (as we’re known locally) and can tell you more. The area we support is remote, but not far from the airport – you fly over it as you come in to land.

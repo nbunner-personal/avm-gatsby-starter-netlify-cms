@@ -1,6 +1,7 @@
 ---
 templateKey: page-basic
 title: Rammed earth building
+description: We build in rammed earth because it is a sustainable and affordable way of building.
 headerImage: /img/chemex.jpg
 ---
 

@@ -1,6 +1,7 @@
 ---
 templateKey: page-basic
 title: Good Nutrition
+description: We are helping the local communities to set up sustainable feeding gardens, where we will grow a combination of soya, groundnuts, maize and millet that can be fed to the children.
 headerImage: /img/chemex.jpg
 ---
 

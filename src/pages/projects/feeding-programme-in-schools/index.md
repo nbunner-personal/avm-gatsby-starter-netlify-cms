@@ -1,15 +1,13 @@
 ---
 templateKey: page-basic
 title: Feeding programme in schools
+description: The under 5’s are the most vulnerable group in our area.  Providing a nutritional meal at our pre-schools not only encourages the children to come to school, it helps them learn more effectively.
 headerImage: /img/chemex.jpg
 ---
 
-
-
-
 We have set up 9 feeding centres in our area at our Community Based Children Centres (CBCCs).
 
-The under 5’s are the most vulnerable group in our area.  Providing a nutritional meal at our pre-schools not only encourages the children to come to school, it helps them learn more effectively.  Their bodies are stronger to fight any infections and diseases and their bodies are not stunted, as many are in our area, due to poor nutrition.
+The under 5’s are the most vulnerable group in our area. Providing a nutritional meal at our pre-schools not only encourages the children to come to school, it helps them learn more effectively. Their bodies are stronger to fight any infections and diseases and their bodies are not stunted, as many are in our area, due to poor nutrition.
 Boy at M'teza feeding programme
 
 Boy at M’teza feeding programme
@@ -20,12 +18,10 @@ Setting up a feeding programme in just one of our schools ensures that all the c
 
 Sustainable Food Gardens
 
-Feed The Children are discontinuing their programme to provide nutritional porridge.  Alongside the local communities, we have begun to set up sustainable food gardens to grow food for the children at schools.
+Feed The Children are discontinuing their programme to provide nutritional porridge. Alongside the local communities, we have begun to set up sustainable food gardens to grow food for the children at schools.
 
 Can you donate to help feed the under 5’s at pre-school?
 Donate
-
- 
 
 To set up a feeding programme:
 Children at M'teza feeding programme
@@ -38,8 +34,6 @@ As an example, if we buy 400 bowls and spoons it costs around £200 and we also 
 
 This is a total of just £640 to set up equipment for a new feeding programme.
 
-Once we have spent the initial costs on the set up and training, the programme is run with little support from African Vision Malawi. We need to collect and provide the food and check that the information of weight and heights are being kept by the centre.  Cooking is done by volunteers (ladies in the village work on rotation) and each child brings a piece of wood for the oven so we will not incur costs in buying fuel.
+Once we have spent the initial costs on the set up and training, the programme is run with little support from African Vision Malawi. We need to collect and provide the food and check that the information of weight and heights are being kept by the centre. Cooking is done by volunteers (ladies in the village work on rotation) and each child brings a piece of wood for the oven so we will not incur costs in buying fuel.
 
-We set up our first feeding programme at Masiye Primary School and second at Namanyanga Primary School.  We now have 9 running in total.
-
-
+We set up our first feeding programme at Masiye Primary School and second at Namanyanga Primary School. We now have 9 running in total.
