@@ -5,11 +5,11 @@ backend:
 media_folder: static/img
 public_folder: /img
 
-media_library:
-  name: cloudinary
-  config:
-    cloud_name: african-vision-malawi
-    api_key: 854553221163211
+# media_library:
+#   name: cloudinary
+#   config:
+#     cloud_name: african-vision-malawi
+#     api_key: 854553221163211
 
 collections:
   - name: "news"
@@ -29,7 +29,7 @@ collections:
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list" }
-  
+
   - name: "events"
     label: "Events"
     folder: "src/pages/events"
@@ -47,11 +47,11 @@ collections:
       - { label: "End date", name: "date", widget: "datetime" }
       - { label: "Short description*", name: "description", widget: "text" }
       - { label: "Body*", name: "body", widget: "markdown" }
-      - { label: "All day?", name: "allDay", widget: "boolean", default: false}
+      - { label: "All day?", name: "allDay", widget: "boolean", default: false }
       - { label: "Location*", name: "location", widget: "text" }
       - { label: "Cost* (0 for free)", name: "cost", widget: "number" }
       - { label: "URL", name: "url", widget: "string" }
-      - { label: "Tags", name: "tags", widget: "list" }    
+      - { label: "Tags", name: "tags", widget: "list" }
 
   - name: "shopproduct"
     label: "Shop"
@@ -66,7 +66,7 @@ collections:
           default: "shop-product-page",
         }
       - { label: "Title*", name: "title", widget: "string" }
-      - { label: "Date*", name: "date", widget: "datetime" }      
+      - { label: "Date*", name: "date", widget: "datetime" }
       - { label: "Short description*", name: "description", widget: "text" }
       - { label: "Body*", name: "body", widget: "markdown" }
       - { label: "Price", name: "price", widget: "number" }
@@ -75,9 +75,9 @@ collections:
       - { label: "Weight (g)", name: "weight", widget: "number" }
       - { label: "Length (mm)", name: "length", widget: "number" }
       - { label: "Width (mm)", name: "width", widget: "number" }
-      - { label: "Height (mm)", name: "height", widget: "number" }    
-      - { label: "Shipping Class*", name: "shippingClass", widget: "text" }            
-      - { label: "Tags", name: "tags", widget: "list" }       
+      - { label: "Height (mm)", name: "height", widget: "number" }
+      - { label: "Shipping Class*", name: "shippingClass", widget: "text" }
+      - { label: "Tags", name: "tags", widget: "list" }
 
   - name: "aboutus"
     label: "About Us"
@@ -115,7 +115,7 @@ collections:
               default: "page-basic",
             }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }   
+          - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/about-us/how-we-started/index.md"
         label: "How ewer started"
         name: "howwestarted"
@@ -127,7 +127,7 @@ collections:
               default: "page-basic",
             }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" } 
+          - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/about-us/team/index.md"
         label: "Team"
         name: "team"
@@ -138,7 +138,7 @@ collections:
               widget: "hidden",
               default: "about-team",
             }
-          - { label: "Title", name: "title", widget: "string" }          
+          - { label: "Title", name: "title", widget: "string" }
           - {
               label: "Malawi Team",
               name: malawiTeam,
@@ -149,10 +149,10 @@ collections:
                   { label: Name, name: name, widget: string },
                   { label: Role, name: role, widget: string },
                 ],
-            }  
-          - { label: "Malawi Title", name: "malawiTitle", widget: "string" }  
-          - { label: "Malawi Extra Text", name: "malawiText", widget: "text" }              
-          - { label: "Body", name: "body", widget: "markdown" }              
+            }
+          - { label: "Malawi Title", name: "malawiTitle", widget: "string" }
+          - { label: "Malawi Extra Text", name: "malawiText", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown" }
           - {
               label: "UK Team",
               name: ukTeam,
@@ -163,9 +163,9 @@ collections:
                   { label: Name, name: name, widget: string },
                   { label: Role, name: role, widget: string },
                 ],
-            }                   
-          - { label: "UK Title", name: "ukTitle", widget: "string" }  
-          - { label: "UK Extra Text", name: "ukText", widget: "text" }                  
+            }
+          - { label: "UK Title", name: "ukTitle", widget: "string" }
+          - { label: "UK Extra Text", name: "ukText", widget: "text" }
       - file: "src/pages/about-us/thank-yous/index.md"
         label: "Thank yous"
         name: "thankyous"
@@ -177,7 +177,7 @@ collections:
               default: "page-basic",
             }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }   
+          - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/about-us/where-we-work/index.md"
         label: "Where we work"
         name: "wherewework"
@@ -189,7 +189,7 @@ collections:
               default: "page-basic",
             }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }                                   
+          - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "projects"
     label: "Projects"
@@ -203,7 +203,7 @@ collections:
           widget: "hidden",
           default: "page-text-links",
         }
-      - { label: "Title", name: "title", widget: "string" }      
+      - { label: "Title", name: "title", widget: "string" }
       - {
           label: Links,
           name: links,
@@ -238,14 +238,15 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Hero Image", name: heroImage, widget: image }
           - { label: "Body", name: "body", widget: "markdown" }
-          - { label: "Videos", 
-              name: "videos", 
+          - {
+              label: "Videos",
+              name: "videos",
               widget: "list",
               fields:
                 [
-                  { label: Video Url, name: videourl, widget: string},
-                  { label: Description, name: videotext, widget: text},
-                ]           
+                  { label: Video Url, name: videourl, widget: string },
+                  { label: Description, name: videotext, widget: text },
+                ],
             }
           - {
               label: "Photos",
@@ -307,7 +308,7 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Header Image", name: headerImage, widget: image }
-          - { label: "Body", name: "body", widget: "markdown" }  
+          - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/projects/sams-village/building-programme/index.md"
         label: "Building programme"
         name: "buildingprogramme"
@@ -320,7 +321,7 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Header Image", name: headerImage, widget: image }
-          - { label: "Body", name: "body", widget: "markdown" }   
+          - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/projects/sams-village/biogas/index.md"
         label: "Biogas"
         name: "biogas"
@@ -333,7 +334,7 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Header Image", name: headerImage, widget: image }
-          - { label: "Body", name: "body", widget: "markdown" }   
+          - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/projects/sams-village/njewa-new-office/index.md"
         label: "Njewa New Office"
         name: "njewanewoffice"
@@ -346,7 +347,7 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Header Image", name: headerImage, widget: image }
-          - { label: "Body", name: "body", widget: "markdown" }                                        
+          - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "water"
     label: "Water"
@@ -398,7 +399,7 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Header Image", name: headerImage, widget: image }
-          - { label: "Body", name: "body", widget: "markdown" } 
+          - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/projects/water-boreholes/index.md"
         label: "Water boreholes"
         name: "waterboreholes"
@@ -411,7 +412,7 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Header Image", name: headerImage, widget: image }
-          - { label: "Body", name: "body", widget: "markdown" }  
+          - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/water/sanitation/index.md"
         label: "Sanitation"
         name: "sanitation"
@@ -424,8 +425,8 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Header Image", name: headerImage, widget: image }
-          - { label: "Body", name: "body", widget: "markdown" }   
-          
+          - { label: "Body", name: "body", widget: "markdown" }
+
   - name: "health"
     label: "Health"
     files:
@@ -476,7 +477,7 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Header Image", name: headerImage, widget: image }
-          - { label: "Body", name: "body", widget: "markdown" } 
+          - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/health/disability/index.md"
         label: "Disability"
         name: "disability"
@@ -489,7 +490,7 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Header Image", name: headerImage, widget: image }
-          - { label: "Body", name: "body", widget: "markdown" }  
+          - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/health/hivaids/index.md"
         label: "hiv  / aids"
         name: "hivaids"
@@ -502,7 +503,7 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Header Image", name: headerImage, widget: image }
-          - { label: "Body", name: "body", widget: "markdown" }   
+          - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/projects/feeding-programme-in-schools/index.md"
         label: "Feeding programmes"
         name: "feedingprogrammes"
@@ -515,7 +516,7 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Header Image", name: headerImage, widget: image }
-          - { label: "Body", name: "body", widget: "markdown" }  
+          - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/projects/maternity-unit/index.md"
         label: "Maternity unit"
         name: "maternityunit"
@@ -528,7 +529,7 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Header Image", name: headerImage, widget: image }
-          - { label: "Body", name: "body", widget: "markdown" }   
+          - { label: "Body", name: "body", widget: "markdown" }
           - {
               label: "Photos",
               name: gallery,
@@ -538,7 +539,7 @@ collections:
                   { label: Photo, name: photo, widget: image },
                   { label: Alt text, name: alt, widget: string },
                 ],
-            }   
+            }
       - file: "src/pages/projects/distributions/index.md"
         label: "Distributions"
         name: "distributions"
@@ -551,7 +552,7 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Header Image", name: headerImage, widget: image }
-          - { label: "Body", name: "body", widget: "markdown" }                               
+          - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "education"
     label: "Education"
@@ -568,7 +569,7 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Hero Image", name: heroImage, widget: image }
-          - { label: "Body", name: "body", widget: "markdown" }          
+          - { label: "Body", name: "body", widget: "markdown" }
           - {
               label: Links,
               name: links,
@@ -580,7 +581,7 @@ collections:
                   { label: Text, name: linkText, widget: text },
                   { label: Url, name: url, widget: string },
                 ],
-            } 
+            }
       - file: "src/pages/projects/community-based-childcare-centres-cbccs/index.md"
         label: "CBCCs"
         name: "cbccs"
@@ -593,4 +594,4 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Header Image", name: headerImage, widget: image }
-          - { label: "Body", name: "body", widget: "markdown" }                       
+          - { label: "Body", name: "body", widget: "markdown" }

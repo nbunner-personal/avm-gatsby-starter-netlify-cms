@@ -42,6 +42,4 @@ links:
     url: ./projects/project4africa/
 ---
 
-![](https://res.cloudinary.com/african-vision-malawi/image/upload/v1551472964/sample.jpg)
-
 Education content goes here.
