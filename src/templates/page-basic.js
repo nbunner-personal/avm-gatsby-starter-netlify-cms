@@ -1,16 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
+import Helmet from "react-helmet";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import FeaturedProjects from "../components/FeaturedProjects";
 import CtaButton from "../components/CtaButton";
 
-export const PageBasicTemplate = ({ title, content, contentComponent }) => {
+export const PageBasicTemplate = ({
+  title,
+  description,
+  content,
+  contentComponent,
+  helmet
+}) => {
   const PageContent = contentComponent || Content;
 
   return (
     <section className="section section--gradient">
+      {helmet || ""}
       <div className="container">
         <div className="columns">
           <div className="column is-14 is-offset-1">
@@ -30,7 +38,7 @@ export const PageBasicTemplate = ({ title, content, contentComponent }) => {
                   <FeaturedProjects currentProject="default" />
                 </aside>
               </div>
-            </article>            
+            </article>
           </div>
         </div>
       </div>
@@ -40,6 +48,7 @@ export const PageBasicTemplate = ({ title, content, contentComponent }) => {
 
 PageBasicTemplate.propTypes = {
   title: PropTypes.string.isRequired,
+  description: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func
 };
@@ -53,6 +62,16 @@ const PageBasic = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
+        description={post.frontmatter.description}
+        helmet={
+          <Helmet titleTemplate="%s | African Vision Malawi">
+            <title>{`${post.frontmatter.title}`}</title>
+            <meta
+              name="description"
+              content={`${post.frontmatter.description}`}
+            />
+          </Helmet>
+        }
       />
     </Layout>
   );
@@ -70,6 +89,7 @@ export const pageBasicQuery = graphql`
       html
       frontmatter {
         title
+        description
       }
     }
   }
