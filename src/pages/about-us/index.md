@@ -9,25 +9,25 @@ links:
   - url: /about-us/how-we-started/
     linkTitle: How we started
     linkText: I lived in Malawi, as a child, for 10 years, and, for some time, had wanted to go back. I didn’t, however, want to return to Malawi as a tourist. I had been supporting a charity called “Child Survival in Malawi” for some years and contacted them to see if anything could be done to help while I was there
-  - url: /about/
+  - url: /about-us
     linkTitle: This is another link
     linkText: and some more link text goes here
-  - url: /about/
+  - url: /about-us
     linkTitle: This is another link
     linkText: and some more link text goes here
-  - url: /about/
+  - url: /about-us
     linkTitle: This is another link
     linkText: and some more link text goes here
-  - url: /about/
+  - url: /about-us
     linkTitle: This is another link
     linkText: and some more link text goes here
-  - url: /about/
+  - url: /about-us
     linkTitle: This is another link
     linkText: and some more link text goes here
-  - url: /about/
+  - url: /about-us
     linkTitle: This is another link
     linkText: and some more link text goes here
-  - url: /about/
+  - url: /about-us
     linkTitle: This is another link
     linkText: and some more link text goes here
   - url: /about-us/where-we-work/

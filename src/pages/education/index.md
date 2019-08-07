@@ -2,7 +2,7 @@
 templateKey: featured-project-simple
 currentProject: education
 title: Education
-description: details about our education projects
+description: Details about our education projects
 heroImage: /img/mainphoto_education.jpg
 heroMsg: >-
   90% of primary school aged children attend school
