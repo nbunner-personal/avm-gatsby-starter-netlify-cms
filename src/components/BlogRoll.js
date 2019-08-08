@@ -1,3 +1,8 @@
+import PreviewCompatibleImage from './PreviewCompatibleImage'
+class BlogRoll extends React.Component {
+  render() {
+    const { data } = this.props
+    const { edges: posts } = data.allMarkdownRemark
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, StaticQuery } from 'gatsby'
