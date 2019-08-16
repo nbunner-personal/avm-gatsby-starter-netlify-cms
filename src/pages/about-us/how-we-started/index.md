@@ -1,9 +1,10 @@
 ---
 templateKey: page-basic
 title: How we started
-desription: The origins of African Vision Malawi
-headerImage: /img/chemex.jpg
 ---
+![Landirani Launch](/img/landirani_20launch_20050-1.jpg "Landirani Launch")
+
+
 
 Heather Palmer, co-founder and CEO, explains how African Vision Malawi started out:
 
