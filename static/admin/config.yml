@@ -65,7 +65,7 @@ collections:
           widget: "hidden",
           default: "shop-product-page",
         }
-      - { label: Photo, name: photo, widget: image }
+      - { label: "Photo", name: "photo", widget: "image" }
       - { label: "Title*", name: "title", widget: "string" }
       - { label: "Date*", name: "date", widget: "datetime" }
       - { label: "Short description*", name: "description", widget: "text" }
