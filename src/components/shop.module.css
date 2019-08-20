@@ -1,0 +1,7 @@
+.shopIndexList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.shopIndexList li {
+  margin: 8px;
+}
