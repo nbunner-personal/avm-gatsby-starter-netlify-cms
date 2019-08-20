@@ -63,7 +63,7 @@ The Village is self-sustaining and your money goes into supporting the maintenan
 
 ## Staying in Lilongwe (Capital City) costs:
 
-Mabuya Camp: Over lander camp with restaurant, bar, self-cooking, swimming pool, internet facilities http://mabuyacamp.com/
+Mabuya Camp: Over lander camp with restaurant, bar, self-cooking, swimming pool, internet facilities https://mabuyacamp.com/
 Shared dorm – £8 ($10) per night
 Twin A frame/chalet – £20 ($30) per night
 En-suite double room – £30 (\$45) per night
