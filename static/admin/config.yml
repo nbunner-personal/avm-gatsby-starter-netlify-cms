@@ -43,6 +43,7 @@ collections:
           default: "events-post",
         }
       - { label: "Title*", name: "title", widget: "string" }
+      - { label: "Photo", name: "photo", widget: "image" }
       - { label: "Start date*", name: "date", widget: "datetime" }
       - { label: "End date", name: "date", widget: "datetime" }
       - { label: "Short description*", name: "description", widget: "text" }

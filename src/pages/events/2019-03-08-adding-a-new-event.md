@@ -2,6 +2,7 @@
 templateKey: events-post
 layout: post
 title: adding a new event
+photo: /img/shop/build-a-well-1.jpg
 date: 2019-08-09T17:17:29.696Z
 endDate: 2019-08-09T17:17:29.696Z
 allDay: true
@@ -12,8 +13,9 @@ description: here is a description
 tags:
   - event
 ---
+
 and here is some text to play with
 
-* and a list
-* and another
-*
+- and a list
+- and another
+-
