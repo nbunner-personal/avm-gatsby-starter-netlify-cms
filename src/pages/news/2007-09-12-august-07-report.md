@@ -1,6 +1,7 @@
 ---
 layout: post
 templateKey: blog-post
+featuredImage: /img/blog/default-image.jpg
 title: "August '07 Report"
 published: true
 author: Pip
