@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import postStyles from "./posts.module.css";
 import Img from "gatsby-image";
 
-const BlogItem = ({ post }) => (
+const BlogCard = ({ post }) => (
   <div className={postStyles.card} key={post.id}>
     <article className={postStyles.cardContent}>
       {post.frontmatter.featuredImage && (
@@ -23,9 +23,6 @@ const BlogItem = ({ post }) => (
         </span>
       </p>
       <p>
-        {post.excerpt}
-        <br />
-        <br />
         <Link className="button" to={post.fields.slug}>
           Keep Reading →
         </Link>
@@ -34,8 +31,8 @@ const BlogItem = ({ post }) => (
   </div>
 );
 
-BlogItem.propTypes = {
+BlogCard.propTypes = {
   post: PropTypes.object
 };
 
-export default BlogItem;
+export default BlogCard;

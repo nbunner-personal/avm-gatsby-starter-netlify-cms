@@ -15,7 +15,9 @@ class EventsRoll extends React.Component {
           posts.map(({ node: post }) => (
             <div className={postStyles.card} key={post.id}>
               <article className={postStyles.cardContent}>
-                <Img fixed={post.frontmatter.photo.childImageSharp.fixed} />
+                {post.frontmatter.photo && (
+                  <Img fixed={post.frontmatter.photo.childImageSharp.fixed} />
+                )}
                 <p>
                   <Link
                     className="title has-text-primary is-size-4"

@@ -6,7 +6,7 @@ import FeaturedProjects from "../components/FeaturedProjects";
 import HeroImage from "../components/HeroImage";
 import videoStyles from "../components/videos.module.css";
 import ReactPlayer from "react-player";
-import BlogItem from "../components/BlogRollItem";
+import BlogRollCard from "../components/BlogRollCard";
 import postStyles from "../components/posts.module.css";
 import { Link } from "gatsby";
 
@@ -62,7 +62,7 @@ export default class IndexPage extends React.Component {
                 {posts &&
                   posts.map(({ node: post }) => (
                     <div key={post.fields.slug}>
-                      <BlogItem post={post} />
+                      <BlogRollCard post={post} />
                     </div>
                   ))}
               </div>
@@ -99,7 +99,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 400)
+          excerpt(pruneLength: 140)
           id
           fields {
             slug
