@@ -24,6 +24,7 @@ collections:
           widget: "hidden",
           default: "blog-post",
         }
+      - { label: "Featured Image", name: "photo", widget: "image" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "text" }
