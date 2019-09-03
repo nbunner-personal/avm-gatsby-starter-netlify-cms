@@ -18,9 +18,7 @@ const BlogCard = ({ post }) => (
           {post.frontmatter.title}
         </Link>
         <span> &bull; </span>
-        <span className="subtitle is-size-5 is-block">
-          {post.frontmatter.date}
-        </span>
+        <span className={postStyles.cardDate}>{post.frontmatter.date}</span>
       </p>
       <p>
         <Link className="button" to={post.fields.slug}>

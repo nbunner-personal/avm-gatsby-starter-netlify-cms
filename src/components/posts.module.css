@@ -1,15 +1,33 @@
 .cont {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
-.card {width: 250px;}
-.cardContent {background: #fff; padding: 1rem;}
+.card {
+  width: 240px;
+}
+.cardContent {
+  background: #fff;
+}
+.cardContent p {
+  padding: 0 1rem;
+}
+.cardContent .subtitle {
+  font-size: 0.8rem;
+}
+.cardDate {
+  display: block;
+  font-size: 0.9rem;
+}
+/* .cardContent .gatsby-image-wrapper {
+  display: block;
+  margin: 0 auto;
+} */
 
 .postWide .cont {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .postWide .card {
-    width: 100%;
+  width: 100%;
 }
