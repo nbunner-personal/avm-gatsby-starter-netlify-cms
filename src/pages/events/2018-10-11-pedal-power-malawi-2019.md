@@ -2,7 +2,7 @@
 templateKey: events-post
 layout: post
 title: Pedal Power Malawi 2019
-photo: /img/shop/build-a-well-1.jpg
+photo: /img/img_5263.jpg
 date: 2018-04-08T22:07:16.531Z
 endDate: 2019-04-22T19:50:09.959Z
 allDay: true

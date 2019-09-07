@@ -14,6 +14,7 @@ export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
+    const { edges: events } = data.eventsPosts;
     const heroImage = this.props.data.heroImage;
     const heroMsg =
       "The people of Malawi want to help themselves. We can empower them to become self-sufficient and independent.";
@@ -68,6 +69,18 @@ export default class IndexPage extends React.Component {
               </div>
               <Link to="/news">View all news</Link>
             </section>
+            <section>
+              <h2 className="has-text-weight-bold is-size-3">Latest events</h2>
+              <div className={postStyles.cont}>
+                {events &&
+                  events.map(({ node: event }) => (
+                    <div key={event.fields.slug}>
+                      <BlogRollCard post={event} />
+                    </div>
+                  ))}
+              </div>
+              <Link to="/news">View all news</Link>
+            </section>
           </div>
         </section>
       </Layout>
@@ -109,6 +122,32 @@ export const pageQuery = graphql`
             templateKey
             date(formatString: "MMMM DD, YYYY")
             featuredImage {
+              childImageSharp {
+                fixed(width: 280, height: 160) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    eventsPosts: allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      limit: 4
+      filter: { frontmatter: { templateKey: { eq: "events-post" } } }
+    ) {
+      edges {
+        node {
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            templateKey
+            date(formatString: "MMMM DD, YYYY")
+            photo {
               childImageSharp {
                 fixed(width: 280, height: 160) {
                   ...GatsbyImageSharpFixed
