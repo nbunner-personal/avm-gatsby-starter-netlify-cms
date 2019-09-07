@@ -44,7 +44,7 @@ export default class IndexPage extends React.Component {
                 </div>
               </div>
               <div className="column">
-                <h2>Our vision</h2>
+                <h2 className="has-text-weight-bold is-size-3">Our vision</h2>
                 <p>
                   Since 2005 African Vision Malawi has been helping children and
                   vulnerable people in Malawi, one of the poorest countries in
@@ -57,7 +57,7 @@ export default class IndexPage extends React.Component {
               </div>
             </section>
             <section>
-              <h2>Latest news</h2>
+              <h2 className="has-text-weight-bold is-size-3">Latest news</h2>
               <div className={postStyles.cont}>
                 {posts &&
                   posts.map(({ node: post }) => (
@@ -94,7 +94,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      limit: 5
+      limit: 4
       filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
     ) {
       edges {
@@ -110,7 +110,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             featuredImage {
               childImageSharp {
-                fixed(width: 240, height: 240) {
+                fixed(width: 280, height: 160) {
                   ...GatsbyImageSharpFixed
                 }
               }

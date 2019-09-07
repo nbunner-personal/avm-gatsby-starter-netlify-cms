@@ -4,10 +4,13 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .card {
-  width: 240px;
+  width: 280px;
 }
 .cardContent {
   background: #fff;
+  min-height: 305px;
+  padding-bottom: 8px;
+  position: relative;
 }
 .cardContent p {
   padding: 0 1rem;
@@ -16,8 +19,26 @@
   font-size: 0.8rem;
 }
 .cardDate {
+  color: #ababad;
   display: block;
   font-size: 0.9rem;
+  padding: 0 12px 8px;
+}
+.postHeading {
+  color: #2b2d32;
+  display: block;
+  padding: 8px 12px 4px;
+}
+.postButton {
+  border: 1px solid #ababad;
+  bottom: 5px;
+  display: block;
+  left: 5px;
+  /* margin: 5px; */
+  padding: 3px 8px;
+  position: absolute;
+  right: 5px;
+  text-align: center;
 }
 /* .cardContent .gatsby-image-wrapper {
   display: block;

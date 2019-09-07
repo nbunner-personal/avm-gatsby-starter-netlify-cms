@@ -7,21 +7,16 @@ import Img from "gatsby-image";
 const BlogCard = ({ post }) => (
   <div className={postStyles.card} key={post.id}>
     <article className={postStyles.cardContent}>
-      {post.frontmatter.featuredImage && (
-        <Img fixed={post.frontmatter.featuredImage.childImageSharp.fixed} />
-      )}
-      <p>
-        <Link
-          className="title has-text-primary is-size-4"
-          to={post.fields.slug}
-        >
-          {post.frontmatter.title}
-        </Link>
-        <span> &bull; </span>
+      <Link to={post.fields.slug}>
+        {post.frontmatter.featuredImage && (
+          <Img fixed={post.frontmatter.featuredImage.childImageSharp.fixed} />
+        )}
+
+        <span className={postStyles.postHeading}>{post.frontmatter.title}</span>
         <span className={postStyles.cardDate}>{post.frontmatter.date}</span>
-      </p>
+      </Link>
       <p>
-        <Link className="button" to={post.fields.slug}>
+        <Link className={postStyles.postButton} to={post.fields.slug}>
           Keep Reading →
         </Link>
       </p>
