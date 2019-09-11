@@ -7,6 +7,7 @@ import HeroImage from "../components/HeroImage";
 import videoStyles from "../components/videos.module.css";
 import ReactPlayer from "react-player";
 import BlogRollCard from "../components/BlogRollCard";
+import EventsRollCard from "../components/EventsRollCard";
 import postStyles from "../components/posts.module.css";
 import { Link } from "gatsby";
 
@@ -75,11 +76,11 @@ export default class IndexPage extends React.Component {
                 {events &&
                   events.map(({ node: event }) => (
                     <div key={event.fields.slug}>
-                      <BlogRollCard post={event} />
+                      <EventsRollCard post={event} />
                     </div>
                   ))}
               </div>
-              <Link to="/news">View all news</Link>
+              <Link to="/news">View all events</Link>
             </section>
           </div>
         </section>
