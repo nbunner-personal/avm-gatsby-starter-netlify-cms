@@ -87,6 +87,7 @@ collections:
     files:
       - file: "src/pages/index.md"
         label: "Homepage latest news box"
+        name: "homepage"
         fields:
           - { label: "Latest news box", name: "body", widget: "markdown" }
 
