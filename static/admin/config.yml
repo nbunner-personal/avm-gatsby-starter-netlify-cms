@@ -82,6 +82,13 @@ collections:
       - { label: "Shipping Class*", name: "shippingClass", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list" }
 
+  - name: "homepage"
+    label: "Homepage"
+    folder: "src/pages"
+    fields:       
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Latest news section", name: "body", widget: "markdown" }      
+
   - name: "aboutus"
     label: "About Us"
     files:
