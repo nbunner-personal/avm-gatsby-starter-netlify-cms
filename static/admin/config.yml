@@ -55,33 +55,6 @@ collections:
       - { label: "URL", name: "url", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list" }
 
-  - name: "shopproduct"
-    label: "Shop"
-    folder: "src/pages/shop"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {
-          label: "Template Key",
-          name: "templateKey",
-          widget: "hidden",
-          default: "shop-product-page",
-        }
-      - { label: "Product Image", name: "productImage", widget: "image" }
-      - { label: "Title*", name: "title", widget: "string" }
-      - { label: "Date*", name: "date", widget: "datetime" }
-      - { label: "Short description*", name: "description", widget: "text" }
-      - { label: "Body*", name: "body", widget: "markdown" }
-      - { label: "Price", name: "price", widget: "number" }
-      - { label: "Sale Price", name: "salePrice", widget: "number" }
-      - { label: "Stock", name: "inStock", widget: "number" }
-      - { label: "Weight (g)", name: "weight", widget: "number" }
-      - { label: "Length (mm)", name: "length", widget: "number" }
-      - { label: "Width (mm)", name: "width", widget: "number" }
-      - { label: "Height (mm)", name: "height", widget: "number" }
-      - { label: "Shipping Class*", name: "shippingClass", widget: "text" }
-      - { label: "Tags", name: "tags", widget: "list" }
-
   - name: "homepage"
     label: "Homepage"
     files:
@@ -108,6 +81,33 @@ collections:
               default: "Since 2005 African Vision Malawi has been helping children and vulnerable people in Malawi, one of the poorest countries in the world. Our vision is to see a healthy, educated and self-sufficient community in Malawi.",
             }
           - { label: "Latest news box", name: "body", widget: "markdown" }
+
+  - name: "shopproduct"
+    label: "Shop"
+    folder: "src/pages/shop"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "shop-product-page",
+        }
+      - { label: "Product Image", name: "productImage", widget: "image" }
+      - { label: "Title*", name: "title", widget: "string" }
+      - { label: "Date*", name: "date", widget: "datetime" }
+      - { label: "Short description*", name: "description", widget: "text" }
+      - { label: "Body*", name: "body", widget: "markdown" }
+      - { label: "Price", name: "price", widget: "number" }
+      - { label: "Sale Price", name: "salePrice", widget: "number" }
+      - { label: "Stock", name: "inStock", widget: "number" }
+      - { label: "Weight (g)", name: "weight", widget: "number" }
+      - { label: "Length (mm)", name: "length", widget: "number" }
+      - { label: "Width (mm)", name: "width", widget: "number" }
+      - { label: "Height (mm)", name: "height", widget: "number" }
+      - { label: "Shipping Class*", name: "shippingClass", widget: "text" }
+      - { label: "Tags", name: "tags", widget: "list" }
 
   - name: "aboutus"
     label: "About Us"
