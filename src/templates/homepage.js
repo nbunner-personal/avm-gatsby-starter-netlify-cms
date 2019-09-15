@@ -16,6 +16,7 @@ export default class IndexPage extends React.Component {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
     const { edges: events } = data.eventsPosts;
+    const { edges: homeContent } = data.homePage;
     const heroImage = this.props.data.heroImage;
     const heroMsg =
       "The people of Malawi want to help themselves. We can empower them to become self-sufficient and independent.";
@@ -45,6 +46,7 @@ export default class IndexPage extends React.Component {
                   />
                 </div>
               </div>
+              {homeContent.map(({ node: home }) => home.html)}
               <div className="column">
                 <h2 className="has-text-weight-bold is-size-3">Our vision</h2>
                 <p>
@@ -130,6 +132,15 @@ export const pageQuery = graphql`
               }
             }
           }
+        }
+      }
+    }
+    homePage: allMarkdownRemark(
+      filter: { frontmatter: { templateKey: { eq: "homepage" } } }
+    ) {
+      edges {
+        node {
+          html
         }
       }
     }
