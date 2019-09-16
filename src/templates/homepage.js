@@ -36,18 +36,7 @@ export default class IndexPage extends React.Component {
               </h1>
             </div>
             <section className="columns">
-              <div className="column">
-                <div className={videoStyles.playerWrapper}>
-                  <ReactPlayer
-                    url={promoVideo}
-                    width="100%"
-                    height="100%"
-                    className={videoStyles.reactPlayer}
-                  />
-                </div>
-              </div>
-              {homeContent.map(({ node: home }) => home.html)}
-              <div className="column">
+              <div class="column">
                 <h2 className="has-text-weight-bold is-size-3">Our vision</h2>
                 <p>
                   Since 2005 African Vision Malawi has been helping children and
@@ -58,10 +47,27 @@ export default class IndexPage extends React.Component {
                   Our vision is to see a "healthy, educated and self-sufficient
                   community in Malawi".
                 </p>
+                {homeContent.map(({ node: home }) => (
+                  <div className="latestNews">
+                    <h2 className="has-text-weight-bold is-size-3">
+                      Latest news
+                    </h2>
+                    <div dangerouslySetInnerHTML={{ __html: home.html }} />
+                  </div>
+                ))}
+              </div>
+              <div className="column">
+                <div className={videoStyles.playerWrapper}>
+                  <ReactPlayer
+                    url={promoVideo}
+                    width="100%"
+                    height="100%"
+                    className={videoStyles.reactPlayer}
+                  />
+                </div>
               </div>
             </section>
             <section>
-              <h2 className="has-text-weight-bold is-size-3">Latest news</h2>
               <div className={postStyles.cont}>
                 {posts &&
                   posts.map(({ node: post }) => (
