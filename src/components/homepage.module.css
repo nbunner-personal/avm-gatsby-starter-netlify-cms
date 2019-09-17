@@ -1,0 +1,25 @@
+.topSection {
+  background: #fff;
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin-bottom: 30px;
+  padding: 0.75rem;
+  /* padding: 15px 12px; */
+}
+.box {
+  background: #fff;
+  padding: 8px;
+}
+.latestNews h2 {
+  font-size: 1.4rem;
+}
+.sectionHeading {
+  margin-top: 1.44rem;
+}
+.allPostsLink {
+  display: inline-block;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}

@@ -9,6 +9,7 @@ import ReactPlayer from "react-player";
 import BlogRollCard from "../components/BlogRollCard";
 import EventsRollCard from "../components/EventsRollCard";
 import postStyles from "../components/posts.module.css";
+import homepageStyles from "../components/homepage.module.css";
 import { Link } from "gatsby";
 
 export default class IndexPage extends React.Component {
@@ -35,24 +36,29 @@ export default class IndexPage extends React.Component {
                 in Malawi).
               </h1>
             </div>
-            <section className="columns">
+            <section className={homepageStyles.topSection}>
               <div class="column">
-                <h2 className="has-text-weight-bold is-size-3">Our vision</h2>
-                <p>
-                  Since 2005 African Vision Malawi has been helping children and
-                  vulnerable people in Malawi, one of the poorest countries in
-                  the world.
-                </p>
-                <p>
-                  Our vision is to see a "healthy, educated and self-sufficient
-                  community in Malawi".
-                </p>
+                <div className={homepageStyles.box}>
+                  <h2 className="has-text-weight-bold is-size-3">Our vision</h2>
+                  <p>
+                    Since 2005 African Vision Malawi has been helping children
+                    and vulnerable people in Malawi, one of the poorest
+                    countries in the world.
+                  </p>
+                  <p>
+                    Our vision is to see a "healthy, educated and
+                    self-sufficient community in Malawi".
+                  </p>
+                </div>
                 {homeContent.map(({ node: home }) => (
-                  <div className="latestNews">
+                  <div className={`${homepageStyles.box}`}>
                     <h2 className="has-text-weight-bold is-size-3">
                       Latest news
                     </h2>
-                    <div dangerouslySetInnerHTML={{ __html: home.html }} />
+                    <div
+                      className={homepageStyles.latestNews}
+                      dangerouslySetInnerHTML={{ __html: home.html }}
+                    />
                   </div>
                 ))}
               </div>
@@ -76,10 +82,16 @@ export default class IndexPage extends React.Component {
                     </div>
                   ))}
               </div>
-              <Link to="/news">View all news</Link>
+              <Link to="/news" className={homepageStyles.allPostsLink}>
+                View all news
+              </Link>
             </section>
             <section>
-              <h2 className="has-text-weight-bold is-size-3">Latest events</h2>
+              <h2
+                className={`has-text-weight-bold is-size-3 ${homepageStyles.sectionHeading}`}
+              >
+                Latest events
+              </h2>
               <div className={postStyles.cont}>
                 {events &&
                   events.map(({ node: event }) => (
@@ -88,7 +100,9 @@ export default class IndexPage extends React.Component {
                     </div>
                   ))}
               </div>
-              <Link to="/news">View all events</Link>
+              <Link to="/news" className={homepageStyles.allPostsLink}>
+                View all events
+              </Link>
             </section>
           </div>
         </section>
