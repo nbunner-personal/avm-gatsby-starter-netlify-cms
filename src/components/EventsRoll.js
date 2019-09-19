@@ -10,36 +10,43 @@ class EventsRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark;
 
     return (
-      <section className={postStyles.cont}>
+      <section className={postStyles.list}>
         {posts &&
           posts.map(({ node: post }) => (
-            <div className={postStyles.card} key={post.id}>
-              <article className={postStyles.cardContent}>
+            <div className={postStyles.events} key={post.id}>
+              <article className={postStyles.list__item}>
                 {post.frontmatter.photo && (
-                  <Img fixed={post.frontmatter.photo.childImageSharp.fixed} />
+                  <Img
+                    fixed={post.frontmatter.photo.childImageSharp.fixed}
+                    className={postStyles.list__aside}
+                  />
                 )}
-                <p>
-                  <Link
-                    className="title has-text-primary is-size-4"
-                    to={post.fields.slug}
-                  >
-                    {post.frontmatter.title}
-                  </Link>
-                  <span> &bull; </span>
-                  <span className="subtitle is-size-5 is-block">
-                    {post.frontmatter.date} to
-                    {post.frontmatter.endDate}
-                  </span>
-                  <span className="subtitle">{post.frontmatter.location}</span>
-                </p>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
-                </p>
+                <div className={postStyles.list__main}>
+                  <p>
+                    <Link
+                      className="title has-text-primary is-size-4"
+                      to={post.fields.slug}
+                    >
+                      {post.frontmatter.title}
+                    </Link>
+                    <span> &bull; </span>
+                    <span className="subtitle is-size-5 is-block">
+                      {post.frontmatter.date} to
+                      {post.frontmatter.endDate}
+                    </span>
+                    <span className="subtitle">
+                      {post.frontmatter.location}
+                    </span>
+                  </p>
+                  <p>
+                    {post.excerpt}
+                    <br />
+                    <br />
+                    <Link className="button" to={post.fields.slug}>
+                      Keep Reading →
+                    </Link>
+                  </p>
+                </div>
               </article>
             </div>
           ))}
