@@ -1,16 +1,31 @@
 .cardCont {
-    align-items: grid-start;
-    display: grid;
-    grid-template-columns: repeat(auto-fill,250px);
-    grid-gap: 1rem;    
+  align-items: grid-start;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  grid-gap: 1rem;
 }
-.card {width: 250px;}
-.cardContent {background: #fff; padding: 1rem;}
-.cardImage {margin: 0;}
+.card {
+  width: 250px;
+}
+.cardContent {
+  background: #fff;
+  padding: 1rem;
+}
+.cardImage {
+  margin: 0;
+}
 
-.linkRow {    
-    margin: 0 0 3rem;
+.linkRow {
+  margin: 0 0 3rem;
 }
 .linkHeading a {
-    color: #363636;
+  color: #363636;
+}
+.btn {
+  border: 1px solid #dee8fa;
+  border-radius: 4px;
+  color: #3273dc;
+  display: block;
+  padding: 8px;
+  text-align: center;
 }
