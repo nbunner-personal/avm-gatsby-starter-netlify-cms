@@ -37,8 +37,10 @@ collections:
         default: "/img/blog/default-pdf.pdf", 
         required: false,  
         media_library:
+          - {
           config:
             multiple: false
+          } 
         }
 
   - name: "events"
