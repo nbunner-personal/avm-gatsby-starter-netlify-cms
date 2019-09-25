@@ -6,6 +6,7 @@ import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import FeaturedProjects from "../components/FeaturedProjects";
 import CtaButton from "../components/CtaButton";
+import pageBasicStyles from "../components/pageBasic.module.css";
 
 export const PageBasicTemplate = ({
   title,
@@ -24,7 +25,7 @@ export const PageBasicTemplate = ({
           <div className="column is-14 is-offset-1">
             <article className="content">
               <div className="columns">
-                <main className="column is-8">
+                <main className={`column is-8 ${pageBasicStyles.main}`}>
                   <h1 className="has-text-weight-semibold is-size-2">
                     {title}
                   </h1>

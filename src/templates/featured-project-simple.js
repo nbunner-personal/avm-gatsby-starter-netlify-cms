@@ -11,84 +11,77 @@ import PageLinksWithPhotos from "../components/PageLinksWithPhotos";
 import FeaturedProjects from "../components/FeaturedProjects";
 import CtaButton from "../components/CtaButton";
 // import { Link } from 'gatsby'
+import pageBasicStyles from "../components/pageBasic.module.css";
 
 export const FeaturedProjectsSimpleTemplate = ({
-         heroImage,
-         heroMsg,
-         title,
-         currentProject,
-         columns,
-         content,
-         links,
-         contentComponent
-       }) => {
-         const PageContent = contentComponent || Content;
+  heroImage,
+  heroMsg,
+  title,
+  currentProject,
+  columns,
+  content,
+  links,
+  contentComponent
+}) => {
+  const PageContent = contentComponent || Content;
 
-         return (
-           <section
-             className="section section--gradient"
-             style={{
-               paddingBottom: "0"
-             }}
-           >
-             <div className="container">
-               <div>
-                 <div className="columns">
-                   <div className="column is-10 is-offset-1">
-                     <section>
-                       <HeroImage
-                         heroImage={heroImage}
-                         heroMsg={heroMsg}
-                       />
-                     </section>
-                     <FeaturedProjects currentProject={currentProject} />
-                     <article className="content">
-                       <div className="columns">
-                         <main className="column is-9">
-                           <h1 className="has-text-weight-semibold is-size-2">
-                             {title}
-                           </h1>
-                           <PageContent
-                             className="content"
-                             content={content}
-                           />{" "}
-                           <CtaButton
-                             link="https://www.charitycheckout.co.uk/1113786/"
-                             text="Donate"
-                           />
-                         </main>
-                         {columns === 2 ? (
-                           <aside className="column is-5">
-                             side col goes here
-                           </aside>
-                         ) : (
-                           ""
-                         )}
-                       </div>
-                       {links.length && (
-                         <section
-                           className="full-width-container margin-top-0"
-                           style={{
-                             background: "#f2f2f2",
-                             borderBottom: "1px solid #e5e5e5",
-                             marginBottom: "0",
-                             paddingBottom: "30px"
-                           }}
-                         >
-                           <div className="column is-10 is-offset-1">
-                             <h2>Find out more...</h2>
-                             <PageLinksWithPhotos pagelinks={links} />
-                           </div>
-                         </section>
-                       )}
-                     </article>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </section>
-         );
-       };
+  return (
+    <section
+      className="section section--gradient"
+      style={{
+        paddingBottom: "0"
+      }}
+    >
+      <div className="container">
+        <div>
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
+              <section>
+                <HeroImage heroImage={heroImage} heroMsg={heroMsg} />
+              </section>
+              <FeaturedProjects currentProject={currentProject} />
+              <article className="content">
+                <div className="columns">
+                  <main className={`column is-9 ${pageBasicStyles.main}`}>
+                    <h1 className="has-text-weight-semibold is-size-2">
+                      {title}
+                    </h1>
+                    <PageContent className="content" content={content} />{" "}
+                    <CtaButton
+                      link="https://www.charitycheckout.co.uk/1113786/"
+                      text="Donate"
+                    />
+                  </main>
+                  {columns === 2 ? (
+                    <aside className="column is-5">side col goes here</aside>
+                  ) : (
+                    ""
+                  )}
+                </div>
+                {links.length && (
+                  <section
+                    className="full-width-container margin-top-0"
+                    style={{
+                      background: "#f2f2f2",
+                      borderBottom: "1px solid #e5e5e5",
+                      marginBottom: "0",
+                      paddingBottom: "30px"
+                    }}
+                  >
+                    <div className="column is-10 is-offset-1">
+                      <h2>Find out more...</h2>
+                      <PageLinksWithPhotos pagelinks={links} />
+                    </div>
+                  </section>
+                )}
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 FeaturedProjectsSimpleTemplate.propTypes = {
   heroImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -144,7 +137,7 @@ export const FeaturedProjectsPageSimpleQuery = graphql`
         }
         heroMsg
         currentProject
-        columns        
+        columns
         links {
           linkTitle
           photo {
