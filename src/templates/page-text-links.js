@@ -7,37 +7,45 @@ import FeaturedProjects from "../components/FeaturedProjects";
 import PageLinks from "../components/PageLinks";
 import CtaButton from "../components/CtaButton";
 
-export const PageTextLinksTemplate = ({ title, content, contentComponent, links }) => {
-    const PageContent = contentComponent || Content;
+export const PageTextLinksTemplate = ({
+  title,
+  content,
+  contentComponent,
+  links
+}) => {
+  const PageContent = contentComponent || Content;
 
-    return (
-      <section className="section section--gradient">
-        <div className="container">
-          <div className="columns">
-            <div className="column is-14 is-offset-1">
-              <article className="content">
-                <div className="columns">
-                  <main className="column is-8">
-                    <h1 className="has-text-weight-semibold is-size-2">
-                      {title}
-                    </h1>
-                    <PageContent className="content" content={content} />
-                    <PageLinks pagelinks={links} />
-                    <CtaButton
-                      link="https://www.charitycheckout.co.uk/1113786/"
-                      text="Donate"
-                    />
-                  </main>
-                  <aside className="column is-4">
-                    <FeaturedProjects currentProject="default" />
-                  </aside>
-                </div>
-              </article>
-            </div>
+  return (
+    <section className="section section--gradient">
+      <div className="container">
+        <div className="columns">
+          <div className="column is-14 is-offset-1">
+            <article className="content">
+              <div className="columns">
+                <main className="column is-8">
+                  <h1 className="has-text-weight-semibold is-size-2">
+                    {title}
+                  </h1>
+                  <PageContent className="content" content={content} />
+                  <PageLinks pagelinks={links} />
+                  <CtaButton
+                    link="https://www.charitycheckout.co.uk/1113786/"
+                    text="Donate"
+                  />
+                </main>
+                <aside className="column is-4">
+                  <FeaturedProjects
+                    currentProject="default"
+                    displayHeading={true}
+                  />
+                </aside>
+              </div>
+            </article>
           </div>
         </div>
-      </section>
-    );
+      </div>
+    </section>
+  );
 };
 
 PageTextLinksTemplate.propTypes = {
@@ -48,38 +56,38 @@ PageTextLinksTemplate.propTypes = {
 };
 
 const PageTextLinks = ({ data }) => {
-    const { markdownRemark: post } = data;
+  const { markdownRemark: post } = data;
 
-    return (
-      <Layout>
-        <PageTextLinksTemplate
-          contentComponent={HTMLContent}
-          title={post.frontmatter.title}
-          content={post.html}
-          links={post.frontmatter.links}
-        />
-      </Layout>
-    );
+  return (
+    <Layout>
+      <PageTextLinksTemplate
+        contentComponent={HTMLContent}
+        title={post.frontmatter.title}
+        content={post.html}
+        links={post.frontmatter.links}
+      />
+    </Layout>
+  );
 };
 
 PageTextLinks.propTypes = {
-    data: PropTypes.object.isRequired
+  data: PropTypes.object.isRequired
 };
 
 export default PageTextLinks;
 
 export const pageBasicQuery = graphql`
-         query PageTextLinks($id: String!) {
-           markdownRemark(id: { eq: $id }) {
-             html
-             frontmatter {
-               title
-               links {
-                 linkTitle                 
-                 linkText
-                 url
-               }
-             }
-           }
-         }
-       `;
+  query PageTextLinks($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      html
+      frontmatter {
+        title
+        links {
+          linkTitle
+          linkText
+          url
+        }
+      }
+    }
+  }
+`;

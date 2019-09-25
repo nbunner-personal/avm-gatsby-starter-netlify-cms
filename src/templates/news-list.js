@@ -29,7 +29,7 @@ export default class BlogIndexPage extends React.Component {
   render() {
     const { location, pageContext } = this.props;
     const { group, index, pageCount, first, last } = pageContext;
-    const previousUrl = index - 1 === 1 ? "" : (index - 1).toString();
+    const previousUrl = index - 1 === 1 ? "" : (index - 1).toString() + "/";
     const nextUrl = (index + 1).toString() + "/";
     const pageNumbers = new Array(pageCount)
       .fill(undefined)
@@ -62,7 +62,7 @@ export default class BlogIndexPage extends React.Component {
                           return (
                             <PaginationLink
                               test={isActive}
-                              url={`/${number === 1 ? "" : number}`}
+                              url={`/${number === 1 ? "" : number}/`}
                               text={number}
                             />
                           );

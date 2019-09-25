@@ -15,11 +15,6 @@ const EventsCard = ({ post }) => (
         <span className={postStyles.postHeading}>{post.frontmatter.title}</span>
         <span className={postStyles.cardDate}>{post.frontmatter.date}</span>
       </Link>
-      <p>
-        <Link className={postStyles.postButton} to={post.fields.slug}>
-          Keep Reading →
-        </Link>
-      </p>
     </article>
   </div>
 );

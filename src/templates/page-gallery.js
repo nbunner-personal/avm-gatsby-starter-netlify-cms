@@ -50,7 +50,10 @@ export const PageGalleryTemplate = ({
                   />
                 </main>
                 <aside className="column is-4">
-                  <FeaturedProjects currentProject="default" />
+                  <FeaturedProjects
+                    currentProject="default"
+                    displayHeading={true}
+                  />
                 </aside>
               </div>
             </article>

@@ -2,14 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import postStyles from "./posts.module.css";
-import Img from "gatsby-image";
+// import Img from "gatsby-image";
 
 const BlogItem = ({ post }) => (
-  <div className={postStyles.card} key={post.id}>
-    <article className={postStyles.cardContent}>
-      {post.frontmatter.featuredImage && (
-        <Img fixed={post.frontmatter.featuredImage.childImageSharp.fixed} />
-      )}
+  <div className={postStyles.list} key={post.id}>
+    <article className={postStyles.listContent}>
       <p>
         <Link
           className="title has-text-primary is-size-4"
@@ -18,9 +15,7 @@ const BlogItem = ({ post }) => (
           {post.frontmatter.title}
         </Link>
         <span> &bull; </span>
-        <span className="subtitle is-size-5 is-block">
-          {post.frontmatter.date}
-        </span>
+        <span className={postStyles.date}>{post.frontmatter.date}</span>
       </p>
       <p>
         {post.excerpt}

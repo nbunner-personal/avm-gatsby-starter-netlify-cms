@@ -36,8 +36,9 @@ const projects = [
   }
 ];
 
-const FeaturedProjects = ({ currentProject }) => (
+const FeaturedProjects = ({ currentProject, displayHeading }) => (
   <div className={projectLinkStyles.featuredProjectsCont}>
+    {displayHeading === true ? <h3>Featured projects</h3> : ""}
     <ul className={projectLinkStyles.featuredProjects}>
       {projects.map(project => (
         <li
@@ -54,7 +55,8 @@ const FeaturedProjects = ({ currentProject }) => (
 );
 
 FeaturedProjects.propTypes = {
-  currentProject: PropTypes.string
+  currentProject: PropTypes.string,
+  displayHeading: PropTypes.bool
 };
 
 export default FeaturedProjects;
