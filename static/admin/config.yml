@@ -36,11 +36,7 @@ collections:
         widget: "file", 
         default: "/img/blog/default-pdf.pdf", 
         required: false,  
-        media_library:
-          - {
-          config:
-            multiple: false
-          } 
+        multiple: false        
         }
 
   - name: "events"
