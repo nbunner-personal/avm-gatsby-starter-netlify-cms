@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: "African Vision Malawi",
     description:
-      "..This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution."
+      "Since 2005 African Vision Malawi has been helping children and vulnerable people in Malawi, one of the poorest countries in the world. Our vision is to see a healthy, educated and self-sufficient community in Malawi."
   },
   plugins: [
     "gatsby-plugin-react-helmet",
