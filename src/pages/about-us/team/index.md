@@ -1,7 +1,7 @@
 ---
 templateKey: about-team
 title: Team
-desription: Meet the team - African Vision Malawi
+description: Meet the team - African Vision Malawi
 malawiTeam:
   - order: 1
     photo: /img/team/Alinafe-4-150x150.jpg

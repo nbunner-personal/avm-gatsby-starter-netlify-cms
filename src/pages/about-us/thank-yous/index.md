@@ -1,7 +1,7 @@
 ---
 templateKey: page-basic
 title: Thank yous
-desription: People who have generously supported us
+description: People who have generously supported us
 ---
 
 This page celebrates the friends of African Vision Malawi who have been kind enough to support us in activities in the UK and Malawi. The number of people who help us is growing all the time!

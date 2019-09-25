@@ -1,7 +1,7 @@
 ---
 templateKey: page-text-links
 title: About Us
-desription: About African Vision Malawi
+description: About African Vision Malawi
 links:
   - url: /about-us/african-vision-malawi-our-new-name/
     linkTitle: African Vision Malawi - our change of name
