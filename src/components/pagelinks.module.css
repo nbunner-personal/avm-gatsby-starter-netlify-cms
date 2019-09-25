@@ -16,7 +16,11 @@
 }
 
 .linkRow {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
   margin: 0 0 3rem;
+  padding: 15px;
 }
 .linkHeading a {
   color: #363636;
