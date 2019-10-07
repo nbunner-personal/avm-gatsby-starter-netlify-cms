@@ -1,7 +1,35 @@
 .shopIndexList {
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 .shopIndexList li {
+  list-style-type: none;
   margin: 8px;
+  opacity: 0.9;
+  padding: 0;
+  position: relative;
+}
+.shopIndexList li:hover {
+  opacity: 1;
+}
+.listItemPrice {
+  background: #58b5d7;
+  color: #fff;
+  padding: 6px 8px;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.tag {
+  color: #4a4a4a;
+  font-style: italic;
+}
+h2.itemTitle {
+  margin: 0 !important;
 }

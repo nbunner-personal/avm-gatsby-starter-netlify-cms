@@ -26,11 +26,15 @@ const ShopIndex = ({ data }) => (
                         }
                       />
 
-                      <p>
+                      <h2 className={shopStyles.itemTitle}>
                         {document.node.frontmatter.title}
-
-                        <em>{document.node.frontmatter.tags}</em>
-                      </p>
+                      </h2>
+                      <span className={shopStyles.tag}>
+                        {document.node.frontmatter.tags}
+                      </span>
+                      <span className={shopStyles.listItemPrice}>
+                        &pound;{document.node.frontmatter.price}
+                      </span>
                     </Link>
                   </li>
                 ))}
