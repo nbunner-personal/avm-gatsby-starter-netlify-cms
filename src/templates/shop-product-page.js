@@ -6,6 +6,7 @@ import Content, { HTMLContent } from "../components/Content";
 // import FeaturedProjects from "../components/FeaturedProjects";
 import CtaButton from "../components/CtaButton";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+import shopStyles from "../components/shop.module.css";
 
 export const ShopProductTemplate = ({
   title,
@@ -31,40 +32,47 @@ export const ShopProductTemplate = ({
           <div className="column is-14 is-offset-1">
             <article className="content">
               <div className="columns">
-                <main className="column is-8">
+                <main className="column is-7">
                   <h1 className="has-text-weight-semibold is-size-2">
                     {title}
                   </h1>
-                  <PreviewCompatibleImage imageInfo={productImage} />
-                  <PageContent className="content" content={content} />
-                  Price: &pound;{price}
-                  <br />
-                  Sale Price: &pound;{salePrice}
-                  <br />
-                  In Stock: {inStock}
-                  <br />
-                  Weight: {weight}
-                  <br />
-                  Length: {length}
-                  <br />
-                  Width: {width}
-                  <br />
-                  Height: {height}
-                  <br />
-                  Shipping Class: {shippingClass}
-                  {tags && tags.length ? (
-                    <ul className="taglist">
-                      {tags.map(tag => (
-                        <li key={tag + `tag`}>{tag}</li>
-                      ))}
-                    </ul>
-                  ) : null}
+                  <div className={shopStyles.product}>
+                    <div className={shopStyles.productMain}>
+                      <PreviewCompatibleImage imageInfo={productImage} />
+                    </div>
+                  </div>
                   <CtaButton
                     link="https://www.charitycheckout.co.uk/1113786/"
                     text="Donate"
                   />
                 </main>
-                <aside className="column is-4"></aside>
+                <aside className="column is-3">
+                  <div className={shopStyles.productAside}>
+                    <PageContent className="content" content={content} />
+                    Price: &pound;{price}
+                    <br />
+                    Sale Price: &pound;{salePrice}
+                    <br />
+                    In Stock: {inStock}
+                    <br />
+                    Weight: {weight}
+                    <br />
+                    Length: {length}
+                    <br />
+                    Width: {width}
+                    <br />
+                    Height: {height}
+                    <br />
+                    Shipping Class: {shippingClass}
+                    {tags && tags.length ? (
+                      <ul className="taglist">
+                        {tags.map(tag => (
+                          <li key={tag + `tag`}>{tag}</li>
+                        ))}
+                      </ul>
+                    ) : null}
+                  </div>
+                </aside>
               </div>
             </article>
           </div>
