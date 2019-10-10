@@ -82,9 +82,11 @@ export default class IndexPage extends React.Component {
                     </div>
                   ))}
               </div>
-              <Link to="/news" className={homepageStyles.allPostsLink}>
-                View all news
-              </Link>
+              <div className={homepageStyles.allPostsFooter}>
+                <Link to="/news" className={homepageStyles.allPostsLink}>
+                  View all news
+                </Link>
+              </div>
             </section>
             <section>
               <h2
@@ -100,9 +102,11 @@ export default class IndexPage extends React.Component {
                     </div>
                   ))}
               </div>
-              <Link to="/news" className={homepageStyles.allPostsLink}>
-                View all events
-              </Link>
+              <div className={homepageStyles.allPostsFooter}>
+                <Link to="/news" className={homepageStyles.allPostsLink}>
+                  View all events
+                </Link>
+              </div>
             </section>
           </div>
         </section>

@@ -25,3 +25,8 @@
   font-weight: bold;
   margin: 0.5rem 0;
 }
+.allPostsFooter {
+  border-bottom: 1px solid #d5d5d6;
+  margin: 8px 0 2rem;
+  padding: 0 8px;
+}
