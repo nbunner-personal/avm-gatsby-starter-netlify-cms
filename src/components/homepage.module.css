@@ -2,10 +2,6 @@
   background: #fff;
   border: 1px solid #e5e5e5;
   border-radius: 2px;
-  display: flex;
-  flex-basis: 0;
-  flex-grow: 1;
-  flex-shrink: 1;
   margin-bottom: 30px;
   padding: 0.75rem;
   /* padding: 15px 12px; */
@@ -17,16 +13,52 @@
 .latestNews h2 {
   font-size: 1.4rem;
 }
+.latestNews p {
+  margin-bottom: 0.8rem;
+}
 .sectionHeading {
   margin-top: 1.44rem;
 }
 .allPostsLink {
+  background: #fff;
+  border: 1px solid #3273dc;
+  border-radius: 4px;
+  color: #3273dc;
   display: inline-block;
   font-weight: bold;
   margin: 0.5rem 0;
+  padding: 8px 12px;
+  text-align: center;
 }
 .allPostsFooter {
   border-bottom: 1px solid #d5d5d6;
+  display: flex;
+  justify-content: flex-end;
   margin: 8px 0 2rem;
   padding: 0 8px;
+}
+
+.latestNewsBox {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  margin-bottom: 15px;
+  padding: 15px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .topSection {
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  .latestNewsCont {
+    display: flex;
+  }
+  .latestNewsBox {
+    margin: 0 15px 0;
+    max-width: 377px;
+  }
 }

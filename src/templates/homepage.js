@@ -7,6 +7,7 @@ import HeroImage from "../components/HeroImage";
 import videoStyles from "../components/videos.module.css";
 import ReactPlayer from "react-player";
 import BlogRollCard from "../components/BlogRollCard";
+import BlogRollLandscape from "../components/BlogRollLandscape";
 import EventsRollCard from "../components/EventsRollCard";
 import postStyles from "../components/posts.module.css";
 import homepageStyles from "../components/homepage.module.css";
@@ -50,17 +51,6 @@ export default class IndexPage extends React.Component {
                     self-sufficient community in Malawi".
                   </p>
                 </div>
-                {homeContent.map(({ node: home }) => (
-                  <div className={`${homepageStyles.box}`}>
-                    <h2 className="has-text-weight-bold is-size-3">
-                      Latest news
-                    </h2>
-                    <div
-                      className={homepageStyles.latestNews}
-                      dangerouslySetInnerHTML={{ __html: home.html }}
-                    />
-                  </div>
-                ))}
               </div>
               <div className="column">
                 <div className={videoStyles.playerWrapper}>
@@ -74,20 +64,41 @@ export default class IndexPage extends React.Component {
               </div>
             </section>
             <section>
-              <div className={postStyles.cont}>
-                {posts &&
-                  posts.map(({ node: post }) => (
-                    <div key={post.fields.slug}>
-                      <BlogRollCard post={post} />
-                    </div>
-                  ))}
-              </div>
-              <div className={homepageStyles.allPostsFooter}>
-                <Link to="/news" className={homepageStyles.allPostsLink}>
-                  View all news
-                </Link>
+              <div className={homepageStyles.latestNewsCont}>
+                {homeContent.map(({ node: home }) => (
+                  <div className={`${homepageStyles.latestNewsBox}`}>
+                    <h2 className="has-text-weight-bold is-size-3">
+                      Latest news
+                    </h2>
+                    <div
+                      className={homepageStyles.latestNews}
+                      dangerouslySetInnerHTML={{ __html: home.html }}
+                    />
+                  </div>
+                ))}
+                <div className={postStyles.contLandscape}>
+                  {posts &&
+                    posts.map(({ node: post }) => (
+                      <div key={post.fields.slug}>
+                        <BlogRollLandscape post={post} />
+                      </div>
+                    ))}
+                </div>
               </div>
             </section>
+            {/* <div className={postStyles.cont}>
+              {posts &&
+                posts.map(({ node: post }) => (
+                  <div key={post.fields.slug}>
+                    <BlogRollCard post={post} />
+                  </div>
+                ))}
+            </div> */}
+            <div className={homepageStyles.allPostsFooter}>
+              <Link to="/news" className={homepageStyles.allPostsLink}>
+                View all news
+              </Link>
+            </div>
             <section>
               <h2
                 className={`has-text-weight-bold is-size-3 ${homepageStyles.sectionHeading}`}
@@ -134,12 +145,12 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      limit: 4
+      limit: 3
       filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
     ) {
       edges {
         node {
-          excerpt(pruneLength: 140)
+          excerpt(pruneLength: 110)
           id
           fields {
             slug

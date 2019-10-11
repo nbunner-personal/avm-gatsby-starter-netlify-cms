@@ -90,6 +90,39 @@
 .list__main {
 }
 
+.landscapeContent {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  margin: 0 0 15px;
+  max-width: 760px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.landscapeContent .gatsby-image-wrapper {
+  width: 100%;
+}
+.landscapeContent .postText {
+  border-left: 1px solid #e5e5e5;
+  /* max-width: 250px; */
+}
+.landscapeContent .postHeading {
+  font-size: 1.5rem;
+}
+.landscapeContent p {
+  margin-bottom: 0.5rem;
+}
+.contLandscape {
+  display: flex;
+  flex-direction: column;
+}
+.postExcerpt {
+  color: #333;
+  font-size: 0.9rem;
+  padding: 0 10px;
+}
+
 @media only screen and (min-width: 640px) {
   .list__item {
     flex-direction: row;
@@ -97,5 +130,14 @@
   }
   .list__aside {
     margin: 0 15px 0 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .landscapeContent a {
+    display: flex;
+  }
+  .landscapeContent .gatsby-image-wrapper {
+    flex-shrink: 0;
   }
 }
