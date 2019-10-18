@@ -1,8 +1,20 @@
 ---
-templateKey: page-basic
+templateKey: page-gallery
 title: Training programme
 description: From 2018  we will offer residential courses primarily for vulnerable adults in our local area.
-headerImage: /img/chemex.jpg
+gallery:
+  - alt: House in France
+    photo: /img/projects/France-1.jpg
+  - alt: House in France
+    photo: /img/projects/France-2.jpg
+  - alt: House in France
+    photo: /img/projects/France-3.jpg
+  - alt: House in France
+    photo: /img/projects/France-4.jpg
+  - alt: House in France
+    photo: /img/projects/France-5.jpg
+  - alt: House in France
+    photo: /img/projects/France-8.jpg
 ---
 
 Our first Training Programme at Sam’s Village took place in May 2017 which was for 98 local based committee members and focused on pro-activity in the community.
