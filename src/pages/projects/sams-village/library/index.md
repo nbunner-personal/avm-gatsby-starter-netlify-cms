@@ -3,17 +3,21 @@ templateKey: page-basic
 title: Library
 headerImage: /img/chemex.jpg
 ---
-The Community Library at Sam’s Village in Lilongwe rural North-West, was officially opened to the public on 1st February 2017. This means that the communities around the 400 km2 of Traditional Authorities M’bang’ombe, Mtema, Chitukula, Kayembe (Dowa district) and Mkukula (Dowa district) can fully access diverse books for their knowledge and personal development. More information about the opening event here …
+The Community Library at Sam’s Village in Lilongwe rural North-West, was officially opened to the public on 1st February 2017. This means that the communities around the 400 km2 of Traditional Authorities M’bang’ombe, Mtema, Chitukula, Kayembe (Dowa district) and Mkukula (Dowa district) can fully access diverse books for their knowledge and personal development. More information about the opening event [here](http://www.africanvision.org.uk/africa-vision-news/wp-content/uploads/2015/11/REPORT-ON-OPENING-LIBRARY-010217.pdf)
+
+![Library opening](/img/report-on-opening-library-2-010217.jpg "Library opening")
+
+![Library opening](/img/report-on-opening-library-010217.jpg "Library opening")
+
+
 
 The Library at Sam’s Village is open to the public – all day Monday to Friday and Saturday mornings. The Library is in Chigonti village, opposite M’teza School. It is near M’bang’ombe trading centre, on the road from Kamuzu International Airport.
 
 The Library is a visible sign of our commitment to education and training as a means of encouraging sustainable development of communities in Malawi. We are so grateful to everyone who contributed to construct this building and to fill it with books!
 
-Library
+![The Library is now well used](/img/library.jpg "The Library is now well used")
 
-The Library is now well used
-
-Our librarians Chikondi and Ireen are available to assist library users. The Library has electricity, powered by a solar panel. We have hopes and plans to have computers and internet access at the library in the future.
+Our librarians Chikondi and [Ireen](/about-us/team/staff-stories-ireen-mwale/) are available to assist library users. The Library has electricity, powered by a solar panel. We have hopes and plans to have computers and internet access at the library in the future.
 
 ## Who uses the Library?
 
