@@ -1,10 +1,8 @@
 ---
 templateKey: page-basic
 title: Library
-description: The Community Library at Sam’s Village in Lilongwe rural North-West, was officially opened to the public on 1st February 2017.
 headerImage: /img/chemex.jpg
 ---
-
 The Community Library at Sam’s Village in Lilongwe rural North-West, was officially opened to the public on 1st February 2017. This means that the communities around the 400 km2 of Traditional Authorities M’bang’ombe, Mtema, Chitukula, Kayembe (Dowa district) and Mkukula (Dowa district) can fully access diverse books for their knowledge and personal development. More information about the opening event here …
 
 The Library at Sam’s Village is open to the public – all day Monday to Friday and Saturday mornings. The Library is in Chigonti village, opposite M’teza School. It is near M’bang’ombe trading centre, on the road from Kamuzu International Airport.
@@ -17,11 +15,11 @@ The Library is now well used
 
 Our librarians Chikondi and Ireen are available to assist library users. The Library has electricity, powered by a solar panel. We have hopes and plans to have computers and internet access at the library in the future.
 
-Who uses the Library?
+## Who uses the Library?
 
 The Library is used by students, school children and adults from the surrounding area.
 
-David Lackson
+![David Lackson](/img/david-lackson-1.jpg "David Lackson")
 
 David Lackson
 
