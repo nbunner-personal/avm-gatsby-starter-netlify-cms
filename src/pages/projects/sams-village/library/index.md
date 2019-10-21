@@ -21,19 +21,15 @@ The Library is used by students, school children and adults from the surrounding
 
 ![David Lackson](/img/david-lackson-1.jpg "David Lackson")
 
-David Lackson
-
-David Lackson, one of the Scholarship Programme beneficiaries, has been a regular library user 2 or 3 days a week since he graduated from Secondary School. When interviewed about the books he has been reading, this is what he had to say:
+**David Lackson**, one of the Scholarship Programme beneficiaries, has been a regular library user 2 or 3 days a week since he graduated from Secondary School. When interviewed about the books he has been reading, this is what he had to say:
 
 ‘I have been reading lots of English and French books in the library. Among them, English A1 book for IB diploma programme by Elizabeth Druce and Hannah Tyson has been interesting to read. I have read this book for good numbers of days. I really like it because most of its content is what I would learn in my English course at university. It has important literature devices such as poetry, drama, commentaries and essays. It is a very good book to read and understand what it discusses. This library is benefitting me, it is like a granary of knowledge of what most people like me are desperate for.’’
 
 David has been accepted into University of Malawi at Chancellor College (one of the constituent colleges) from January 2016 to study a four year course for a Bachelor of Education (languages).
 
-Andrew Kaunda
+![Andrew Kaunda](/img/andrew-kaunda-1.jpg "Andrew Kaunda")
 
-Andrew Kaunda
-
-Andrew Kaunda is one of the regular library users. He stays with his brother who is clinical officer at M’bang’ombe clinic.
+**Andrew Kaunda** is one of the regular library users. He stays with his brother who is clinical officer at M’bang’ombe clinic.
 
 Andrew studied Journalism level two certificate at Malawi Institute of Journalism (MIJ) in 2013. Here is what he said about the library:
 
@@ -41,29 +37,27 @@ Andrew studied Journalism level two certificate at Malawi Institute of Journalis
 
 When we spoke to him Andrew was reading Contemporary English Grammar by Jayanthi Dakshina Murthy which he said is one of the books he read frequently.
 
-Reading Group
+![Reading Group with Jennie Hawley](/img/jennie-hawley-and-literacy-2.jpg "Reading Group with Jennie Hawley")
 
-Reading Group with Jennie Hawley
+Jennie Hawley, a volunteer from London UK, has been doing tremendous work forming **reading groups** with primary school learners, as shown in the pictures, as well as secondary school students. In the picture above they are reading the following children books: Hairy Maclary’s Showbusiness by Iynley Dodd, Why is the Sky Blue by Sally Grindley and Susan Varley and Diego’s Safari Rescue. The picture below shows Jennie helping children how to find words in a childrens dictionary.
 
-Jennie Hawley, a volunteer from London UK, has been doing tremendous work forming reading groups with primary school learners, as shown in the pictures, as well as secondary school students. In the picture above they are reading the following children books: Hairy Maclary’s Showbusiness by Iynley Dodd, Why is the Sky Blue by Sally Grindley and Susan Varley and Diego’s Safari Rescue. The picture below shows Jennie helping children how to find words in a childrens dictionary.
-Looking up words in a dictionary
 
-Looking up words in a dictionary
+![Looking up words in a dictionary](/img/jennie-hawley-and-literacy-1.jpg "Looking up words in a dictionary")
+
+
 
 After school reading group activities are a step towards educating both students and communities on how to use the library and improving research skills, especially for learners. Above all, encouraging the reading culture because most students in Malawi read academic books mostly based on the curriculum which will be examined.
 
-Violet and Prisca Chaza
+![Violet and Prisca Chaza](/img/violet-and-prisca-chaza.jpg "Violet and Prisca Chaza")
 
-Violet and Prisca Chaza
+**Violet Chaza** (left) and her sister **Prisca** (right) are both secondary school students. Violet is in form 3 at Bzyanzi Secondary and Prisca is in form 2 at Chitukula Community Day Secondary School. Violet and Prisca are studying Biology and Life Skills respectively in the photo, for their secondary school curriculums.
 
-Violet Chaza (left) and her sister Prisca (right) are both secondary school students. Violet is in form 3 at Bzyanzi Secondary and Prisca is in form 2 at Chitukula Community Day Secondary School. Violet and Prisca are studying Biology and Life Skills respectively in the photo, for their secondary school curriculums.
+![Loness Eliya, photo taken at her college campus in Blantyre](/img/loness-eliya-2.jpg "Loness Eliya, photo taken at her college campus in Blantyre")
 
-Loness Eliya
 
-Loness Eliya, photo taken at her college campus in Blantyre
 
-Loness Eliya, another scholarship beneficiary, is now doing her 2rd year at Kamuzu College of Nursing, studying Nursing and Midwifery under the umbrella of University of Malawi. During university holidays, Loness assists in teaching children at Community Based Child Care Centre (CBCC) within Sam’s Village premises, where M’teza library is. After teaching the children she goes to assist librarians where needed and has her own time to study.
+**Loness Eliya**, another scholarship beneficiary, is now doing her 2rd year at Kamuzu College of Nursing, studying Nursing and Midwifery under the umbrella of University of Malawi. During university holidays, Loness assists in teaching children at Community Based Child Care Centre (CBCC) within Sam’s Village premises, where M’teza library is. After teaching the children she goes to assist librarians where needed and has her own time to study.
 
 This is what she had to say about the library and the new stock, via text message:
 
-‘The library is very useful to me especially when I am on holiday. I have found lots of important books which are on my course – titles such as Mental Health, Psychiatric Nursing, Surgical Nursing, Ethics and Law. Most of these books came in the new donation and they are really excellent ones. I think the library has great books which are very useful to our community.’
+> ‘The library is very useful to me especially when I am on holiday. I have found lots of important books which are on my course – titles such as Mental Health, Psychiatric Nursing, Surgical Nursing, Ethics and Law. Most of these books came in the new donation and they are really excellent ones. I think the library has great books which are very useful to our community.’
