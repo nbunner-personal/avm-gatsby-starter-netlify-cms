@@ -32,8 +32,7 @@ export const PageGalleryTemplate = ({
                     <section
                       className=""
                       style={{
-                        background: "#f2f2f2",
-                        borderBottom: "1px solid #e5e5e5",
+                        background: "#ffffff",
                         marginBottom: "0",
                         paddingBottom: "30px"
                       }}
