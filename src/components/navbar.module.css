@@ -23,16 +23,15 @@
 .navbarBtns {
   display: grid;
   grid-gap: 8px;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));  
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   font-size: 0.8rem;
-  justify-content: space-between;  
+  justify-content: space-between;
   left: 82px;
   max-width: 348px;
   position: absolute;
-  top: 10px;  
+  top: 10px;
   width: 67%;
 }
-  
 
 @media only screen and (min-width: 769px) {
   .navContainer {
@@ -40,17 +39,27 @@
   }
   .navbarLogo {
     left: 2px; /* TODO needs changing for mobile */
-    width: 80px;    
+    width: 80px;
   }
   .navbarBtns {
-    display: flex;    
+    display: flex;
     left: auto;
     right: 5px;
     top: 50px;
     width: auto;
-
   }
-  
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbarLogo {
+    left: -16px;
+  }
+}
+
+@media only screen and (min-width: 1083px) {
+  .navbarlogo {
+    left: -60px;
+  }
 }
 
 @media only screen and (min-width: 1088px) {
@@ -60,13 +69,42 @@
   .navbarLogo {
     left: -60px; /* TODO needs changing for mobile */
     width: 135px;
-    
   }
   .navbarBtns {
     top: 12px;
   }
 }
 
+@media only screen and (min-width: 1140px) {
+  .navbarLogo {
+    left: -75px;
+  }
+}
+
+@media only screen and (min-width: 1216px) {
+  .navbarLogo {
+    left: -45px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .navbarLogo {
+    left: -60px;
+  }
+}
+
 .navbarBurger {
   color: #fff !important;
+}
+
+@media only screen and (min-width: 1401px) {
+  .navbarLogo {
+    left: -45px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .navbarLogo {
+    left: -60px;
+  }
 }
