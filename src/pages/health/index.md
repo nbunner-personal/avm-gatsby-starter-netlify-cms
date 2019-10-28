@@ -53,6 +53,6 @@ One of our big forthcoming projects is to build a Waiting Home for new mothers a
 
 The project will include nutritional permaculture gardens in front of the new wing, and education on good nutrition for new mothers. 
 
-****[**Find out more**](/health/a-child-is-born/)****
+**[Find out more...](/health/a-child-is-born/)**
 
 You can donate here:
