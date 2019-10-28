@@ -30,13 +30,13 @@ collections:
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list" }
-      - { 
-        label: "Upload newsletter PDF", 
-        name: "pdf", 
-        widget: "file", 
-        default: "/img/blog/default-pdf.pdf", 
-        required: false,  
-        multiple: false        
+      - {
+          label: "Upload newsletter PDF",
+          name: "pdf",
+          widget: "file",
+          default: "/img/blog/default-pdf.pdf",
+          required: false,
+          multiple: false,
         }
 
   - name: "events"
@@ -52,16 +52,21 @@ collections:
           default: "events-post",
         }
       - { label: "Title*", name: "title", widget: "string" }
-      - { label: "Photo", name: "photo", widget: "image" }
+      - { label: "Photo", name: "photo", widget: "image", required: false }
       - { label: "Start date*", name: "date", widget: "datetime" }
-      - { label: "End date", name: "endDate", widget: "datetime" }
+      - {
+          label: "End date",
+          name: "endDate",
+          widget: "datetime",
+          required: false,
+        }
+      - { label: "All day?", name: "allDay", widget: "boolean", default: false }
       - { label: "Short description*", name: "description", widget: "text" }
       - { label: "Body*", name: "body", widget: "markdown" }
-      - { label: "All day?", name: "allDay", widget: "boolean", default: false }
       - { label: "Location*", name: "location", widget: "text" }
       - { label: "Cost* (0 for free)", name: "cost", widget: "number" }
-      - { label: "URL", name: "url", widget: "string" }
-      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "URL", name: "url", widget: "string", required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
 
   - name: "homepage"
     label: "Homepage"
@@ -525,7 +530,7 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Header Image", name: headerImage, widget: image }
-          - { label: "Body", name: "body", widget: "markdown" }      
+          - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/projects/bicycle-ambulances/index.md"
         label: "Bicycle ambulances"
         name: "bicycleambulances"
