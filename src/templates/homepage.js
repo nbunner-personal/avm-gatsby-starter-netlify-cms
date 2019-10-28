@@ -6,11 +6,12 @@ import FeaturedProjects from "../components/FeaturedProjects";
 import HeroImage from "../components/HeroImage";
 import videoStyles from "../components/videos.module.css";
 import ReactPlayer from "react-player";
-import BlogRollCard from "../components/BlogRollCard";
+// import BlogRollCard from "../components/BlogRollCard";
 import BlogRollLandscape from "../components/BlogRollLandscape";
 import EventsRollCard from "../components/EventsRollCard";
 import postStyles from "../components/posts.module.css";
 import homepageStyles from "../components/homepage.module.css";
+import moment from "moment";
 import { Link } from "gatsby";
 
 export default class IndexPage extends React.Component {
@@ -108,8 +109,13 @@ export default class IndexPage extends React.Component {
               <div className={postStyles.cont}>
                 {events &&
                   events.map(({ node: event }) => (
-                    <div key={event.fields.slug}>
-                      <EventsRollCard post={event} />
+                    <div
+                      key={event.fields.slug}
+                      className={homepageStyles.eventContainer}
+                    >
+                      {moment(event.frontmatter.date, "MMMM DD, YYYY").isAfter(
+                        moment().format("MMMM DD, YYYY")
+                      ) && <EventsRollCard post={event} />}
                     </div>
                   ))}
               </div>
@@ -180,8 +186,7 @@ export const pageQuery = graphql`
       }
     }
     eventsPosts: allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      limit: 4
+      sort: { order: ASC, fields: [frontmatter___date] }
       filter: { frontmatter: { templateKey: { eq: "events-post" } } }
     ) {
       edges {

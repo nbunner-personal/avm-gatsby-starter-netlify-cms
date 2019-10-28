@@ -47,6 +47,10 @@
   width: 100%;
 }
 
+.eventContainer:empty {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   .topSection {
     display: flex;
