@@ -55,7 +55,7 @@ const Footer = () => (
                 <Link to="/water/">Water</Link>
               </li>
               <li>
-                <Link to="/health">Health</Link>
+                <Link to="/health/">Health</Link>
               </li>
               <li>
                 <Link to="/education/">Education</Link>
