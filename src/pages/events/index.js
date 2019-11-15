@@ -16,8 +16,12 @@ export default class BlogIndexPage extends React.Component {
               <section>
                 <HeroImage heroImage={heroImage} heroMsg={heroMsg} />
               </section>
+              <section className="columns">
+                <main className="column">
+                  <EventsRoll />
+                </main>
+              </section>
             </div>
-            <EventsRoll />
           </div>
         </section>
       </Layout>

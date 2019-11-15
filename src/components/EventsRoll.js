@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Link, graphql, StaticQuery } from "gatsby";
 import postStyles from "./posts.module.css";
 import Img from "gatsby-image";
+import moment from "moment";
 
 class EventsRoll extends React.Component {
   render() {
@@ -14,40 +15,44 @@ class EventsRoll extends React.Component {
         {posts &&
           posts.map(({ node: post }) => (
             <div className={postStyles.events} key={post.id}>
-              <article className={postStyles.list__item}>
-                {post.frontmatter.photo && (
-                  <Img
-                    fixed={post.frontmatter.photo.childImageSharp.fixed}
-                    className={postStyles.list__aside}
-                  />
-                )}
-                <div className={postStyles.list__main}>
-                  <p>
-                    <Link
-                      className="title has-text-primary is-size-4"
-                      to={post.fields.slug}
-                    >
-                      {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.date} to
-                      {post.frontmatter.endDate}
-                    </span>
-                    <span className="subtitle">
-                      {post.frontmatter.location}
-                    </span>
-                  </p>
-                  <p>
-                    {post.excerpt}
-                    <br />
-                    <br />
-                    <Link className="button" to={post.fields.slug}>
-                      Keep Reading →
-                    </Link>
-                  </p>
-                </div>
-              </article>
+              {moment(post.frontmatter.date, "MMMM DD, YYYY").isAfter(
+                moment().format("MMMM DD, YYYY")
+              ) && (
+                <article className={postStyles.list__item}>
+                  {post.frontmatter.photo && (
+                    <Img
+                      fixed={post.frontmatter.photo.childImageSharp.fixed}
+                      className={postStyles.list__aside}
+                    />
+                  )}
+                  <div className={postStyles.list__main}>
+                    <p>
+                      <Link
+                        className="title has-text-primary is-size-4"
+                        to={post.fields.slug}
+                      >
+                        {post.frontmatter.title}
+                      </Link>
+                      <span> &bull; </span>
+                      <span className="subtitle is-size-5 is-block">
+                        {post.frontmatter.date} <span>to </span>
+                        {post.frontmatter.endDate}
+                      </span>
+                      <span className="subtitle">
+                        {post.frontmatter.location}
+                      </span>
+                    </p>
+                    <p>
+                      {post.excerpt}
+                      <br />
+                      <br />
+                      <Link className="button" to={post.fields.slug}>
+                        Keep Reading →
+                      </Link>
+                    </p>
+                  </div>
+                </article>
+              )}
             </div>
           ))}
       </section>
@@ -68,7 +73,7 @@ export default () => (
     query={graphql`
       query EventsRollQuery {
         allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] }
+          sort: { order: ASC, fields: [frontmatter___date] }
           filter: { frontmatter: { templateKey: { eq: "events-post" } } }
         ) {
           edges {

@@ -29,7 +29,7 @@ export const EventsPostTemplate = ({
       {helmet || ""}
       <div className="container content">
         <div className="columns">
-          <div className="column is-10 is-offset-1">
+          <main className="column is-8 is-offset-1">
             {photo && Object.keys(photo.childImageSharp.fixed).length ? (
               <Img fixed={photo.childImageSharp.fixed} />
             ) : null}
@@ -55,7 +55,15 @@ export const EventsPostTemplate = ({
                 </ul>
               </div>
             ) : null}
-          </div>
+          </main>
+          <aside className="column is-4">
+            <ul>
+              <li>
+                <Link to="/events/">View all events</Link>
+              </li>
+              {/* component with latest 5 events goes here */}
+            </ul>
+          </aside>
         </div>
       </div>
     </section>
