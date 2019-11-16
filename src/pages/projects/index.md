@@ -46,7 +46,7 @@ links:
       There was one Medical Assistant and one Midwife to run the two units. The
       Midwife was pregnant.
     linkTitle: Maternity Unit
-    url: 'http://www.africanvision.org.uk/projects/maternity-unit/'
+    url: /projects/maternity-unit/
   - linkText: >-
       Project4Africa is a group who raise funds to help various projects in
       Africa. This year we are delighted to announce they will be raising money
