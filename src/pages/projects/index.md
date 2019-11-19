@@ -72,5 +72,49 @@ links:
   - linkText: ...
     linkTitle: Njewa New Office
     url: /projects/sams-village/njewa-new-office/
+  - linkText: ...
+    linkTitle: Rammed Earth Building
+    url: /projects/sams-village/njewa-new-office/rammed-earth-building/
+  - linkText: ...
+    linkTitle: Permaculture
+    url: /projects/sams-village/permaculture/
+  - linkText: ...
+    linkTitle: Training Programme
+    url: /projects/sams-village/training-programme/
+  - linkText: ...
+    linkTitle: Christmas Appeal to complete Sam's Village
+    url: >-
+      /projects/sams-village/training-programme/christmas-appeal-to-complete-sams-village/
+  - linkText: >-
+      Education is free to children up to the end of primary school but if they
+      want to go on and get a full education (and hopefully go onto university)
+      it costs around £792 for four years at Secondary School This pays for
+      school fees, exam fees, school materials, boarding fees, food and school
+      uniform. We are currently sponsoring 28 teenagers to go to Secondary
+      school.
+    linkTitle: Secondary School Sponsorship
+    url: /projects/secondary-school-sponsorship/
+  - linkText: ...
+    linkTitle: University Scholarships
+    url: /projects/university-scholarships/
+  - linkText: ...
+    linkTitle: Lobiner Kanthenga - story of a University Student
+    url: >-
+      /projects/university-scholarships/lobiner-kanthenga-story-of-a-university-student/
+  - linkText: ...
+    linkTitle: Loness Eliya - story of a sponsored University Student
+    url: >-
+      /projects/university-scholarships/loness-eliya-story-of-a-sponsored-university-student/
+  - linkText: >-
+      It only costs £150 to build up a well to make it safe a free from
+      contamination. This is a great present for your friends and family as it
+      is genuinely saving lives and we will have a plaque created with the name
+      of your recipient on it to go on the well - we will then take pictures of
+      the well upon completion and send it to them.
+    linkTitle: Water and Sanitation
+    url: /projects/water-and-sanitation/
+  - linkText: ...
+    linkTitle: Water boreholes
+    url: /projects/water-boreholes/
 ---
 
