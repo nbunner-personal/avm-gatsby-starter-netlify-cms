@@ -493,9 +493,26 @@ collections:
               widget: "hidden",
               default: "health-page",
             }
+          - {
+              label: "Current Project",
+              name: "currentProject",
+              widget: "hidden",
+              default: "health",
+            }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Hero Image", name: heroImage, widget: image }
+          - { label: "Description", name: "description", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: "Videos",
+              name: videos,
+              widget: list,
+              fields:
+                [
+                  { label: videourl, name: videourl, widget: string },
+                  { label: videotext, name: videotext, widget: string },
+                ],
+            }
           - {
               label: "Photos",
               name: gallery,
