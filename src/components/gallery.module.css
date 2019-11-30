@@ -1,9 +1,11 @@
 .gallery {
+  background: #2b2d32;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(110px, 1fr));
   grid-gap: 1rem;
   grid-auto-flow: dense;
+  padding: 15px;
 }
 .gallery .gatsby-image-wrapper {
   height: 100%;
