@@ -4,7 +4,8 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .card {
-  width: 280px;
+  /* width: 280px; */
+  overflow: hidden;
 }
 .cardContent {
   background: #fff;

@@ -1,13 +1,15 @@
 .topSection {
-  background: #fff;
+  background: #2b2d32;
+  color: #fff;
   border: 1px solid #e5e5e5;
-  border-radius: 2px;
+  border-radius: 4px;
   margin-bottom: 30px;
   padding: 0.75rem;
   /* padding: 15px 12px; */
 }
 .box {
-  background: #fff;
+  background: #2b2d32;
+  color: inherit;
   padding: 8px;
 }
 .latestNews h2 {
@@ -37,14 +39,24 @@
   margin: 8px 0 2rem;
   padding: 0 8px;
 }
-
+.latestNewsCont,
 .latestNewsBox {
-  background: #fff;
-  border: 1px solid #e5e5e5;
+  background: #2b2d32;
+}
+.latestNewsCont {
+  border-radius: 4px;
+  padding: 15px;
+}
+.latestNewsBox {
+  /* border: 1px solid #e5e5e5; */
   border-radius: 2px;
+  color: #fff;
   margin-bottom: 15px;
   padding: 15px;
   width: 100%;
+}
+.latestNewsBox strong {
+  color: #fff;
 }
 
 .eventContainer:empty {
