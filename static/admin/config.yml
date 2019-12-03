@@ -651,7 +651,9 @@ collections:
               default: "education-page",
             }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Hero Image", name: heroImage, widget: image }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Hero Image", name: heroImage, widget: image }          
+          - { label: "Hero Message", name: heroMsg, widget: "string"}
           - { label: "Body", name: "body", widget: "markdown" }
           - {
               label: Links,
@@ -678,6 +680,121 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Header Image", name: headerImage, widget: image }
           - { label: "Body", name: "body", widget: "markdown" }
+
+- name: "environment"
+    label: "Environment"
+    files:
+      - file: "src/pages/environment/index.md"
+        label: "Environment"
+        name: "environment"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "featured-project-simple",
+            }
+          - {
+              label: "Columns",
+              name: "columns",
+              widget: "hidden",
+              default: 1,
+            }  
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }      - { label: "Header Image", name: heroImage, widget: image }  
+          - { label: "Hero Message", name: heroMsg, widget: "string"}
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: Links,
+              name: links,
+              widget: list,
+              fields:
+                [
+                  { label: Title, name: linkTitle, widget: string },
+                  { label: Photo, name: photo, widget: image },
+                  { label: Text, name: linkText, widget: text },
+                  { label: Url, name: url, widget: string },
+                ],
+            }
+      - file: "src/pages/environment/groundnut-farming/index.md"        
+        label: "Groundnut Farming"
+        name: "groundnutfarming"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "page-basic",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Description", name: "description", widget: "string" }
+      - file: "src/pages/environment/fuel-saving-stoves/index.md"        
+        label: "Fuel Saving Stoves"
+        name: "fuelsavingstoves"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "page-basic",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Description", name: "description", widget: "string" }  
+      - file: "src/pages/environment/reforestation/index.md"        
+        label: "Reforestation"
+        name: "reforestation"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "page-basic",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Description", name: "description", widget: "string" }
+      - file: "src/pages/environment/kafutwe-food-mill/index.md"        
+        label: "Food Mill"
+        name: "foodmill"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "page-basic",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Description", name: "description", widget: "string" }     
+      - file: "src/pages/environment/orphan-vegetable-gardens/index.md"        
+        label: "Vegetable Gardens"
+        name: "vegetablegardens"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "page-basic",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Description", name: "description", widget: "string" }
+      - file: "src/pages/environment/fruit-trees/index.md"        
+        label: "Fruit Trees"
+        name: "fruittrees"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "page-basic",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Description", name: "description", widget: "string" }             
+
 
   - name: "getinvolved"
     label: "Get Involved"
