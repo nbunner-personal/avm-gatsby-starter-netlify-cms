@@ -681,7 +681,7 @@ collections:
           - { label: "Header Image", name: headerImage, widget: image }
           - { label: "Body", name: "body", widget: "markdown" }
 
-- name: "environment"
+  - name: "environment"
     label: "Environment"
     files:
       - file: "src/pages/environment/index.md"
