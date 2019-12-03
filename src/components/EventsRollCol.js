@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 // import { v4 } from 'uuid'
 import { Link } from "gatsby";
-import eventsColStyles from "./eventscol.module.css";
+import eventsColStyles from "./eventsCol.module.css";
 // import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 import Img from "gatsby-image";
 import moment from "moment";
