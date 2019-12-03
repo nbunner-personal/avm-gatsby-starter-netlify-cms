@@ -652,8 +652,8 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "string" }
-          - { label: "Hero Image", name: heroImage, widget: image }          
-          - { label: "Hero Message", name: heroMsg, widget: "string"}
+          - { label: "Hero Image", name: heroImage, widget: image }
+          - { label: "Hero Message", name: heroMsg, widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
           - {
               label: Links,
@@ -694,15 +694,11 @@ collections:
               widget: "hidden",
               default: "featured-project-simple",
             }
-          - {
-              label: "Columns",
-              name: "columns",
-              widget: "hidden",
-              default: 1,
-            }  
+          - { label: "Columns", name: "columns", widget: "hidden", default: 1 }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "string" }      - { label: "Header Image", name: heroImage, widget: image }  
-          - { label: "Hero Message", name: heroMsg, widget: "string"}
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Header Image", name: "heroImage", widget: "image" }
+          - { label: "Hero Message", name: "heroMsg", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
           - {
               label: Links,
@@ -716,7 +712,7 @@ collections:
                   { label: Url, name: url, widget: string },
                 ],
             }
-      - file: "src/pages/environment/groundnut-farming/index.md"        
+      - file: "src/pages/environment/groundnut-farming/index.md"
         label: "Groundnut Farming"
         name: "groundnutfarming"
         fields:
@@ -729,7 +725,7 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
           - { label: "Description", name: "description", widget: "string" }
-      - file: "src/pages/environment/fuel-saving-stoves/index.md"        
+      - file: "src/pages/environment/fuel-saving-stoves/index.md"
         label: "Fuel Saving Stoves"
         name: "fuelsavingstoves"
         fields:
@@ -741,8 +737,8 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
-          - { label: "Description", name: "description", widget: "string" }  
-      - file: "src/pages/environment/reforestation/index.md"        
+          - { label: "Description", name: "description", widget: "string" }
+      - file: "src/pages/environment/reforestation/index.md"
         label: "Reforestation"
         name: "reforestation"
         fields:
@@ -755,7 +751,7 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
           - { label: "Description", name: "description", widget: "string" }
-      - file: "src/pages/environment/kafutwe-food-mill/index.md"        
+      - file: "src/pages/environment/kafutwe-food-mill/index.md"
         label: "Food Mill"
         name: "foodmill"
         fields:
@@ -767,8 +763,8 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
-          - { label: "Description", name: "description", widget: "string" }     
-      - file: "src/pages/environment/orphan-vegetable-gardens/index.md"        
+          - { label: "Description", name: "description", widget: "string" }
+      - file: "src/pages/environment/orphan-vegetable-gardens/index.md"
         label: "Vegetable Gardens"
         name: "vegetablegardens"
         fields:
@@ -781,7 +777,7 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
           - { label: "Description", name: "description", widget: "string" }
-      - file: "src/pages/environment/fruit-trees/index.md"        
+      - file: "src/pages/environment/fruit-trees/index.md"
         label: "Fruit Trees"
         name: "fruittrees"
         fields:
@@ -793,8 +789,7 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
-          - { label: "Description", name: "description", widget: "string" }             
-
+          - { label: "Description", name: "description", widget: "string" }
 
   - name: "getinvolved"
     label: "Get Involved"
