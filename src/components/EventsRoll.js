@@ -3,7 +3,10 @@ import PropTypes from "prop-types";
 import { Link, graphql, StaticQuery } from "gatsby";
 import postStyles from "./posts.module.css";
 import Img from "gatsby-image";
-import moment from "moment";
+import EventDate from "./EventDate";
+import dayjs from "dayjs";
+import advancedFormat from "dayjs/plugin/advancedFormat";
+dayjs.extend(advancedFormat);
 
 class EventsRoll extends React.Component {
   render() {
@@ -15,8 +18,8 @@ class EventsRoll extends React.Component {
         {posts &&
           posts.map(({ node: post }) => (
             <div className={postStyles.events} key={post.id}>
-              {moment(post.frontmatter.date, "MMMM DD, YYYY").isAfter(
-                moment().format("MMMM DD, YYYY")
+              {dayjs(post.frontmatter.date, "MMMM DD, YYYY").isAfter(
+                dayjs().format("MMMM DD, YYYY")
               ) && (
                 <article className={postStyles.list__item}>
                   {post.frontmatter.photo && (
@@ -35,8 +38,10 @@ class EventsRoll extends React.Component {
                       </Link>
                       <span> &bull; </span>
                       <span className="subtitle is-size-5 is-block">
-                        {post.frontmatter.date} <span>to </span>
-                        {post.frontmatter.endDate}
+                        <EventDate
+                          date={post.frontmatter.date}
+                          endDate={post.frontmatter.endDate}
+                        />
                       </span>
                       <span className="subtitle">
                         {post.frontmatter.location}

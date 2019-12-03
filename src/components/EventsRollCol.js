@@ -5,15 +5,18 @@ import { Link } from "gatsby";
 import eventsColStyles from "./eventsCol.module.css";
 // import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 import Img from "gatsby-image";
-import moment from "moment";
+import EventDate from "./EventDate";
+import dayjs from "dayjs";
+import advancedFormat from "dayjs/plugin/advancedFormat";
+dayjs.extend(advancedFormat);
 
 const EventsCol = ({ events }) => (
   <div className={eventsColStyles.cardCont}>
     {events &&
       events.map(({ node: event }) => (
         <div className={eventsColStyles.eventsColInner}>
-          {moment(event.frontmatter.date, "MMMM DD, YYYY").isAfter(
-            moment().format("MMMM DD, YYYY")
+          {dayjs(event.frontmatter.date, "MMMM DD, YYYY").isAfter(
+            dayjs().format("MMMM DD, YYYY")
           ) && (
             <div className={eventsColStyles.card} key={event.fields.slug}>
               <div className="card-image">
@@ -28,7 +31,13 @@ const EventsCol = ({ events }) => (
               <div className={eventsColStyles.cardContent}>
                 <div className="content">
                   <h3>{event.frontmatter.title}</h3>
-                  <p>{event.frontmatter.date}</p>
+                  <p>
+                    <EventDate
+                      date={event.frontmatter.date}
+                      endDate={event.frontmatter.endDate}
+                    />
+                  </p>
+                  <p>{event.excerpt}</p>
                   <Link to={event.fields.slug} className={eventsColStyles.btn}>
                     find out more
                   </Link>

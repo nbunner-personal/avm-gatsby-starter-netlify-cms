@@ -5,7 +5,10 @@ import Helmet from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
-import Img from "gatsby-image";
+// import Img from "gatsby-image";
+import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+import pageBasicStyles from "../components/pageBasic.module.css";
+import EventDate from "../components/EventDate";
 
 export const EventsPostTemplate = ({
   content,
@@ -29,20 +32,21 @@ export const EventsPostTemplate = ({
       {helmet || ""}
       <div className="container content">
         <div className="columns">
-          <main className="column is-8 is-offset-1">
-            {photo && Object.keys(photo.childImageSharp.fixed).length ? (
-              <Img fixed={photo.childImageSharp.fixed} />
+          <main className={`column is-8 is-offset-1 ${pageBasicStyles.main}`}>
+            {photo && Object.keys(photo.childImageSharp.fluid).length ? (
+              <PreviewCompatibleImage imageInfo={photo} />
             ) : null}
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
             <p>
-              Date(s): {date} to {endDate}
+              Date(s): <EventDate date={date} endDate={endDate} />
             </p>
             <p>Location: {location}</p>
             <p>Cost: &pound;{cost}</p>
             <p>{description}</p>
             <PostContent content={content} />
+
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
@@ -145,8 +149,8 @@ export const pageQuery = graphql`
         tags
         photo {
           childImageSharp {
-            fixed(width: 240, height: 240) {
-              ...GatsbyImageSharpFixed
+            fluid(maxWidth: 450, quality: 50) {
+              ...GatsbyImageSharpFluid
             }
           }
         }

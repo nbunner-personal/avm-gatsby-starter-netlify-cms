@@ -11,7 +11,6 @@ import BlogRollLandscape from "../components/BlogRollLandscape";
 import EventsRollCol from "../components/EventsRollCol";
 import postStyles from "../components/posts.module.css";
 import homepageStyles from "../components/homepage.module.css";
-import moment from "moment";
 import { Link } from "gatsby";
 
 export default class IndexPage extends React.Component {
@@ -107,21 +106,9 @@ export default class IndexPage extends React.Component {
                 Latest events
               </h2>
               <EventsRollCol events={events} />
-              <div className={postStyles.cont}>
-                {events &&
-                  events.map(({ node: event }) => (
-                    <div
-                      key={event.fields.slug}
-                      className={homepageStyles.eventContainer}
-                    >
-                      {moment(event.frontmatter.date, "MMMM DD, YYYY").isAfter(
-                        moment().format("MMMM DD, YYYY")
-                      ) && <EventsRollCol post={event} />}
-                    </div>
-                  ))}
-              </div>
+
               <div className={homepageStyles.allPostsFooter}>
-                <Link to="/news" className={homepageStyles.allPostsLink}>
+                <Link to="/events" className={homepageStyles.allPostsLink}>
                   View all events
                 </Link>
               </div>
@@ -192,6 +179,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
+          excerpt(pruneLength: 110)
           id
           fields {
             slug
