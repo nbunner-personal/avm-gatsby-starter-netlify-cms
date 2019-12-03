@@ -8,7 +8,7 @@ import videoStyles from "../components/videos.module.css";
 import ReactPlayer from "react-player";
 // import BlogRollCard from "../components/BlogRollCard";
 import BlogRollLandscape from "../components/BlogRollLandscape";
-import EventsRollCard from "../components/EventsRollCard";
+import EventsRollCol from "../components/EventsRollCol";
 import postStyles from "../components/posts.module.css";
 import homepageStyles from "../components/homepage.module.css";
 import moment from "moment";
@@ -106,6 +106,7 @@ export default class IndexPage extends React.Component {
               >
                 Latest events
               </h2>
+              <EventsRollCol events={events} />
               <div className={postStyles.cont}>
                 {events &&
                   events.map(({ node: event }) => (
@@ -115,7 +116,7 @@ export default class IndexPage extends React.Component {
                     >
                       {moment(event.frontmatter.date, "MMMM DD, YYYY").isAfter(
                         moment().format("MMMM DD, YYYY")
-                      ) && <EventsRollCard post={event} />}
+                      ) && <EventsRollCol post={event} />}
                     </div>
                   ))}
               </div>
