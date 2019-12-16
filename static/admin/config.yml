@@ -826,9 +826,20 @@ collections:
               label: "Template Key",
               name: "templateKey",
               widget: "hidden",
-              default: "page-basic",
+              default: "page-gallery",
             }
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Brief Description", name: "description", widget: "string" }
+          - {
+              label: "Photos",
+              name: gallery,
+              widget: list,
+              fields:
+                [
+                  { label: Photo, name: photo, widget: image },
+                  { label: Alt text, name: alt, widget: string },
+                ],
+            }
           - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/get-involved/fundraise-with-easy-fundraising/index.md"
         label: "Easy Fundraising"
