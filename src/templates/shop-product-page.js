@@ -5,7 +5,9 @@ import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 // import FeaturedProjects from "../components/FeaturedProjects";
 import CtaButton from "../components/CtaButton";
+import BuyButton from "../components/BuyButton";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+import styled from "styled-components";
 import shopStyles from "../components/shop.module.css";
 
 export const ShopProductTemplate = ({
@@ -32,10 +34,7 @@ export const ShopProductTemplate = ({
           <div className="column is-14 is-offset-1">
             <article className="content">
               <div className="columns">
-                <main className="column is-7">
-                  <h1 className="has-text-weight-semibold is-size-2">
-                    {title}
-                  </h1>
+                <main className="column is-6">
                   <div className={shopStyles.product}>
                     <div className={shopStyles.productMain}>
                       <PreviewCompatibleImage imageInfo={productImage} />
@@ -46,24 +45,15 @@ export const ShopProductTemplate = ({
                     text="Donate"
                   />
                 </main>
-                <aside className="column is-3">
+                <aside className="column is-4">
+                  <h1 className="has-text-weight-semibold is-size-2">
+                    {title}
+                  </h1>
                   <div className={shopStyles.productAside}>
+                    <span className={shopStyles.price}>&pound;{price}</span>
+                    <BuyButton />
                     <PageContent className="content" content={content} />
-                    Price: &pound;{price}
-                    <br />
-                    Sale Price: &pound;{salePrice}
-                    <br />
-                    In Stock: {inStock}
-                    <br />
-                    Weight: {weight}
-                    <br />
-                    Length: {length}
-                    <br />
-                    Width: {width}
-                    <br />
-                    Height: {height}
-                    <br />
-                    Shipping Class: {shippingClass}
+
                     {tags && tags.length ? (
                       <ul className="taglist">
                         {tags.map(tag => (

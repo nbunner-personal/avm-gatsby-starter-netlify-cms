@@ -33,6 +33,11 @@
 h2.itemTitle {
   margin: 0 !important;
 }
+.price {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+}
 /* .product {
   display: flex;
 }

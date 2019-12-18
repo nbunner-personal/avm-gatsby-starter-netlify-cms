@@ -1,6 +1,7 @@
 ---
 # templateKey: product-page
 templateKey: shop-product-page
+productId: buildUpWell
 title: Build up a well
 date: 2019-05-25
 productImage: /img/shop/build-a-well-1.jpg
