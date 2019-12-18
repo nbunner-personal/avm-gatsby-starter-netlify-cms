@@ -5,6 +5,16 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: src/pages/about-us
+  label: About Us
+  create: all
+  match: "**/*"
+- type: directory
+  path: src/pages/environment
+  label: Environment
+  create: all
+  match: "**/*"
+- type: directory
   path: src/pages/health
   label: Health
   create: all
@@ -15,13 +25,8 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: src/pages/environment
-  label: Environment
-  create: all
-  match: "**/*"
-- type: directory
-  path: src/pages/about-us
-  label: About Us
+  path: src/pages/water
+  label: Water
   create: all
   match: "**/*"
 upload_dir: static/img
