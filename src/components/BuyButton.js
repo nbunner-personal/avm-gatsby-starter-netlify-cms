@@ -19,8 +19,19 @@ const Button = styled.div`
   }
 `;
 
-export const BuyButton = ({ date, endDate }) => {
-  return <Button>Add to basket</Button>;
+export const BuyButton = ({ productId, price, description, image, url }) => {
+  return (
+    <Button
+      className="snipcart-add-item"
+      data-item-id={productId}
+      data-item-price={price}
+      data-item-description={description}
+      data-item-image={image}
+      data-item-url={url}
+    >
+      Add to basket
+    </Button>
+  );
 };
 
 export default BuyButton;
